@@ -1,0 +1,147 @@
+\documentclass[a4paper,openany]{book}
+
+%#############################################################################
+% Paquetes utilizados
+\usepackage[utf8]{inputenc} % codigo 
+\usepackage[spanish]{babel} % español
+\usepackage{graphicx} % insertar imagenes
+\usepackage[table, xcdraw]{xcolor} % color
+\usepackage[most]{tcolorbox} % cuadros https://es.overleaf.com/latex/examples/drawing-coloured-boxes-using-tcolorbox/pvknncpjyfbp
+\usepackage[left=2.54cm, right=2.54cm, top=2.54cm,bottom=2.54cm ]{geometry} % texwidth tendra un margen de 2cm derecha izquierda
+\usepackage{fancyhdr} % estilo de la pag
+\usepackage[hidelinks]{hyperref} % Hipervinculos
+\usepackage{parskip} % Quita la salgria y pone un espacio en blanco
+\usepackage{smartdiagram} % Insertar diagramas
+\usepackage{listings} % Insertar codigo en el documento
+\usepackage{zed-csp} % insertar tablas
+\usepackage{wrapfig} %preámbulo
+\usepackage{setspace}
+\usepackage{pgfgantt}
+\usepackage{minted} %insertar codigo coloreado
+\usepackage{color, colortbl}
+\usepackage{url}
+\usepackage{pdfpages}
+\usepackage{pdflscape} %poner pdf horizontal
+\usepackage[square,numbers]{natbib}
+\usepackage{tikz}
+\usepackage{datetime}
+
+%#######################################################################
+%Cronograma
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33}
+\sffamily
+
+%#############################################################################
+% Info del documento
+\title{Trabajo Final}
+\author{Blanco Emanuel .A}
+
+%#############################################################################
+% Colores
+% Definición de colores usados en la portada
+\definecolor{epsc:oscuro}{HTML}{0063ae}
+\definecolor{epsc:medio}{HTML}{4C5CC5}
+\definecolor{epsc:verde}{HTML}{009cb5}
+\definecolor{epsc:claro}{HTML}{3FCFD5}
+\definecolor{PORTADA_0}{cmyk}{1.00,0.00,0.07,0.28,1.00}
+\definecolor{PORTADA_1}{cmyk}{0.58,0.55,0.00,0.44,1.00}
+\definecolor{friendlyGray}{HTML}{f0f0f0}
+\definecolor{azPortada}{HTML}{A52FFC}
+\definecolor{vePortada}{HTML}{0DF3B1}
+\definecolor{roPortada}{HTML}{EC40A5}
+\definecolor{nePortada}{HTML}{070308}
+
+\renewcommand{\lstlistingname}{Código} % cambiar el caption del codigo
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{ % Color de sintaxis https://es.overleaf.com/learn/latex/Code_listing
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%#############################################################################
+% variables
+\newcommand{\logoPortada}{imagenes/portada/portada.jpg}
+\newcommand{\logoFich}{imagenes/portada/fich.jpg}
+\newcommand{\logoUnl}{imagenes/portada/portada.jpg}
+\newcommand{\nameAuthor}{Blanco Emanuel A.}
+\newcommand{\startdate}{26 de Junio 2022}
+\newdateformat{monthyeardate}{\monthname, \THEYEAR}
+
+%#############################################################################
+% Comienzo del documento
+\begin{document}
+    
+    \cfoot{\thepage} % Numero de pag
+    
+    \frontmatter
+
+	\input{cuerpo/portada/caratula}
+	
+    \tableofcontents
+
+    \mainmatter
+
+    \include{cuerpo/paginas/capitulo1.tex}
+            
+    \include{cuerpo/paginas/capitulo2.tex}
+           
+    \include{cuerpo/paginas/capitulo3.tex}
+    
+    \include{cuerpo/paginas/capitulo4.tex}
+    
+    \include{cuerpo/paginas/capitulo5.tex}
+    
+    \include{cuerpo/paginas/capitulo6.tex}
+    
+    \include{cuerpo/paginas/capitulo7.tex}
+    
+    \include{cuerpo/paginas/capitulo8.tex}
+
+    \include{cuerpo/paginas/capitulo9.tex}
+
+    \include{cuerpo/paginas/capitulo10.tex}
+    
+    \include{cuerpo/paginas/capitulo11.tex}
+    
+    \include{cuerpo/paginas/capitulo12.tex}
+    
+    \include{cuerpo/paginas/capitulo13.tex}
+
+    \include{cuerpo/paginas/capitulo14.tex}
+
+    \include{cuerpo/paginas/capitulo15.tex}
+    
+    \include{cuerpo/paginas/capitulo16.tex}
+    
+    \backmatter
+    
+    \nocite{*}
+    
+    \bibliographystyle{plain}
+    
+    \bibliography{cuerpo/bibliografias/bd-bibliografias.bib}
+       
+\end{document}
+

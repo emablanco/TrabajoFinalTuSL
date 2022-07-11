@@ -1,0 +1,13 @@
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/ema-raiz /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/mmcblk0p1 during installation
+UUID=2321-DD09  /boot/efi       vfat    umask=0077      0       1
+/dev/mapper/ema-home /home ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0  2
+/dev/mapper/ema-opt	/opt ext4 rw,exec,auto,nodev,nosuid,noatime,async,nouseri 0 0
+/dev/mapper/ema-srv	/srv ext4 defaults	0	0
+/dev/mapper/ema-docker	/var/lib/docker	ext4	defaults	0	0
+/dev/mapper/ema-var--log /var/log ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0 0
+/dev/mapper/ema-var--tmp /var/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0 0
+/dev/mapper/ema-tmp	/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser 0 0
+/dev/mapper/ema-usr	/usr	ext4	defaults	0	0
+/dev/mapper/ema-swap none            swap    sw              0       0

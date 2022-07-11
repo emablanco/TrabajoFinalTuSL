@@ -1,0 +1,78 @@
+
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+	% Top
+	\node [anchor=north east, inner sep=0pt]  at (current page.north east)%
+	{\includegraphics[height=6cm]{imagenes/Portada/arriba.png}};
+	% Bottom
+	\node [anchor=south west, inner sep=0pt]  at (current page.south west)%
+	{\includegraphics[height=6cm]{imagenes/Portada/abajo.jpg}};
+	\node (uco) [anchor=south east, inner sep=0pt, xshift=-10mm, yshift=10mm]  at (current page.south east)%
+	{\includegraphics[height=6cm]{imagenes/Portada/unl_escudo.pdf}};
+	\node [anchor=south east, inner sep=0pt, xshift=-10mm]  at (uco.south west)%	
+	{\includegraphics[height=6cm]{imagenes/Portada/fich.pdf}};
+	
+\end{tikzpicture}
+
+% Título del trabajo, autor y directores
+	{\color{epsc:oscuro}
+	\centering                                                              
+
+        {\LARGE\textbf{UNIVERISDAD NACIONAL DEL LITORAL}}\par\vspace{0.5cm}      
+
+		{\large\textbf{FACULTAD DE INGENIERIA Y CIENCIAS HÍDRICAS}}\par        
+
+	}
+
+\begin{flushright}                                  
+	
+	{\color{epsc:verde} \rule{7cm}{0.5mm}}
+	
+\end{flushright}
+
+\begin{center}
+	
+	\vspace*{2cm}
+	
+	\includegraphics[width=12.5cm]{imagenes/Portada/fich_logo.png}
+	
+	\vspace{1cm}
+	
+	{\color{epsc:oscuro}
+		
+		\Large\textbf{TRABAJO FINAL}\par	
+		
+		\vspace{0.2cm}
+		
+		\textbf{MIGRACIÓN DE SOFTWARE PRIVATIVO A SOFTWARE LIBRE}
+		
+		\vspace{0.2cm}
+		
+	} \vspace{2mm}
+	
+	{\color{epsc:oscuro}
+		
+		{\itshape{baruja shen adonai elohim}}\vspace{1cm}
+		
+		{\color{epsc:verde}\rule[2cm]{7cm}{0.3mm}}
+		
+		\begin{center}
+	
+			{\large\textbf{Blanco Emanuel A.}}\par
+			{\large\textbf{Universidad Nacional Del Litoral.}}\par
+			{\large\textbf{Facultad de Ingeniería y Ciencias Hídricas.}} \par
+			{\large\textbf{Tecnicatura Universitaria en Software Libre.}}\par
+			{\large\textbf{Creative Commons Atribución-CompartirDerivadasIgual 2.5 (Argentina)}}
+				
+		\end{center}
+		
+		\vspace{0.7cm}
+	
+		\textbf{\monthyeardate{\today}}        % Fecha de compilación en formato mes, año
+		
+	}
+
+\end{center}
+
+\endinput

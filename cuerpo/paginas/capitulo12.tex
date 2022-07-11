@@ -1,0 +1,33 @@
+\chapter{Cronograma de trabajo}\label{ch:cronograma}
+
+		\begin{ganttchart}[
+				canvas/.append style={fill=none, draw=black!5, line width=.75pt},hgrid  		style/.style={draw=black!5, line width=.75pt},vgrid={*1{draw=black!5, line width=.75pt}}, title/.style={draw=none, fill=none},title label font=\bfseries\footnotesize, title label node/.append style={below=7pt},include title in canvas=false,bar label font=\mdseries\small\color{black!70},bar label node/.append style={left=2cm},bar/.append style={draw=none, fill=black!63},	bar incomplete/.append style={fill=barblue},bar progress label font=\mdseries\footnotesize\color{black!70},group incomplete/.append style={fill=groupblue},	group left shift=0,	group right shift=0,group height=.5,group peaks tip position=0,group label node/.append style={left=.6cm},	group progress label font=\bfseries\small,link/.style={-latex, line width=1.5pt, linkred},link label font=\scriptsize\bfseries,link label node/.append style={below left=-2pt and 0pt}]{1}{13}
+		
+			\gantttitle[title label node/.append style={below left=7pt and -3pt}]{DÍAS DE TRABAJO:\quad1}{1}
+			
+			\gantttitlelist{2,...,4}{1} \\
+			
+			\ganttgroup[progress=0]{PROCESO DE TRABAJO}{2}{12} \\
+			
+			\ganttgroup[progress=20]{SITUACIÓN DE PARTIDA DÍA 1}{2}{12} \\
+			\ganttbar[progress=100]{\textbf{Inventario de Hardware}}{2}{5} \\
+			\ganttbar[progress=100]{\textbf{Inventario de Software}}{5}{7} \\
+			\ganttbar[progress=100]{\textbf{Alternativas al Software Privativo}}{7}{9}\\
+			\ganttbar[progress=100]{\textbf{Sistema Operativo}}{9}{12}\\
+			
+			\ganttgroup[progress=30]{MIGRACIÓN DÍA 2}{2}{12} \\
+			\ganttbar[progress=100]{\textbf{Instalación del Sistema Operativo}}{2}{5} \\
+			\ganttbar[progress=100]{\textbf{Instalación de Programas}}{5}{8} \\
+			\ganttbar[progress=100]{\textbf{Configuración de Red}}{9}{12} \\
+		
+			\ganttgroup[progress=40]{CREACIÓN DEL SERVIDOR DÍA 3}{2}{12} \\
+			\ganttbar[progress=100]{\textbf{Servidor Docker}}{2}{6} \\
+			\ganttbar[progress=100]{\textbf{Nextcloud}}{7}{9} \\
+			\ganttbar[progress=100]{\textbf{Emby}}{10}{12} 	\\
+			
+			\ganttgroup[progress=10]{CAPACITACIÓN DÍA 4}{2}{12} \\
+			\ganttbar[progress=100]{\textbf{Capacitación}}{2}{12} \\
+		
+			\ganttgroup[progress=100]{PROCESO DE TRABAJO}{2}{12} \\
+			
+	\end{ganttchart}

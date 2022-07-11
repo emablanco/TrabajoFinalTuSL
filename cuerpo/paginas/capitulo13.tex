@@ -1,0 +1,359 @@
+\chapter{Proceso de migración}\label{ch:migración}
+
+	En este punto realizare un análisis de la situación de partida para tener conocimiento detallado de las arquitecturas de los hardware disponibles, documentos/aplicaciones/tipos de archivos, etc. Esto me ayudará a evitar que realice ajustes imprevistos durante la migración y establecer un plan de actuación con suficiente antelación.
+	
+	Con este análisis pretendo identificar los requisitos funcionales que debe cumplir el nuevo sistema operativo.
+	
+	\section{Aspectos importantes}
+	
+		\begin{itemize}
+			
+			\item Documentos y sus formatos.
+			\item Archivos de audio/vídeos y sus formatos.
+			\item Aplicaciones y sus interfaces.
+			\item Bases de datos y estructura de datos.
+			\item Disponibilidad de datos y aplicaciones.
+			\item Hardware Disponible y driver necesarios.
+			
+		\end{itemize}
+	
+		\vspace{0.3cm}
+		
+	\section{Inventario de Software}
+		
+		El inventario de software consiste en realizar un listado de todos los programas (Aplicaciones, servicios y configuraciones) que se utilizan en los equipos que se deben migrar.\par
+		
+		\vspace{0.3cm}
+		
+		\subsection{Software Invetariado}
+			
+			\begin{itemize}
+				
+				\item Windows 10 64 bits
+				\item Navegador Chrome
+				\item Microsoft Outlook,
+				\item Adobe After Effect
+				\item Adobe Acrobat
+				\item Adobe Photoshop
+				\item atube gatcher
+				\item uTorrent
+				\item Microsoft Office 2016
+				\item Panda Cloud Antivirus
+				\item Windows Media
+				\item WinRAR
+				\item CCleaner
+			
+			\end{itemize}
+		
+			\vspace{0.3cm}
+		
+	\section{Inventario de Hardware}
+			
+		El inventario de hardware consiste en conocer en detalle el hardware de los ordenadores que se planean migrar. Esto me ayudara a saber si estarán soportado por las distribuciones de software libre de manera nativa e identificar si hay componentes a actualizar o cualquier incidencia con el soporte de hardware.\par\vspace{0.3cm}
+		
+		\subsection{Hardware Inventariado}
+		
+			\textbf{Desktop}
+							
+			Cuatro computadoras Intel con las siguientes características:\par\vspace{0.2cm}
+				
+			\begin{center}
+				\begin{tabular}{| r | l |}
+					\hline
+					Hardware & Modelo \\ \hline
+					Mother: & Asrock H55M-LE \\ 
+					Procesador: & Intel Core i3 3.0GHz. \\
+					Disco Duro & 500GB. \\
+					Memoria RAM & DDR3 2GB \\
+					Arquitectura & 64bits.\\ \hline
+				\end{tabular}
+			\end{center}
+		
+			\vspace{0.3cm}
+		
+			Tres computadoras AMD con las siguientes características:\par\vspace{0.2cm}
+					
+			\begin{center}			
+				\begin{tabular}{| r | l |}
+					\hline
+					Hardware & Modelo \\ \hline
+					Mother: & MSI \\ 
+					Procesador: & Amd athlon2 x2 3.00GHz. \\
+					Disco Duro & 500GB. \\
+					Memoria RAM & DDR3 2GB \\
+					Arquitectura & 64bits.\\ \hline
+				\end{tabular}
+			\end{center}
+			
+			\vspace{0.3cm}
+		
+			\textbf{Servidor}	
+		
+			Una computadora AMD con las siguientes características:
+		
+			\begin{center}			
+				\begin{tabular}{| r | l |}
+					\hline
+					Hardware & Modelo \\ \hline
+					Mother: & FM2 \\ 
+					Procesador: & Amd 3.5ghz. \\
+					Disco Duro & 500GB. \\
+					Memoria RAM & DDR3 8GB \\
+					Arquitectura & 64bits.\\ \hline
+				\end{tabular}
+			\end{center} 
+					
+		\vspace{0.3cm}
+		
+	
+	\section{Sistema Operativo}
+		
+		\subsection{Distribución GNU/Linux}
+			
+			Una distribución GNU/Linux es una distribución de software basada en el núcleo Linux que incluye determinados paquetes de software. Dependiendo el tipo de software que incluya surgen ediciones domésticas, empresariales y para servidores. Por lo general están compuestas, total o mayoritariamente, de software libre, aunque a menudo incorporan aplicaciones o controladores propietarios.\par
+			
+			Además del núcleo Linux, las distribuciones incluyen habitualmente las bibliotecas y herramientas del proyecto GNU y el sistema de ventanas X Window System. Dependiendo del tipo de usuarios a los que la distribución esté dirigida se incluye también otro tipo de software como procesadores de texto, hoja de cálculo, reproductores multimedia, herramientas administrativas, etc. En el caso de incluir paquetes de código del proyecto GNU, se denomina distribución GNU/Linux.\par
+			
+			
+		\subsection{Debian}\label{sub:debian}
+			
+			Seleccione Debían como mi sistema Desktop personal y para instalar en todos los ordenadores del aula universitaria porque es una distribución mantenida por la comunidad, tienen una muy buena estabilidad y a la hora de actualización de paquetes o de la propia distribución se puede lograr de una manera muy sencilla.\par 
+			
+			Debian funciona en numerosas arquitecturas y dispositivos y ofrece soporte a largo plazo (LTS).\par\vspace{0.2cm}
+			
+			\textbf{Características de Debian}\par\vspace{0.3cm}
+			
+			\begin{itemize}
+				
+				\item \textbf{Debian es software libre:} Está hecho de Software Libre y siempre será 100\% libre.\par
+				
+				\item \textbf{Debian es estable y seguro:} Es un sistema operativo basado en Linux, y soporta una gran variedad de dispositivos, portátiles, ordenadores de escritorio y servidores. Proporciona una configuración predeterminada para cada paquete, así como actualizaciones de seguridad con regularidad durante su ciclo de vida.\par
+				
+				\item \textbf{Debian tiene un soporte de hardware extenso} La mayoría del hardware ya está soportado por el núcleo Linux, lo que significa que está soportado en Debian también. Hay disponibles controladores no libres para el hardware si fueran necesarios. 
+							
+			\end{itemize}	
+		
+		\section{Instalación del sistema operativo}
+			
+	 		Antes de comenzar con la instalación del Sistema Operativo en los ordenadores, realizare el respaldo de toda la información de los alumnos en un disco externo.\par
+	 		
+	 		Este respaldo se puede realizar de varias maneras, siempre es recomendable que se haga en otro medio físico de almacenamiento.\par
+			
+			\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+				colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Debian,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]
+		
+				\centering
+		
+				\href{https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/}{\color{blue}{}Descargar Debian	}
+			
+			\end{tcolorbox}
+				
+			\subsection{Requisitos}
+				
+				Los requisitos mínimos necesarios para la instalación de \textbf{Debían Cinnamon} son los siguientes:
+				
+				\begin{itemize}
+					
+					\item 1 GB de RAM (se recomiendan 2 GB para un uso cómodo).
+					\item 15 GB de espacio en disco (se recomiendan 20 GB).
+					\item Resolución de 1024×768.
+					\item Procesador 2Ghz, doble núcleo.
+					
+				\end{itemize}
+			
+			\subsection{Proceso de Instalación}
+			
+				\textbf{Primeras configuraciones}\par
+			
+				Para el proceso de instalación seguiré una serie de pasos que me servirán para ir configurando el sistema operativo. Este proceso se puede repetir en cada uno de los ordenadores o clonar el disco con alguna herramienta.
+				
+				\vspace{0.2cm}
+	 
+				\begin{itemize}
+				
+					\item \textbf{Seleccionar idioma:} Seleccionar el idioma del proceso de instalación.
+					
+					\item \textbf{Seleccionar su Ubicación:} Seleccionar la ubicación geográfica. Así Debian podrá configurar automáticamente la zona horaria y la 	localización.	
+				
+					\item \textbf{Configure el Teclado:} Seleccionar el idioma de nuestro teclado.
+							
+				\end{itemize}
+		
+				\vspace{0.2cm}	
+			
+				Ahora que el idioma y el teclado de la distro esta configurado, Debian se encargara de realizar las demás configuraciones.
+			
+				\vspace{0.2cm}
+			
+				\textbf{Detectar y configurar el hardware}\par\vspace{0.2cm}
+			
+				Después de las primeras configuracionesq Debian dedicará un tiempo a volcar los datos del medio de instalación (USB o DVD) al ordenador para poder acceder a ellos más rápidamente. También aprovechará para detectar todo el hardware del ordenador, configurarlo y conectarlo a Internet.\par
+				
+				Este proceso puede tardar varios minutos dependiendo de la potencia del PC.\par
+			
+				\vspace{0.2cm}
+			
+				\begin{itemize}
+					
+					\item \textbf{Configurar red:} El nombre que se le coloque al PC sera con el cual se identificara en la red local.
+					
+					\item \textbf{Configurar usuarios y contraseña:} Lo primero que pedirá Debian es introducir una contraseña para el superusuario. Esta contraseña debe ser larga y robusta, para proteger el equipo.
+					
+					Después de haber creado la cuenta de superusuario es hora de crear el primer usuario. Debian solicitara que se introduzca en primer lugar el nombre completo del mismo y luego la contraseña que se le asignara.
+					
+					\item \textbf{Configurar Reloj:} A continuación,se debe seleccionar la ubicación de la zona horaria para que se ajuste el reloj automáticamente.
+					
+				\end{itemize}
+
+				\vspace{0.3cm}
+				
+				\textbf{Particionado}\vspace{0.2cm}
+				
+				Ha llegado el turno al disco duro. Debian, como cualquier otro Linux utiliza una serie de particiones y puntos de montaje necesarios para poder guardar todos los datos. En este caso se puede usar todo el disco y usar el método guiado para que el proceso de creación de las particiones sea lo más sencillo posible.
+				
+				Por fines prácticos creare un LVM y seleccionare el \textbf{método guiado} para usar todo el disco.
+				
+				\begin{itemize}
+					
+					\item \textbf{Paso N° 1:} Seleccionar el disco duro donde se va a instalar la distribución
+					
+					\item \textbf{Paso N° 2:} Seleccionar la estructura de particiones que se va a utilizar.
+					
+				\end{itemize}
+
+								
+				El asistente de instalación de Debian hará los cálculos correspondientes y mostrara un resumen con todos los cambios que se van a realizar.\par			
+				
+				Si está todo correcto se debe aceptar los cambios y así comenzará la instalación como tal.\par
+								
+				\vspace{0.2cm}	
+		
+				\textbf{Comenzando la copia de archivos para instalar Debian}\par\vspace{0.2cm}
+		
+				\begin{itemize}
+					
+					\item \textbf{Instalando el sistema base:} El sistema se instala en el PC. Durante este proceso se descargarán los paquetes que faltan y se configurará la distribución para poder funcionar.\par
+					
+					\item \textbf{Configurar el gestor de paquetes:} Al acabar la copia de archivos, el asistente preguntará si hay otro CD o DVD de software para utilizar e instalar al mismo tiempo. Esto era bastante frecuente en el pasado, pero ahora ya está en desuso. Por tanto, como no se dispone otro medio de instalación, seleccionare la opción «No».\par 
+					
+					\item \textbf{Configurar el gestor de paquetes:} Ahora Debian solicitara la ubicación del servidor de repositorios, desde donde se descargarán los paquetes y las actualizaciones. Es recomendable que este servidor esté lo más cerca posible para que la velocidad sea lo mayor posible. También se debe seleccionar el servidor desde donde bajar todo. Generalmente, el que viene por defecto (deb.debian.org).\par
+					
+					Con todo esto el asistente de instalación de Debian se conectará a los repositorios y actualizará la base de datos de software, descargando otras dependencias o listas que no se encuentren en el sistema.\par
+					
+					\item \textbf{Configurar el popularity-contest:} Configurar si se compartirán datos anónimos de uso. Por defecto, no.\par	
+					
+				\end{itemize}
+				
+				\clearpage
+				
+				\textbf{Instalando software adicional}\par\vspace{0.2cm}
+				
+				\begin{itemize}
+					
+					\item \textbf{Selección de programas:} Seleccionar el entorno de escritorio. \par
+					
+				\end{itemize}
+				
+				Como ultimo paso se debe instalar el gestor de arranque \textbf{GRUB}, e indicar en qué unidad queremos instalarlo.\par
+			
+				\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Guía de Instalación,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black}]
+					
+					\centering
+					
+					\href{https://debian-handbook.info/browse/es-ES/stable/sect.installation-steps.html/}{\color{blue}{}Manual de Debían}
+					
+				\end{tcolorbox}
+	
+	\section{Repositorios}
+	
+		\subsection{¿Que es un repositorio?}
+		
+			Un repositorio es un servidor web que se encarga de almacenar paquetes y programas para que los usuario puedan descargarlos e instalarlos en su distribución GNU/Linux. Además de los repositorios predeterminados del sistema operativo, se puedes disponer y utilizar repositorios de terceros, que contengan actualizaciones de software o programas que no han sido incluidos en los repositorios iniciales.\par
+			
+		\subsection{Configuración de repositorios Debian}
+
+		La lista a editar se encuentra alojada en \textit{/etc/apt/source.list}. Para obtener información sobre los repositorios disponibles por parte de \href{https://www.debian.org}{\color{blue}{}Debian.org}, se puede hacer uso de una \href{https://wiki.debian.org/SourcesList/}{\color{blue}{}Wiki} que cuenta con información detallada de cada repositorio.\par
+		
+		Mi lista de repositorios.\par
+			
+	\begin{lstlisting}[language=bash, caption=Repositorios]
+		
+		deb http://deb.debian.org/debian/ bullseye main
+		
+		deb-src http://deb.debian.org/debian/ bullseye main
+		 
+		deb http://security.debian.org/debian-security bullseye-security main contrib
+		
+		deb-src http://security.debian.org/debian-security bullseye-security main contrib
+		 
+		bullseye-updates, to get updates before a point release is made;
+		
+		# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
+		
+		deb http://deb.debian.org/debian/ bullseye-updates main contrib
+		
+		deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+		
+	\end{lstlisting}	
+			
+	\section{Instalación de Programas}
+		
+		La mayoría de los programas que necesita el estudiante ya se instalan de forma automática y otros los tendré que instalar de forma manual por medio de la terminal.\par
+		
+		Los programas que debo instalar en los equipos son los siguientes:\par
+		
+		\begin{itemize}
+			
+			\item \textbf{Brave:} Brave es un navegador totalmente gratuito y de código abierto para ordenador o para teléfonos móviles que destaca por la privacidad, por la velocidad.\par 
+			
+			\item \textbf{Chromium:} Chromium es una versión de código abierto de Google Chrome, pero sin todos los códecs exclusivos y otros elementos con los que Google pretende diferenciar Chrome de otros navegadores.\par
+				
+			\item \textbf{Cliente mail Thunderbird:} Thunderbird es el cliente de correo electrónico de la Fundación Mozilla, la misma responsable del navegador Firefox. Thunderbird fue creado para cubrir las necesidades de tener un gestor de correo ligero y gratuito.
+
+			\item \textbf{Evince:} Evince es un visor de documentos para el entorno de escritorio GNOME. Se pueden ver los archivos en formato PDF y PostScript.\par
+
+			
+			\item \textbf{Gimp:} GIMP (GNU Image Manipulation Program) es un programa de edición de imágenes. Se trata de un software libre, englobado dentro del proyecto GNU y disponible bajo esta licencia pública y la de GNU Lesser General Public License.
+			
+			\item \textbf{Inkscape:} Inkscape es un editor de gráficos vectoriales que permite: Diseñar imágenes de calidad, básicas o complejas. Crear y editar diagramas, líneas, gráficos, logotipos, cómics, folletos, entre otros. Utilizar formas, trazos, texto, marcadores, clones, y otras herramientas de diseño.
+			
+			\item \textbf{HandBrak:} HandBrake es un programa Software Libre que permite editar archivos de audio y videos. 
+			
+			\item \textbf{qBittorrent:} qBittorrent es un cliente P2P, Software Libre y se utiliza para la transferencia de archivos grandes.\par
+							
+			\item \textbf{FileZilla:} FileZilla es un programa software libre y funciona a nivel cliente/servidor. Con esta herramienta podemos conectarnos a un servidor para consultar, adquirir y manipular contenido del mismo.\par
+		
+			\item \textbf{VLC:} VLC es un reproductor y framework de vídeo y música software libre compatible con un gran número de formatos de archivo multimedia. Es capaz de reproducir la mayoría de códecs sin tener que descargar paquetes adicionales.
+		
+			\item \textbf{BleachBit:} BleachBit es una herramienta software libre que se encarga de eliminar:
+			Cache, Cookies, Archivos temporales, Historiales, Registros de chats, Thumbs (miniaturas), Historial de descargas, Accesos directos inválidos, Registros de depuración.
+		
+			\item \textbf{TeXstudio} TeXstudio es un editor de \LaTeX{} multiplataforma software libre.\par
+			
+			Entre sus funciones se destacan: Marcadores, autocompletado de comandos, coloreado de sintaxis, menús, soporte de arrastrar imágenes, asistente para la creación de tablas, fórmulas, etc, soporte integrado de diversos compiladores de \LaTeX{}.\par
+			
+		
+		\end{itemize}
+		
+		Para instalar el navegador Brave es necesario que agregue el repositorio donde se encuentra el navegador
+		
+		\vspace{0.3cm}
+			
+		\begin{lstlisting}[language=Bash, caption=Instalación de programas]	
+	
+		#herramientas necesarias para agregar el repositorio.
+		apt install apt-transport-https curl
+		
+		#repositorio de Brave
+		curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+	
+		echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] 		https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
+		
+		#actualizar la lista de paquetes disponibles.
+		apt update
+		
+		#instalar pogramas.
+		apt install brave-browser texstudio bleatbit vlc filezilla qbittorrent handbrake inkscape gimp evince thunderbird chromium
+		
+			
+		\end{lstlisting}
