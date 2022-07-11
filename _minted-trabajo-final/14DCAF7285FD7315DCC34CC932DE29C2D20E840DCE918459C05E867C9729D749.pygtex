@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{version}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}3\PYGZdq{}}
+\PYG{n+nt}{services}\PYG{p}{:}
+  \PYG{n+nt}{nextcloud}\PYG{p}{:}
+    \PYG{n+nt}{image}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{nextcloud}
+    \PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{nextcloud}
+    \PYG{n+nt}{environment}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PUID=1000}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PGID=1000}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{TZ=America/Argentina/Buenos\PYGZus{}Aires}
+    \PYG{n+nt}{volumes}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./nextcloud/config:/config}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./nextcloud/data:/data}
+    \PYG{n+nt}{ports}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{8080:80}
+  \PYG{n+nt}{mariadb}\PYG{p}{:}
+    \PYG{n+nt}{image}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{linuxserver/mariadb}
+    \PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{mariadb}
+    \PYG{n+nt}{environment}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PUID=1000}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PGID=1000}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{MYSQL\PYGZus{}ROOT\PYGZus{}PASSWORD=123456}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{TZ=America/Argentina/Buenos\PYGZus{}Aires}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{MYSQL\PYGZus{}DATABASE=nextclouddb}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{MYSQL\PYGZus{}USER=nextcloud}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{MYSQL\PYGZus{}PASSWORD=123456}
+    \PYG{n+nt}{volumes}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./mariadb/config:/config}
+    \PYG{n+nt}{ports}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{3306:3306}
+    \PYG{n+nt}{restart}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{unless\PYGZhy{}stopped}
+\end{Verbatim}

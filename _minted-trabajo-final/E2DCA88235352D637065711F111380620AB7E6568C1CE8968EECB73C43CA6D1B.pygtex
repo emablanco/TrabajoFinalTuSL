@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{version}\PYG{p}{:} \PYG{l+s}{\PYGZdq{}3.3\PYGZdq{}}
+\PYG{n+nt}{services}\PYG{p}{:}
+  \PYG{n+nt}{emby}\PYG{p}{:}
+    \PYG{n+nt}{image}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{linuxserver/emby}
+    \PYG{n+nt}{container\PYGZus{}name}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{emby}
+    \PYG{n+nt}{restart}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{unless\PYGZhy{}stopped} 
+    \PYG{n+nt}{ports}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+s}{\PYGZdq{}8096:8096\PYGZdq{}}
+    \PYG{n+nt}{environment}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PUID=998}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{PGID=1000}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{TZ=America/Argentina/Buenos\PYGZus{}Aires}
+    \PYG{n+nt}{volumes}\PYG{p}{:}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./library:/config}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./series:/data/tvshows}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./peliculas:/data/movies}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./musica:/data/music}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./tutoriales:/data/tutorials}
+      \PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+lScalar+lScalarPlain}{./imagenes:/data/images}
+\end{Verbatim}

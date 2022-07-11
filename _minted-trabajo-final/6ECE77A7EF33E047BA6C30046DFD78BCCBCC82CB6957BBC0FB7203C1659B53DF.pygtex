@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}LIMPIAR TODAS LAS REGLAS\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+iptables \PYGZhy{}F
+iptables \PYGZhy{}X
+iptables \PYGZhy{}Z
+iptables \PYGZhy{}t nat \PYGZhy{}F
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}POLITICA POR DEFECTO\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+iptables \PYGZhy{}P INPUT DROP
+iptables \PYGZhy{}P FORWARD DROP
+iptables \PYGZhy{}P OUTPUT DROP 
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}PERMITIR RESPUESTA A TODAS LAS SESIONES ESTABLECIDAS\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{}PAQUETES QUE LLEGAN AL FIREWALL ESTABLISHED}
+iptables \PYGZhy{}A INPUT \PYGZhy{}m state \PYGZhy{}\PYGZhy{}state RELATED,ESTABLISHED \PYGZhy{}j ACCEPT
+\PYG{c+c1}{\PYGZsh{}PAQUES QUE SALEN ESTABLISHED}
+iptables \PYGZhy{}A OUTPUT \PYGZhy{}m state \PYGZhy{}\PYGZhy{}state RELATED,ESTABLISHED \PYGZhy{}j ACCEPT
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}PERMITIR SSH AL FIREWALL \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+iptables \PYGZhy{}A INPUT \PYGZhy{}s \PYG{l+m}{192}.168.1.4 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{2222} \PYGZhy{}j ACCEPT \PYG{c+c1}{\PYGZsh{}MI PC}
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}PERMITO SALIDAS DEL FIREWALL POR LOS PUERTOS\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+iptables \PYGZhy{}A OUTPUT \PYGZhy{}o enp2s0 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{80} \PYGZhy{}j ACCEPT \PYG{c+c1}{\PYGZsh{}HTTP}
+iptables \PYGZhy{}A OUTPUT \PYGZhy{}o enp2s0 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{443} \PYGZhy{}j ACCEPT \PYG{c+c1}{\PYGZsh{}HTTPS}
+iptables \PYGZhy{}A OUTPUT \PYGZhy{}o enp2s0 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{53} \PYGZhy{}j ACCEPT \PYG{c+c1}{\PYGZsh{}DNS}
+\PYG{c+c1}{\PYGZsh{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}PERMITO QUE LA RED LAN USE EL SERVIDOR NEXTCLOUD Y EMBY \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+iptables \PYGZhy{}A INPUT \PYGZhy{}s \PYG{l+m}{192}.168.1.0/24 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{8080} \PYGZhy{}j ACCEPT
+iptables \PYGZhy{}A INPUT \PYGZhy{}s \PYG{l+m}{192}.168.1.0/24 \PYGZhy{}p tcp \PYGZhy{}\PYGZhy{}dport \PYG{l+m}{8096} \PYGZhy{}j ACCEPT
+\end{Verbatim}

@@ -2,7 +2,7 @@ Proyecto: Migración de Software Privativo a Software Libre
 
 Autor : Blanco Emanuel A.
 
-                                                    Resumen de propuestas
+                                                    Resumen 
 
 El trabajo sera realizado en el Aula Virtual, ubicada en el Instituto de detencion Penal, N° 2, Las Flores.
 Este espacio es parte del Programa “Educación Universitaria en Prisiones”. El cual consiste en alinea con aquellos intentos

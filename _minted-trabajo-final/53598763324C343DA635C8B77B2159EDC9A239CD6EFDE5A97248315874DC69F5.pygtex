@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}! /bin/bash}
+\PYG{c+c1}{\PYGZsh{}crear directorio llamado \PYGZdq{}seguridad\PYGZdq{}}
+\PYG{n+nv}{workdir}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}PWD}/seguridad
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}Crear Base de datos del HASH de cada archivo\PYGZdq{}}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}
+ 
+find /usr \PYGZhy{}type f \PYGZhy{}exec md5sum \PYG{o}{\PYGZob{}\PYGZcb{}} \PYG{l+s+se}{\PYGZbs{};} \PYGZgt{} \PYG{n+nv}{\PYGZdl{}workdir}/usr.tmp
+find /boot \PYGZhy{}type f \PYGZhy{}exec md5sum \PYG{o}{\PYGZob{}\PYGZcb{}} \PYG{l+s+se}{\PYGZbs{};} \PYGZgt{} \PYG{n+nv}{\PYGZdl{}workdir}/boot.tmp
+find /opt \PYGZhy{}type f \PYGZhy{}exec md5sum \PYG{o}{\PYGZob{}\PYGZcb{}} \PYG{l+s+se}{\PYGZbs{};} \PYGZgt{} \PYG{n+nv}{\PYGZdl{}workdir}/opt.tmp
+find /etc \PYGZhy{}type f \PYGZhy{}exec md5sum \PYG{o}{\PYGZob{}\PYGZcb{}} \PYG{l+s+se}{\PYGZbs{};} \PYGZgt{} \PYG{n+nv}{\PYGZdl{}workdir}/etc.tmp
+find /var \PYGZhy{}type f \PYGZhy{}not \PYGZhy{}path \PYG{l+s+s2}{\PYGZdq{}/var/pool/*\PYGZdq{}} \PYGZhy{}not \PYGZhy{}path \PYG{l+s+s2}{\PYGZdq{}/var/log/*\PYGZdq{}} \PYG{l+s+se}{\PYGZbs{}}
+    \PYGZhy{}not \PYGZhy{}path \PYG{l+s+s2}{\PYGZdq{}/var/tmp/*\PYGZdq{}} \PYGZhy{}exec md5sum \PYG{o}{\PYGZob{}\PYGZcb{}} \PYG{l+s+se}{\PYGZbs{};} \PYGZgt{} \PYG{n+nv}{\PYGZdl{}workdir}/var.tmp
+ 
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}Diferencias...\PYGZdq{}}
+ 
+diff \PYG{n+nv}{\PYGZdl{}workdir}/usr.txt \PYG{n+nv}{\PYGZdl{}workdir}/usr.tmp
+diff \PYG{n+nv}{\PYGZdl{}workdir}/boot.txt \PYG{n+nv}{\PYGZdl{}workdir}/boot.tmp
+diff \PYG{n+nv}{\PYGZdl{}workdir}/opt.txt \PYG{n+nv}{\PYGZdl{}workdir}/opt.tmp
+diff \PYG{n+nv}{\PYGZdl{}workdir}/etc.txt \PYG{n+nv}{\PYGZdl{}workdir}/etc.tmp
+diff \PYG{n+nv}{\PYGZdl{}workdir}/var.txt \PYG{n+nv}{\PYGZdl{}workdir}/var.tmp
+ 
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}Limpiar\PYGZdq{}}
+ 
+rm \PYGZhy{}f \PYG{n+nv}{\PYGZdl{}workdir}/usr.tmp \PYG{n+nv}{\PYGZdl{}workdir}/boot.tmp \PYG{n+nv}{\PYGZdl{}workdir}/opt.tmp \PYG{l+s+se}{\PYGZbs{}}
+    \PYG{n+nv}{\PYGZdl{}workdir}/etc.tmp \PYG{n+nv}{\PYGZdl{}workdir}/etc.tmp \PYG{n+nv}{\PYGZdl{}workdir}/var.tmp
+\end{Verbatim}

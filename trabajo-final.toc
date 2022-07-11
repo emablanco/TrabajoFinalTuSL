@@ -1,0 +1,100 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Motivación}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Contexto}{4}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Importancia}{5}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Destinatarios}{6}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conceptos técnicos aplicados}{7}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Licencias involucradas}{8}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Tipos de licencia}{8}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Licencias GPL}{8}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Licencias LGPL}{8}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Licencias AGPL}{8}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Licencias Estilo BSD}{8}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}Licencia PSFL}{9}{subsection.7.1.5}%
+\contentsline {subsection}{\numberline {7.1.6}Licencias MPL y derivadas}{9}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.7}Licencia CDDL}{9}{subsection.7.1.7}%
+\contentsline {subsection}{\numberline {7.1.8}Licencias EPL}{9}{subsection.7.1.8}%
+\contentsline {subsection}{\numberline {7.1.9}Licencia Apache}{9}{subsection.7.1.9}%
+\contentsline {subsection}{\numberline {7.1.10}Licencia PHP}{9}{subsection.7.1.10}%
+\contentsline {subsection}{\numberline {7.1.11}Licencias Creative Commons}{10}{subsection.7.1.11}%
+\contentsline {subsubsection}{Tipos de licencias de Creative Commons}{10}{section*.2}%
+\contentsline {chapter}{\numberline {8}Documentación}{11}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Estado del arte}{12}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Objetivos}{13}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Generales}{13}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Específicos}{13}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Desarrollo}{14}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Cronograma de trabajo}{15}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Proceso de migración}{17}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Aspectos importantes}{17}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Inventario de Software}{17}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Software Invetariado}{17}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}Inventario de Hardware}{18}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Hardware Inventariado}{18}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Sistema Operativo}{18}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Distribución GNU/Linux}{18}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Debian}{19}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}Instalación del sistema operativo}{19}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Requisitos}{19}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Proceso de Instalación}{19}{subsection.13.5.2}%
+\contentsline {section}{\numberline {13.6}Repositorios}{21}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}¿Que es un repositorio?}{21}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}Configuración de repositorios Debian}{21}{subsection.13.6.2}%
+\contentsline {section}{\numberline {13.7}Instalación de Programas}{21}{section.13.7}%
+\contentsline {chapter}{\numberline {14}Configuración red LAN}{23}{chapter.14}%
+\contentsline {section}{\numberline {14.1}¿Que es una red LAN?}{23}{section.14.1}%
+\contentsline {section}{\numberline {14.2}¿Que es una dirección IP?}{23}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}Direcciones IP dinámicas}{23}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}Direcciones IP estáticas}{23}{subsection.14.2.2}%
+\contentsline {section}{\numberline {14.3}Configuración de red}{23}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Diagrama de red}{24}{subsection.14.3.1}%
+\contentsline {chapter}{\numberline {15}Servidor Local}{25}{chapter.15}%
+\contentsline {section}{\numberline {15.1}¿Que es un Servidor Local}{25}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Uso del servidor}{25}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Sistema Operativo}{25}{section.15.3}%
+\contentsline {section}{\numberline {15.4}Instalación del Sistema Operativo}{25}{section.15.4}%
+\contentsline {section}{\numberline {15.5}LVM}{27}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}¿Que es LVM?}{27}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}Gestión volúmenes lógicos}{27}{subsection.15.5.2}%
+\contentsline {section}{\numberline {15.6}fstab}{28}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}Configurar fstab}{29}{subsection.15.6.1}%
+\contentsline {section}{\numberline {15.7}Controlar cambios en el sistema}{29}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Generar Hash}{30}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}Comparar Hash}{30}{subsection.15.7.2}%
+\contentsline {section}{\numberline {15.8}Configuración de red}{31}{section.15.8}%
+\contentsline {subsection}{\numberline {15.8.1}Asignar una IP estática}{31}{subsection.15.8.1}%
+\contentsline {subsection}{\numberline {15.8.2}Servidor DNS}{31}{subsection.15.8.2}%
+\contentsline {section}{\numberline {15.9}Firewall}{32}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}¿Que es iptables?}{32}{subsection.15.9.1}%
+\contentsline {subsubsection}{Características de iptables:}{32}{section*.3}%
+\contentsline {subsection}{\numberline {15.9.2}Reglas iptables}{32}{subsection.15.9.2}%
+\contentsline {section}{\numberline {15.10}Servidor Docker}{33}{section.15.10}%
+\contentsline {subsection}{\numberline {15.10.1}¿Que es Docker?}{33}{subsection.15.10.1}%
+\contentsline {subsection}{\numberline {15.10.2}Funcionamiento de los contenedores?}{33}{subsection.15.10.2}%
+\contentsline {subsection}{\numberline {15.10.3}Características}{33}{subsection.15.10.3}%
+\contentsline {subsection}{\numberline {15.10.4}Herramientas de Docker}{33}{subsection.15.10.4}%
+\contentsline {subsection}{\numberline {15.10.5}Instalación Docker}{34}{subsection.15.10.5}%
+\contentsline {subsection}{\numberline {15.10.6}¿Que es Docker Compose?}{35}{subsection.15.10.6}%
+\contentsline {subsection}{\numberline {15.10.7}Instalación Docker Compose}{35}{subsection.15.10.7}%
+\contentsline {section}{\numberline {15.11}Contenedor NextCloud}{35}{section.15.11}%
+\contentsline {subsection}{\numberline {15.11.1}¿Que es Nextcloud?}{35}{subsection.15.11.1}%
+\contentsline {subsection}{\numberline {15.11.2}Características:}{35}{subsection.15.11.2}%
+\contentsline {subsection}{\numberline {15.11.3}Requisitos:}{35}{subsection.15.11.3}%
+\contentsline {subsection}{\numberline {15.11.4}Preparación del área de trabajo}{35}{subsection.15.11.4}%
+\contentsline {subsubsection}{Estructura del docker-compose.yml}{36}{section*.4}%
+\contentsline {subsection}{\numberline {15.11.5}Crear Contenedor}{37}{subsection.15.11.5}%
+\contentsline {subsubsection}{Explicación del comando anterior:}{37}{section*.5}%
+\contentsline {subsection}{\numberline {15.11.6}Configuración de NextCloud}{37}{subsection.15.11.6}%
+\contentsline {subsection}{\numberline {15.11.7}Conclusión}{38}{subsection.15.11.7}%
+\contentsline {section}{\numberline {15.12}Contenedor Emby}{39}{section.15.12}%
+\contentsline {subsection}{\numberline {15.12.1}¿Que es Emby?}{39}{subsection.15.12.1}%
+\contentsline {subsection}{\numberline {15.12.2}Características de Emby:}{39}{subsection.15.12.2}%
+\contentsline {subsection}{\numberline {15.12.3}¿Qué es un centro multimedia?}{39}{subsection.15.12.3}%
+\contentsline {subsection}{\numberline {15.12.4}Preparación del área de trabajo}{39}{subsection.15.12.4}%
+\contentsline {subsection}{\numberline {15.12.5}Crear Contenedor Docker:}{40}{subsection.15.12.5}%
+\contentsline {subsubsection}{Explicación del comando anterior:}{40}{section*.6}%
+\contentsline {subsection}{\numberline {15.12.6}Configuración Emby}{40}{subsection.15.12.6}%
+\contentsline {subsubsection}{Panel de control de Emby}{41}{section*.7}%
+\contentsline {subsection}{\numberline {15.12.7}Conclusión}{41}{subsection.15.12.7}%
+\contentsline {chapter}{\numberline {16}Conclusión}{42}{chapter.16}%

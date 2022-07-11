@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} \PYGZlt{}file system\PYGZgt{} \PYGZlt{}mount point\PYGZgt{}   \PYGZlt{}type\PYGZgt{}  \PYGZlt{}options\PYGZgt{}       \PYGZlt{}dump\PYGZgt{}  \PYGZlt{}pass\PYGZgt{}}
+/dev/mapper/ema\PYGZhy{}raiz /               ext4    \PYG{n+nv}{errors}\PYG{o}{=}remount\PYGZhy{}ro \PYG{l+m}{0}       \PYG{l+m}{1}
+\PYG{c+c1}{\PYGZsh{} /boot/efi was on /dev/mmcblk0p1 during installation}
+\PYG{n+nv}{UUID}\PYG{o}{=}\PYG{l+m}{2321}\PYGZhy{}DD09  /boot/efi       vfat    \PYG{n+nv}{umask}\PYG{o}{=}\PYG{l+m}{0077}      \PYG{l+m}{0}       \PYG{l+m}{1}
+/dev/mapper/ema\PYGZhy{}home /home ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0}  \PYG{l+m}{2}
+/dev/mapper/ema\PYGZhy{}opt	/opt ext4 rw,exec,auto,nodev,nosuid,noatime,async,nouseri \PYG{l+m}{0} \PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}srv	/srv ext4 defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}docker	/var/lib/docker	ext4	defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}var\PYGZhy{}\PYGZhy{}log /var/log ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0} \PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}var\PYGZhy{}\PYGZhy{}tmp /var/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0} \PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}tmp	/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser \PYG{l+m}{0} \PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}usr	/usr	ext4	defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}swap none            swap    sw              \PYG{l+m}{0}       \PYG{l+m}{0}
+\end{Verbatim}

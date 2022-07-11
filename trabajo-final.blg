@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: trabajo-final.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo1.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo2.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo3.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo4.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo5.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo6.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo7.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo8.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo9.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo10.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo11.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo12.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo13.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo14.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo15.aux
+A level-1 auxiliary file: cuerpo/paginas/capitulo16.aux
+The style file: plain.bst
+Database file #1: cuerpo/bibliografias/bd-bibliografias.bib
+Warning--entry type for "tesis" isn't style-file defined
+--line 1 of file cuerpo/bibliografias/bd-bibliografias.bib
+Warning--empty journal in licencias
+Warning--there's a month but no year in licencias
+Warning--empty journal in gnu
+Warning--there's a month but no year in gnu
+Warning--empty journal in educación
+Warning--there's a month but no year in educación
+Warning--empty journal in nextcloud
+Warning--there's a month but no year in nextcloud
+Warning--empty journal in Hobbyists
+Warning--there's a month but no year in Hobbyists
+Warning--empty journal in emby
+Warning--there's a month but no year in emby
+Warning--empty journal in Administración
+Warning--empty year in Administración
+Warning--empty journal in installDebian
+Warning--there's a month but no year in installDebian
+Warning--empty journal in Debian
+Warning--there's a month but no year in Debian
+Warning--empty journal in sl
+Warning--there's a month but no year in sl
+Warning--empty journal in redes
+Warning--empty year in redes
+You've used 12 entries,
+            2118 wiz_defined-function locations,
+            570 strings with 5792 characters,
+and the built_in function-call counts, 3069 in all, are:
+= -- 281
+> -- 100
+< -- 7
++ -- 43
+- -- 30
+* -- 153
+:= -- 521
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 51
+chr.to.int$ -- 0
+cite$ -- 34
+duplicate$ -- 151
+empty$ -- 255
+format.name$ -- 30
+if$ -- 645
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 11
+newline$ -- 62
+num.names$ -- 24
+pop$ -- 94
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 101
+stack$ -- 0
+substring$ -- 111
+swap$ -- 28
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 22
+while$ -- 34
+width$ -- 14
+write$ -- 113
+(There were 23 warnings)
