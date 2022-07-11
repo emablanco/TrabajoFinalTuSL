@@ -17,7 +17,7 @@ frecuentemente.
 Estos equipos sufren una rápida degradació que es suele ser causada por virus, spyware, software que se 
 queda residente en memoria, configuraciones erróneas en equipos equipo. 
 
-Lo que se busca con este trabajo es mejorar el rendimiento de todos los equipos, como mejorar la productividad de toda la red informatica utilizando herramientas Software Libre.
+Lo que se busca con este trabajo es mejorar el rendimiento de todos los equipos y la productividad de toda la red informatica utilizando herramientas Software Libre.
 
                                                Análisis del estado del arte:
 
