@@ -91,13 +91,15 @@
 
 %#############################################################################
 % Comienzo del documento
+
 \begin{document}
     
     \cfoot{\thepage} % Numero de pag
     
     \frontmatter
 
-	\input{cuerpo/portada/caratula}
+	\input{cuerpo/portada/caratula}% la version de pdf del logo de la unles muy nueva para latex, compilar version mas vieja
+%a) Convierte el archivo unl_escudo.pdf a una versión compatible: Utiliza una herramienta de conversión, como Ghostscript o Adobe Acrobat, para convertir el archivo unl_escudo.pdf a una versión anterior del formato PDF, como la versión 1.5. Asegúrate de guardar el archivo convertido en una ubicación accesible y actualiza la referencia en tu archivo LaTeX para apuntar al nuevo archivo convertido.
 	
     \tableofcontents
 
@@ -131,7 +133,7 @@
 
     \include{cuerpo/paginas/capitulo14.tex}
 
-    \include{cuerpo/paginas/capitulo15.tex}
+    \include{cuerpo/paginas/capitulo15.tex} %problemas con los espacion. muchos espacios en blanco y saltos de linea
     
     \include{cuerpo/paginas/capitulo16.tex}
     
@@ -144,4 +146,5 @@
     \bibliography{cuerpo/bibliografias/bd-bibliografias.bib}
        
 \end{document}
+
 

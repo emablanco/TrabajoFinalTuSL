@@ -1,0 +1,13 @@
+# Fdb version 3
+["pdflatex"] 1686024587 "caratula.tex" "caratula.pdf" "caratula" 1686024587
+  "/etc/texmf/web2c/texmf.cnf" 1685976724 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1685976785 1283520 06b76673cb091515d90af52f3e5c4a7c ""
+  "caratula.aux" 1686024587 8 a94a2480d3289e625eea47cd1b285758 ""
+  "caratula.tex" 1685922761 2043 e8e6604b3ccbfbb68cd45dee75f9fa2a ""
+  (generated)
+  "caratula.log"
+  "caratula.pdf"

@@ -1,24 +1,23 @@
- \chapter{Servidor Local}\label{ch:servidor}
+\chapter{Servidor Local}\label{ch:servidor}
 
-	\section{¿Que es un Servidor Local}
+	\section{¿Que es un Servidor Loca?}
 	
-		Definiré a un servidor local como un ordenador que estará permanentemente encendido y conectado a la red LAN. Este ordenador proporcionara una serie de servicios y contenidos sin importar el dispositivo que se utilice. Al no ser consultado directamente no sera necesario tener un monitor y teclado conectado.
+	Un servidor local se refiere a una computadora que se mantiene encendida y conectada a una red LAN de manera constante. Su función principal consiste en proporcionar una variedad de servicios y contenidos a través de dicha red, sin importar el dispositivo que los usuarios utilicen. Al no requerir acceso directo por parte de los usuarios, no es necesario contar con un monitor ni un teclado conectados a esta computadora.
 		
 	\section{Uso del servidor}
 	
-		El servidor local proporcionara servicio de alojamiento de archivos y Streaming.
+El servidor local ofrece servicios de alojamiento de archivos y streaming. Estos servicios permiten a los usuarios almacenar y acceder a archivos de manera remota, así como transmitir contenido multimedia a través de la red local. El servidor local despliega su capacidad para gestionar y distribuir eficientemente estos servicios, brindando a los usuarios la posibilidad de compartir y acceder a sus archivos y contenido multimedia de manera conveniente y segura.		
 		
 		\begin{itemize}
-			
-			\item \textbf{Servidor de archivos:} Permite alojar, sincroniza y compartir archivos con otros
-			usuarios y dispositivos que se encuentren en la misma red. Al almacenarse localmente permitirá tener el control total de los datos.
-			
-			\item \textbf{Servidor Streaming:} gestiona el contenido multimedia (música, películas, series,
-			documentales, etc), otorgando la posibilidad de reproducirlo en cualquier dispositivos que se encuentren en la misma red.
-			
+
+\item\textbf{Servidor de archivos:} permite alojar, sincronizar y compartir archivos con otros usuarios y dispositivos conectados a la misma red. Al almacenar los archivos localmente, proporciona un control total sobre los datos, asegurando la privacidad y permitiendo un acceso rápido y eficiente a los archivos compartidos.
+
+\item\textbf{Servidor Streaming:} se encarga de gestionar el contenido multimedia, como música, películas, series y documentales. Este servicio permite reproducir dicho contenido en cualquier dispositivo conectado a la misma red, brindando una experiencia de entretenimiento fluida y accesible.
+
+Ambos servicios del servidor local trabajan en conjunto para facilitar el intercambio y la reproducción de archivos y contenido multimedia dentro de la red local, ofreciendo comodidad y flexibilidad a los usuarios.\par
+		
 		\end{itemize}
-	
-	
+		
 	\section{Sistema Operativo}
 				
 			Por las características propias de Debian no necesitare buscar un sistema operativo orientado a 	servidores, dado que me permitirá crear un potente servidor, al poseer estabilidad/escalabilidad y buenos repositorios.\par
@@ -55,6 +54,7 @@
 			daré al servidor.	
 			
 			\vspace{0.3cm}
+
 			
 			\begin{itemize}
 				
@@ -109,7 +109,7 @@
 			Los volúmenes lógicos son donde todos los datos se almacenan en un LVM. Para crear los nuevos volúmenes lógicos, utilizare los siguiente comandos.
 
 			
-			\begin{lstlisting}[language=Bash, caption=Creación de (LV)]
+			\begin{lstlisting}[language=Bash, caption=Creación de LV]
 				
 			lvcreate -L 10G -n home ema
 			lvcreate -L 10G -n docker ema
@@ -392,20 +392,15 @@
 	\section{Servidor Docker}
 	
 		\subsection{¿Que es Docker?}
-		
 			Docker es una plataforma de contenerización de código abierto. Permite a los desarrolladores empaquetar aplicaciones en contenedores. Los contenedores combinan el código fuente de la aplicación con las bibliotecas del sistema operativo y las dependencias necesarias para ejecutar el código en cualquier entorno. Los contenedores simplifican la entrega de aplicaciones distribuidas.\par
-			
 			Docker es esencialmente un kit de herramientas que permite a los desarrolladores crear, implementar, ejecutar, actualizar y detener contenedores utilizando comandos a través de una única API.
 			
 		\subsection{Funcionamiento de los contenedores?}
-			
-			Los contenedores son posibles gracias al aislamiento de procesos y a las capacidades de virtualización integradas en el kernel de Linux. Estas funcionan como grupos de control (Cgroups) para asignar recursos entre procesos, y espacios de nombres para restringir un acceso de procesos o visibilidad a otros recursos o áreas del sistema.\par
+			Los contenedores son posibles gracias al aislamiento de procesos y a las capacidades de virtualización integradas en el kernel de Linux. Estas funcionan como grupos de control (Cgroups) para asignar recursos entre procesos, y espacios de nombres para restringir un acceso de procesos o visibilidad a otros recursos o áreas del sistema.\par	
 			
 			Como resultado, los contenedores ofrecen toda la funcionalidad y beneficios de las máquinas virtuales, incluyendo aislamiento de aplicaciones, escalabilidad y capacidad de disposición. Sus ventajas son las siguientes:\par
 			
-						
 			\begin{itemize}
-				
 				\item \textbf{Ligero:} Los contenedores sólo incluyen los procesos y dependencias del sistema operativo necesarias para ejecutar el código.
 				
 				\item \textbf{Mejor manejo de los recursos:} Con contenedores se puede ejecutar varias veces las mismas copias de una aplicación en el mismo hardware.
@@ -678,7 +673,7 @@
 				
 			\end{itemize}
 			
-			\begin{figure}[h]
+			\begin{figure}[ht]
 				
 				\centering
 				
@@ -698,7 +693,7 @@
 			
 			Finalizada la configuración y ya dentro del dashboard me dirigiré al perfil del usuario administrador, donde podre crear los usuarios que tendrán acceso al servicio de Nextcloud.
 			
-			\begin{figure}[h]
+			\begin{figure}[ht]
 				
 				\centering
 				
@@ -822,7 +817,7 @@
 		
 			\subsubsection{Panel de control de Emby}
 			
-				\begin{figure}[h]
+				\begin{figure}[ht]
 					
 					\centering
 					

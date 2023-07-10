@@ -1,8 +1,8 @@
 \chapter{Proceso de migración}\label{ch:migración}
 
-	En este punto realizare un análisis de la situación de partida para tener conocimiento detallado de las arquitecturas de los hardware disponibles, documentos/aplicaciones/tipos de archivos, etc. Esto me ayudará a evitar que realice ajustes imprevistos durante la migración y establecer un plan de actuación con suficiente antelación.
-	
-	Con este análisis pretendo identificar los requisitos funcionales que debe cumplir el nuevo sistema operativo.
+	En este punto se realizará un análisis de la situación de partida para obtener un conocimiento detallado de las arquitecturas de los hardware disponibles, los documentos, aplicaciones y tipos de archivos existentes, entre otros aspectos. Este análisis permitirá evitar ajustes imprevistos durante la migración y establecer un plan de acción con la debida anticipación.
+
+El objetivo de este análisis es identificar los requisitos funcionales que debe cumplir el nuevo sistema operativo..
 	
 	\section{Aspectos importantes}
 	
@@ -21,7 +21,9 @@
 		
 	\section{Inventario de Software}
 		
-		El inventario de software consiste en realizar un listado de todos los programas (Aplicaciones, servicios y configuraciones) que se utilizan en los equipos que se deben migrar.\par
+		El inventario de software tiene como finalidad realizar un listado completo de todos los programas, aplicaciones, servicios y configuraciones que se utilizan en los equipos que requieren migración. Este proceso permitirá tener un registro detallado de todo el software presente en los sistemas, lo cual facilitará la planificación y ejecución de la migración.\par
+
+El inventario de software incluirá información como el nombre de cada programa, su versión, el tipo de aplicación o servicio que representa y las configuraciones específicas que se han realizado en cada caso. Con esta recopilación exhaustiva de datos, se obtendrá una visión clara de los componentes del software existente, lo que contribuirá a una migración efectiva y sin contratiempos..\par
 		
 		\vspace{0.3cm}
 		
@@ -49,13 +51,17 @@
 		
 	\section{Inventario de Hardware}
 			
-		El inventario de hardware consiste en conocer en detalle el hardware de los ordenadores que se planean migrar. Esto me ayudara a saber si estarán soportado por las distribuciones de software libre de manera nativa e identificar si hay componentes a actualizar o cualquier incidencia con el soporte de hardware.\par\vspace{0.3cm}
+		El inventario de hardware tiene como objetivo obtener un conocimiento detallado de las características y especificaciones del hardware de los ordenadores que se planean migrar. Este proceso permitirá determinar si los equipos estarán soportados de manera nativa por las distribuciones de software libre y también identificar si es necesario actualizar algún componente o si existen posibles incidencias relacionadas con el soporte de hardware.\par
+
+En el inventario de hardware se registrarán datos como el modelo y fabricante de cada equipo, la cantidad de memoria RAM, el tipo y capacidad del disco duro, la tarjeta gráfica, la tarjeta de red, entre otros componentes relevantes. Además, se investigará si los controladores necesarios para el correcto funcionamiento del hardware están disponibles en las distribuciones de software libre que se consideran para la migración.\par
+
+Con este inventario detallado, se podrá anticipar y abordar posibles desafíos relacionados con el hardware durante el proceso de migración, asegurando así una transición exitosa hacia el software libre.\par\vspace{0.3cm}
 		
 		\subsection{Hardware Inventariado}
 		
 			\textbf{Desktop}
 							
-			Cuatro computadoras Intel con las siguientes características:\par\vspace{0.2cm}
+			Cuatro equipos  con procesador Intel:\par\vspace{0.2cm}
 				
 			\begin{center}
 				\begin{tabular}{| r | l |}
@@ -71,7 +77,7 @@
 		
 			\vspace{0.3cm}
 		
-			Tres computadoras AMD con las siguientes características:\par\vspace{0.2cm}
+			Tres equipos con procesador AMD:\par\vspace{0.2cm}
 					
 			\begin{center}			
 				\begin{tabular}{| r | l |}
@@ -88,8 +94,7 @@
 			\vspace{0.3cm}
 		
 			\textbf{Servidor}	
-		
-			Una computadora AMD con las siguientes características:
+
 		
 			\begin{center}			
 				\begin{tabular}{| r | l |}
@@ -110,34 +115,40 @@
 		
 		\subsection{Distribución GNU/Linux}
 			
-			Una distribución GNU/Linux es una distribución de software basada en el núcleo Linux que incluye determinados paquetes de software. Dependiendo el tipo de software que incluya surgen ediciones domésticas, empresariales y para servidores. Por lo general están compuestas, total o mayoritariamente, de software libre, aunque a menudo incorporan aplicaciones o controladores propietarios.\par
+Las distribuciones GNU/Linux son sistemas operativos basados en el núcleo Linux y que incluyen una selección de paquetes de software. Estas distribuciones se componen principalmente de software libre, aunque en algunos casos también pueden incluir software propietario.\par
+
+Además del núcleo Linux, las distribuciones GNU/Linux suelen incorporar las bibliotecas y herramientas del proyecto GNU, así como el sistema de ventanas X Window System. Dependiendo de su enfoque y del público al que van dirigidas, estas distribuciones pueden incluir una variedad de aplicaciones y herramientas, como procesadores de texto, hojas de cálculo, reproductores multimedia y utilidades administrativas.\par
+
+Es importante destacar que cuando una distribución GNU/Linux incluye paquetes del proyecto GNU, se la denomina distribución GNU/Linux para resaltar la contribución del software libre desarrollado por el proyecto GNU en la distribución.\par			
 			
-			Además del núcleo Linux, las distribuciones incluyen habitualmente las bibliotecas y herramientas del proyecto GNU y el sistema de ventanas X Window System. Dependiendo del tipo de usuarios a los que la distribución esté dirigida se incluye también otro tipo de software como procesadores de texto, hoja de cálculo, reproductores multimedia, herramientas administrativas, etc. En el caso de incluir paquetes de código del proyecto GNU, se denomina distribución GNU/Linux.\par
 			
 			
 		\subsection{Debian}\label{sub:debian}
 			
-			Seleccione Debían como mi sistema Desktop personal y para instalar en todos los ordenadores del aula universitaria porque es una distribución mantenida por la comunidad, tienen una muy buena estabilidad y a la hora de actualización de paquetes o de la propia distribución se puede lograr de una manera muy sencilla.\par 
-			
-			Debian funciona en numerosas arquitecturas y dispositivos y ofrece soporte a largo plazo (LTS).\par\vspace{0.2cm}
-			
-			\textbf{Características de Debian}\par\vspace{0.3cm}
-			
-			\begin{itemize}
+
+
+Se seleccionó Debian como sistema operativo de escritorio personal y para instalar en todos los ordenadores del aula universitaria debido a sus características y ventajas. Debian es una distribución mantenida por la comunidad que ofrece una excelente estabilidad y facilita las actualizaciones de paquetes y del propio sistema de manera sencilla.\par
+
+Debian es conocido por su amplio soporte en diversas arquitecturas y dispositivos, y también ofrece un soporte a largo plazo (LTS).\par 
+
+Entre las características destacadas de Debian se encuentran las siguientes:
+
+    		\begin{itemize}
 				
-				\item \textbf{Debian es software libre:} Está hecho de Software Libre y siempre será 100\% libre.\par
-				
-				\item \textbf{Debian es estable y seguro:} Es un sistema operativo basado en Linux, y soporta una gran variedad de dispositivos, portátiles, ordenadores de escritorio y servidores. Proporciona una configuración predeterminada para cada paquete, así como actualizaciones de seguridad con regularidad durante su ciclo de vida.\par
-				
-				\item \textbf{Debian tiene un soporte de hardware extenso} La mayoría del hardware ya está soportado por el núcleo Linux, lo que significa que está soportado en Debian también. Hay disponibles controladores no libres para el hardware si fueran necesarios. 
-							
+				\item \textbf{ Debian} está compuesto únicamente por software libre y se compromete a mantener esa condición en todas sus versiones.
+
+    			\item \textbf{ Estabilidad y seguridad:} Basado en el núcleo Linux, Debian es un sistema operativo que proporciona una configuración predeterminada para cada paquete y ofrece actualizaciones de seguridad de forma regular durante todo su ciclo de vida.
+
+   				 \item \textbf{ Amplio soporte de hardware:} La mayoría del hardware compatible con el núcleo Linux también es compatible con Debian. En caso de ser necesario, existen controladores no libres disponibles para aquellos dispositivos que lo requieran.			
+			
+			
 			\end{itemize}	
-		
-		\section{Instalación del sistema operativo}
 			
-	 		Antes de comenzar con la instalación del Sistema Operativo en los ordenadores, realizare el respaldo de toda la información de los alumnos en un disco externo.\par
-	 		
-	 		Este respaldo se puede realizar de varias maneras, siempre es recomendable que se haga en otro medio físico de almacenamiento.\par
+	\section{Instalación del sistema operativo}
+			
+	 		Antes de iniciar la instalación del sistema operativo en los ordenadores, se llevará a cabo la tarea de respaldar toda la información de los alumnos en un disco externo. Esta acción se considera esencial para preservar los datos de manera segura y evitar pérdidas.\par 
+
+Existen varias opciones para realizar el respaldo, pero se recomienda siempre utilizar un medio físico de almacenamiento adicional. Esto puede incluir discos duros externos, unidades USB, discos ópticos u otros dispositivos de respaldo adecuados. El objetivo es garantizar que los datos estén protegidos y disponibles para su posterior recuperación en caso de ser necesario.\par 
 			
 			\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
 				colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Debian,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]

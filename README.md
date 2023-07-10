@@ -1,59 +1,32 @@
-Proyecto: Migración de Software Privativo a Software Libre
+## Proyecto: Migración de Software Privativo a Software Libre
 
-Autor : Blanco Emanuel A.
+**Autor:** Blanco Emanuel A.
 
-                                                    Resumen 
+### Resumen
 
-El trabajo sera realizado en el Aula Virtual, ubicada en el Instituto de detencion Penal, N° 2, Las Flores.
-Este espacio es parte del Programa “Educación Universitaria en Prisiones”. El cual consiste en alinea con aquellos intentos
-de transformar la herramienta educativa en un vehı́culo no ya de “corrección”, ni de “moralización”,
-sino de resistencia frente a la degradación cotidiana que el encierro supone..
+El presente proyecto se llevará a cabo en el Aula Virtual del Instituto de Detención Penal N° 2, Las Flores, como parte del Programa "Educación Universitaria en Prisiones". El objetivo principal es transformar la herramienta educativa en un medio de resistencia frente a la degradación cotidiana que supone el encierro, en lugar de ser solo una herramienta de "corrección" o "moralización".
 
-Esta migración es importante, ya que la mayoría de los ordenadores son de bajos recursos y no 
-cuentan con un buen rendimiento. Periódicamente surgen errores debido a las actualizaciones sin 
-autorización que realiza el Sistema Operativo Windows y algunos programas que son utilizados 
-frecuentemente. 
+La migración de software propuesta es crucial, ya que la mayoría de las computadoras disponibles son de bajos recursos y presentan un rendimiento deficiente. Con frecuencia, surgen errores debido a las actualizaciones no autorizadas realizadas por el sistema operativo Windows y algunos programas de uso habitual.
 
-Estos equipos sufren una rápida degradació que es suele ser causada por virus, spyware, software que se 
-queda residente en memoria, configuraciones erróneas en equipos equipo. 
+Estos equipos se degradan rápidamente debido a virus, spyware, software residente en memoria y configuraciones incorrectas.
 
-Lo que se busca con este trabajo es mejorar el rendimiento de todos los equipos y la productividad de toda la red informatica utilizando herramientas Software Libre.
+El objetivo de este proyecto es mejorar el rendimiento de todos los equipos y la productividad de la red informática mediante el uso de herramientas de software libre.
 
-                                               Análisis del estado del arte:
+### Análisis del estado del arte
 
+Después de investigar trabajos que plantean propuestas similares, se tomó como referencia central la tesis "Instalación y Configuración de Equipos Informáticos bajo Software Libre" de la Universidad Técnica de Manabí. El objetivo de dicho documento es ofrecer a la biblioteca de la facultad una alternativa al software privativo y lograr una migración exitosa de los entornos de escritorio a software libre. Esta guía de buenas prácticas proporciona una visión general de los pasos, procesos y elementos necesarios para migrar los equipos de la biblioteca a entornos que utilicen exclusivamente software libre.
 
-Luego de realizar una investigación sobre trabajos que plantearan algo similar a lo propuesto, tome como
-referencia central la Tesis de la Universidad Técnica de Manabı́ “Instalación y Configuración de Equipos
-Informáticos bajo software Libre”
-El objetivo de este documento es ofrecer a la biblioteca de su facultad una alternativa al software privativo
-y realizar una migración exitosa de los entornos de escritorio a software libre. Este documento es una
-guı́a de buenas prácticas. El mismo ofrece una visión acerca de los pasos, procesos y elementos necesarios
-para migrar los equipos de la biblioteca a entornos que solamente utilicen software libre.
-Este trabajo cubre por una parte lo planteado con la desventaja que nunca fue actualizado, es por ello, que
-decidı́ realizar un trabajo nuevo, detallando la migración de una red de computadoras y que aplicativos
-de software utilizar para que sirva como referencia para futuras migraciones de establecimientos con las
-mismas caracterı́sticas.
-El Software que se utilizara en esta migración fue seleccionado por poseer licencias de Software Libre y
-sus respectivas ventajas practicas con sus contra partes privativas.
+Si bien esta tesis cubre en parte lo planteado, presenta la desventaja de no haber sido actualizada. Por esta razón, se decidió realizar un nuevo trabajo que detalle la migración de una red de computadoras y los aplicativos de software recomendados, con el fin de servir como referencia para futuras migraciones en establecimientos con características similares. Los programas de software seleccionados para esta migración se eligieron por tener licencias de software libre y por sus ventajas prácticas en comparación con las alternativas privativas.
 
+### Objetivo general
 
-                                                Objetivo general 
+El objetivo general de este proyecto es lograr la migración completa a software libre de una red de computadoras y optimizar el rendimiento de toda la red informática. Además, se busca que este trabajo pueda ser replicado en otras instituciones con características similares.
 
-Como objetivo general, lo que se pretende lograr es la migración completa a Software Libre de una red
-de computadoras y optimizar el rendimiento de toda la red informática. Pero que también este trabajo
-pueda ser replicado en diferentes de instituciones con similares caracterı́sticas.
-
-
-                                                Objetivos específicos
+### Objetivos específicos
 
 - Mejorar la seguridad, funcionalidad y productividad de toda la red informática.
-- Reducción de costos en la adquisición de hardware y licencias.
-- Reutilización de hardware desechados por no cumplir con los requisitos exigidos por los diferentes
-software privativos.
-- Hacer que la migración a Software Libre sea lo mas transparente y fácil de asimilar para cualquier
-persona que intente implementara este trabajo
-
- 
-
+- Reducir costos en la adquisición de hardware y licencias.
+- Reutilizar hardware descartado debido a que no cumple con los requisitos de los diferentes software privativos.
+- Hacer que la migración a software libre sea lo más transparente y fácil de asimilar para cualquier persona que intente implementar este trabajo.
 
 
