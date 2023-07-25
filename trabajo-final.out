@@ -1,93 +1,78 @@
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Motivaci\363n}{}% 2
+\BOOKMARK [0][-]{chapter.1}{\376\377\000I\000n\000t\000r\000o\000d\000u\000c\000c\000i\000\363\000n}{}% 1
+\BOOKMARK [0][-]{chapter.2}{\376\377\000M\000o\000t\000i\000v\000a\000c\000i\000\363\000n}{}% 2
 \BOOKMARK [0][-]{chapter.3}{Contexto}{}% 3
 \BOOKMARK [0][-]{chapter.4}{Importancia}{}% 4
 \BOOKMARK [0][-]{chapter.5}{Destinatarios}{}% 5
-\BOOKMARK [0][-]{chapter.6}{Conceptos t\351cnicos aplicados}{}% 6
-\BOOKMARK [0][-]{chapter.7}{Licencias involucradas}{}% 7
-\BOOKMARK [1][-]{section.7.1}{Tipos de licencia}{chapter.7}% 8
-\BOOKMARK [2][-]{subsection.7.1.1}{Licencias GPL}{section.7.1}% 9
-\BOOKMARK [2][-]{subsection.7.1.2}{Licencias LGPL}{section.7.1}% 10
-\BOOKMARK [2][-]{subsection.7.1.3}{Licencias AGPL}{section.7.1}% 11
-\BOOKMARK [2][-]{subsection.7.1.4}{Licencias Estilo BSD}{section.7.1}% 12
-\BOOKMARK [2][-]{subsection.7.1.5}{Licencia PSFL}{section.7.1}% 13
-\BOOKMARK [2][-]{subsection.7.1.6}{Licencias MPL y derivadas}{section.7.1}% 14
-\BOOKMARK [2][-]{subsection.7.1.7}{Licencia CDDL}{section.7.1}% 15
-\BOOKMARK [2][-]{subsection.7.1.8}{Licencias EPL}{section.7.1}% 16
-\BOOKMARK [2][-]{subsection.7.1.9}{Licencia Apache}{section.7.1}% 17
-\BOOKMARK [2][-]{subsection.7.1.10}{Licencia PHP}{section.7.1}% 18
-\BOOKMARK [2][-]{subsection.7.1.11}{Licencias Creative Commons}{section.7.1}% 19
-\BOOKMARK [0][-]{chapter.8}{Documentaci\363n}{}% 20
-\BOOKMARK [0][-]{chapter.9}{Estado del arte}{}% 21
+\BOOKMARK [0][-]{chapter.6}{\376\377\000C\000o\000n\000c\000e\000p\000t\000o\000s\000\040\000t\000\351\000c\000n\000i\000c\000o\000s\000\040\000a\000p\000l\000i\000c\000a\000d\000o\000s}{}% 6
+\BOOKMARK [0][-]{chapter.7}{Licencias\040involucradas}{}% 7
+\BOOKMARK [1][-]{section.7.1}{Tipos\040de\040licencia}{chapter.7}% 8
+\BOOKMARK [2][-]{subsection.7.1.1}{Licencia\040GPL}{section.7.1}% 9
+\BOOKMARK [2][-]{subsection.7.1.2}{Licencias\040LGPL}{section.7.1}% 10
+\BOOKMARK [2][-]{subsection.7.1.3}{Licencia\040AGPL}{section.7.1}% 11
+\BOOKMARK [2][-]{subsection.7.1.4}{Licencia\040Estilo\040BSD}{section.7.1}% 12
+\BOOKMARK [2][-]{subsection.7.1.5}{Licencia\040PSFL}{section.7.1}% 13
+\BOOKMARK [2][-]{subsection.7.1.6}{Licencia\040MPL\040y\040derivadas}{section.7.1}% 14
+\BOOKMARK [2][-]{subsection.7.1.7}{Licencia\040CDDL}{section.7.1}% 15
+\BOOKMARK [2][-]{subsection.7.1.8}{Licencia\040EPL}{section.7.1}% 16
+\BOOKMARK [2][-]{subsection.7.1.9}{Licencia\040Apache}{section.7.1}% 17
+\BOOKMARK [2][-]{subsection.7.1.10}{Licencia\040PHP}{section.7.1}% 18
+\BOOKMARK [2][-]{subsection.7.1.11}{Licencias\040Creative\040Commons}{section.7.1}% 19
+\BOOKMARK [0][-]{chapter.8}{\376\377\000D\000o\000c\000u\000m\000e\000n\000t\000a\000c\000i\000\363\000n}{}% 20
+\BOOKMARK [0][-]{chapter.9}{Estado\040del\040arte}{}% 21
 \BOOKMARK [0][-]{chapter.10}{Objetivos}{}% 22
 \BOOKMARK [1][-]{section.10.1}{Generales}{chapter.10}% 23
-\BOOKMARK [1][-]{section.10.2}{Espec\355ficos}{chapter.10}% 24
+\BOOKMARK [1][-]{section.10.2}{\376\377\000E\000s\000p\000e\000c\000\355\000f\000i\000c\000o\000s}{chapter.10}% 24
 \BOOKMARK [0][-]{chapter.11}{Desarrollo}{}% 25
-\BOOKMARK [0][-]{chapter.12}{Cronograma de trabajo}{}% 26
-\BOOKMARK [0][-]{chapter.13}{Proceso de migraci\363n}{}% 27
-\BOOKMARK [1][-]{section.13.1}{Aspectos importantes}{chapter.13}% 28
-\BOOKMARK [1][-]{section.13.2}{Inventario de Software}{chapter.13}% 29
-\BOOKMARK [2][-]{subsection.13.2.1}{Software Invetariado}{section.13.2}% 30
-\BOOKMARK [1][-]{section.13.3}{Inventario de Hardware}{chapter.13}% 31
-\BOOKMARK [2][-]{subsection.13.3.1}{Hardware Inventariado}{section.13.3}% 32
-\BOOKMARK [1][-]{section.13.4}{Sistema Operativo}{chapter.13}% 33
-\BOOKMARK [2][-]{subsection.13.4.1}{Distribuci\363n GNU/Linux}{section.13.4}% 34
+\BOOKMARK [0][-]{chapter.12}{Cronograma\040de\040trabajo}{}% 26
+\BOOKMARK [0][-]{chapter.13}{\376\377\000P\000r\000o\000c\000e\000s\000o\000\040\000d\000e\000\040\000m\000i\000g\000r\000a\000c\000i\000\363\000n}{}% 27
+\BOOKMARK [1][-]{section.13.1}{Aspectos\040importantes}{chapter.13}% 28
+\BOOKMARK [1][-]{section.13.2}{Inventario\040de\040Software}{chapter.13}% 29
+\BOOKMARK [2][-]{subsection.13.2.1}{Software\040Invetariado}{section.13.2}% 30
+\BOOKMARK [1][-]{section.13.3}{Inventario\040de\040Hardware}{chapter.13}% 31
+\BOOKMARK [2][-]{subsection.13.3.1}{Hardware\040Inventariado}{section.13.3}% 32
+\BOOKMARK [1][-]{section.13.4}{Sistema\040Operativo}{chapter.13}% 33
+\BOOKMARK [2][-]{subsection.13.4.1}{\376\377\000D\000i\000s\000t\000r\000i\000b\000u\000c\000i\000\363\000n\000\040\000G\000N\000U\000/\000L\000i\000n\000u\000x}{section.13.4}% 34
 \BOOKMARK [2][-]{subsection.13.4.2}{Debian}{section.13.4}% 35
-\BOOKMARK [1][-]{section.13.5}{Instalaci\363n del sistema operativo}{chapter.13}% 36
+\BOOKMARK [1][-]{section.13.5}{\376\377\000I\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n\000\040\000d\000e\000l\000\040\000s\000i\000s\000t\000e\000m\000a\000\040\000o\000p\000e\000r\000a\000t\000i\000v\000o}{chapter.13}% 36
 \BOOKMARK [2][-]{subsection.13.5.1}{Requisitos}{section.13.5}% 37
-\BOOKMARK [2][-]{subsection.13.5.2}{Proceso de Instalaci\363n}{section.13.5}% 38
+\BOOKMARK [2][-]{subsection.13.5.2}{\376\377\000P\000r\000o\000c\000e\000s\000o\000\040\000d\000e\000\040\000I\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n}{section.13.5}% 38
 \BOOKMARK [1][-]{section.13.6}{Repositorios}{chapter.13}% 39
-\BOOKMARK [2][-]{subsection.13.6.1}{\277Que es un repositorio?}{section.13.6}% 40
-\BOOKMARK [2][-]{subsection.13.6.2}{Configuraci\363n de repositorios Debian}{section.13.6}% 41
-\BOOKMARK [1][-]{section.13.7}{Instalaci\363n de Programas}{chapter.13}% 42
-\BOOKMARK [0][-]{chapter.14}{Configuraci\363n red LAN}{}% 43
-\BOOKMARK [1][-]{section.14.1}{\277Que es una red LAN?}{chapter.14}% 44
-\BOOKMARK [1][-]{section.14.2}{\277Que es una direcci\363n IP?}{chapter.14}% 45
-\BOOKMARK [2][-]{subsection.14.2.1}{Direcciones IP din\341micas}{section.14.2}% 46
-\BOOKMARK [2][-]{subsection.14.2.2}{Direcciones IP est\341ticas}{section.14.2}% 47
-\BOOKMARK [1][-]{section.14.3}{Configuraci\363n de red}{chapter.14}% 48
-\BOOKMARK [2][-]{subsection.14.3.1}{Diagrama de red}{section.14.3}% 49
-\BOOKMARK [0][-]{chapter.15}{Servidor Local}{}% 50
-\BOOKMARK [1][-]{section.15.1}{\277Que es un Servidor Loca?}{chapter.15}% 51
-\BOOKMARK [1][-]{section.15.2}{Uso del servidor}{chapter.15}% 52
-\BOOKMARK [1][-]{section.15.3}{Sistema Operativo}{chapter.15}% 53
-\BOOKMARK [1][-]{section.15.4}{Instalaci\363n del Sistema Operativo}{chapter.15}% 54
+\BOOKMARK [2][-]{subsection.13.6.1}{\376\377\000\277\000Q\000u\000e\000\040\000e\000s\000\040\000u\000n\000\040\000r\000e\000p\000o\000s\000i\000t\000o\000r\000i\000o\000?}{section.13.6}% 40
+\BOOKMARK [2][-]{subsection.13.6.2}{\376\377\000C\000o\000n\000f\000i\000g\000u\000r\000a\000c\000i\000\363\000n\000\040\000d\000e\000\040\000r\000e\000p\000o\000s\000i\000t\000o\000r\000i\000o\000s\000\040\000D\000e\000b\000i\000a\000n}{section.13.6}% 41
+\BOOKMARK [1][-]{section.13.7}{\376\377\000I\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n\000\040\000d\000e\000\040\000P\000r\000o\000g\000r\000a\000m\000a\000s}{chapter.13}% 42
+\BOOKMARK [0][-]{chapter.14}{\376\377\000C\000o\000n\000f\000i\000g\000u\000r\000a\000c\000i\000\363\000n\000\040\000r\000e\000d\000\040\000L\000A\000N}{}% 43
+\BOOKMARK [1][-]{section.14.1}{\376\377\000D\000e\000f\000i\000n\000i\000c\000i\000\363\000n\000\040\000d\000e\000\040\000u\000n\000a\000\040\000r\000e\000d\000\040\000L\000A\000N}{chapter.14}% 44
+\BOOKMARK [1][-]{section.14.2}{\376\377\000S\000i\000g\000n\000i\000f\000i\000c\000a\000d\000o\000\040\000d\000e\000\040\000u\000n\000a\000\040\000d\000i\000r\000e\000c\000c\000i\000\363\000n\000\040\000I\000P}{chapter.14}% 45
+\BOOKMARK [1][-]{section.14.3}{\376\377\000C\000o\000n\000f\000i\000g\000u\000r\000a\000c\000i\000\363\000n\000\040\000d\000e\000\040\000r\000e\000d}{chapter.14}% 46
+\BOOKMARK [2][-]{subsection.14.3.1}{Diagrama\040de\040red}{section.14.3}% 47
+\BOOKMARK [0][-]{chapter.15}{Servidor\040de\040Virtualizacion}{}% 48
+\BOOKMARK [1][-]{section.15.1}{\376\377\000\277\000Q\000u\000e\000\040\000e\000s\000\040\000u\000n\000\040\000S\000e\000r\000v\000i\000d\000o\000r\000\040\000d\000e\000\040\000V\000i\000r\000t\000u\000a\000l\000i\000z\000a\000c\000i\000o\000n\000?}{chapter.15}% 49
+\BOOKMARK [1][-]{section.15.2}{\376\377\000U\000s\000o\000s\000\040\000d\000e\000l\000\040\000s\000e\000r\000v\000i\000d\000o\000r\000\040\000d\000e\000\040\000v\000i\000r\000t\000u\000a\000l\000i\000z\000a\000c\000i\000\363\000n}{chapter.15}% 50
+\BOOKMARK [1][-]{section.15.3}{Sistema\040Operativo}{chapter.15}% 51
+\BOOKMARK [1][-]{section.15.4}{\376\377\000I\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n\000\040\000d\000e\000l\000\040\000S\000i\000s\000t\000e\000m\000a\000\040\000O\000p\000e\000r\000a\000t\000i\000v\000o}{chapter.15}% 52
+\BOOKMARK [2][-]{subsection.15.4.1}{\376\377\000P\000r\000e\000p\000a\000r\000a\000c\000i\000\363\000n\000:}{section.15.4}% 53
+\BOOKMARK [2][-]{subsection.15.4.2}{\376\377\000P\000r\000o\000c\000e\000s\000o\000\040\000d\000e\000\040\000i\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n\000:}{section.15.4}% 54
 \BOOKMARK [1][-]{section.15.5}{LVM}{chapter.15}% 55
-\BOOKMARK [2][-]{subsection.15.5.1}{\277Que es LVM?}{section.15.5}% 56
-\BOOKMARK [2][-]{subsection.15.5.2}{Gesti\363n vol\372menes l\363gicos}{section.15.5}% 57
+\BOOKMARK [2][-]{subsection.15.5.1}{\376\377\000\277\000Q\000u\000e\000\040\000e\000s\000\040\000L\000V\000M\000?}{section.15.5}% 56
+\BOOKMARK [2][-]{subsection.15.5.2}{\376\377\000G\000e\000s\000t\000i\000\363\000n\000\040\000v\000o\000l\000\372\000m\000e\000n\000e\000s\000\040\000l\000\363\000g\000i\000c\000o\000s}{section.15.5}% 57
 \BOOKMARK [1][-]{section.15.6}{fstab}{chapter.15}% 58
-\BOOKMARK [2][-]{subsection.15.6.1}{Configurar fstab}{section.15.6}% 59
-\BOOKMARK [1][-]{section.15.7}{Controlar cambios en el sistema}{chapter.15}% 60
-\BOOKMARK [2][-]{subsection.15.7.1}{Generar Hash}{section.15.7}% 61
-\BOOKMARK [2][-]{subsection.15.7.2}{Comparar Hash}{section.15.7}% 62
-\BOOKMARK [1][-]{section.15.8}{Configuraci\363n de red}{chapter.15}% 63
-\BOOKMARK [2][-]{subsection.15.8.1}{Asignar una IP est\341tica}{section.15.8}% 64
-\BOOKMARK [2][-]{subsection.15.8.2}{Servidor DNS}{section.15.8}% 65
-\BOOKMARK [1][-]{section.15.9}{Firewall}{chapter.15}% 66
-\BOOKMARK [2][-]{subsection.15.9.1}{\277Que es iptables?}{section.15.9}% 67
-\BOOKMARK [2][-]{subsection.15.9.2}{Reglas iptables}{section.15.9}% 68
-\BOOKMARK [1][-]{section.15.10}{Servidor Docker}{chapter.15}% 69
-\BOOKMARK [2][-]{subsection.15.10.1}{\277Que es Docker?}{section.15.10}% 70
-\BOOKMARK [2][-]{subsection.15.10.2}{Funcionamiento de los contenedores?}{section.15.10}% 71
-\BOOKMARK [2][-]{subsection.15.10.3}{Caracter\355sticas}{section.15.10}% 72
-\BOOKMARK [2][-]{subsection.15.10.4}{Herramientas de Docker}{section.15.10}% 73
-\BOOKMARK [2][-]{subsection.15.10.5}{Instalaci\363n Docker}{section.15.10}% 74
-\BOOKMARK [2][-]{subsection.15.10.6}{\277Que es Docker Compose?}{section.15.10}% 75
-\BOOKMARK [2][-]{subsection.15.10.7}{Instalaci\363n Docker Compose}{section.15.10}% 76
-\BOOKMARK [1][-]{section.15.11}{Contenedor NextCloud}{chapter.15}% 77
-\BOOKMARK [2][-]{subsection.15.11.1}{\277Que es Nextcloud?}{section.15.11}% 78
-\BOOKMARK [2][-]{subsection.15.11.2}{Caracter\355sticas:}{section.15.11}% 79
-\BOOKMARK [2][-]{subsection.15.11.3}{Requisitos:}{section.15.11}% 80
-\BOOKMARK [2][-]{subsection.15.11.4}{Preparaci\363n del \341rea de trabajo}{section.15.11}% 81
-\BOOKMARK [2][-]{subsection.15.11.5}{Crear Contenedor}{section.15.11}% 82
-\BOOKMARK [2][-]{subsection.15.11.6}{Configuraci\363n de NextCloud}{section.15.11}% 83
-\BOOKMARK [2][-]{subsection.15.11.7}{Conclusi\363n}{section.15.11}% 84
-\BOOKMARK [1][-]{section.15.12}{Contenedor Emby}{chapter.15}% 85
-\BOOKMARK [2][-]{subsection.15.12.1}{\277Que es Emby?}{section.15.12}% 86
-\BOOKMARK [2][-]{subsection.15.12.2}{Caracter\355sticas de Emby:}{section.15.12}% 87
-\BOOKMARK [2][-]{subsection.15.12.3}{\277Qu\351 es un centro multimedia?}{section.15.12}% 88
-\BOOKMARK [2][-]{subsection.15.12.4}{Preparaci\363n del \341rea de trabajo}{section.15.12}% 89
-\BOOKMARK [2][-]{subsection.15.12.5}{Crear Contenedor Docker:}{section.15.12}% 90
-\BOOKMARK [2][-]{subsection.15.12.6}{Configuraci\363n Emby}{section.15.12}% 91
-\BOOKMARK [2][-]{subsection.15.12.7}{Conclusi\363n}{section.15.12}% 92
-\BOOKMARK [0][-]{chapter.16}{Conclusi\363n}{}% 93
+\BOOKMARK [1][-]{section.15.7}{Hypervisor}{chapter.15}% 59
+\BOOKMARK [2][-]{subsection.15.7.1}{KVM}{section.15.7}% 60
+\BOOKMARK [2][-]{subsection.15.7.2}{QEMU/KVM}{section.15.7}% 61
+\BOOKMARK [2][-]{subsection.15.7.3}{libvirt}{section.15.7}% 62
+\BOOKMARK [2][-]{subsection.15.7.4}{\376\377\000I\000n\000s\000t\000a\000l\000a\000c\000i\000\363\000n}{section.15.7}% 63
+\BOOKMARK [1][-]{section.15.8}{\376\377\000C\000o\000n\373\001\000g\000u\000r\000a\000c\000i\000\363\000n\000\040\000d\000e\000\040\000R\000e\000d}{chapter.15}% 64
+\BOOKMARK [2][-]{subsection.15.8.1}{iproute}{section.15.8}% 65
+\BOOKMARK [2][-]{subsection.15.8.2}{Servidor\040DNS}{section.15.8}% 66
+\BOOKMARK [2][-]{subsection.15.8.3}{NFS}{section.15.8}% 67
+\BOOKMARK [2][-]{subsection.15.8.4}{IP\040forwarding}{section.15.8}% 68
+\BOOKMARK [1][-]{section.15.9}{iptables}{chapter.15}% 69
+\BOOKMARK [2][-]{subsection.15.9.1}{Configurar\040reglas}{section.15.9}% 70
+\BOOKMARK [1][-]{section.15.10}{Seguridad}{chapter.15}% 71
+\BOOKMARK [2][-]{subsection.15.10.1}{Fail2ban}{section.15.10}% 72
+\BOOKMARK [2][-]{subsection.15.10.2}{Controlar\040cambios\040en\040el\040sistema}{section.15.10}% 73
+\BOOKMARK [1][-]{section.15.11}{Snapshot}{chapter.15}% 74
+\BOOKMARK [1][-]{section.15.12}{Maquinas\040virtuales}{chapter.15}% 75
+\BOOKMARK [2][-]{subsection.15.12.1}{Servidor\040Docker}{section.15.12}% 76
+\BOOKMARK [2][-]{subsection.15.12.2}{Servidor\040Nextcloud}{section.15.12}% 77
+\BOOKMARK [0][-]{chapter.16}{\376\377\000C\000o\000n\000c\000l\000u\000s\000i\000\363\000n}{}% 78

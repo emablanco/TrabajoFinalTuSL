@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.6.6)  10 JUL 2023 15:32
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2023.6.6)  25 JUL 2023 01:12
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -11,15 +11,15 @@ Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count177
-\c@chapter=\count178
-\c@section=\count179
-\c@subsection=\count180
-\c@subsubsection=\count181
-\c@paragraph=\count182
-\c@subparagraph=\count183
-\c@figure=\count184
-\c@table=\count185
+\c@part=\count173
+\c@chapter=\count174
+\c@section=\count175
+\c@subsection=\count176
+\c@subsubsection=\count177
+\c@paragraph=\count178
+\c@subparagraph=\count179
+\c@figure=\count180
+\c@table=\count181
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -28,25 +28,29 @@ File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2021/01/26 3.53 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2021/01/26 3.53 Babel common definitions
-\babel@savecnt=\count186
+\babel@savecnt=\count182
 \U@D=\dimen139
 \l@babelnohyphens=\language86
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/xebabel.def
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count187
+\bbl@dirlevel=\count183
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks17
-\es@quotdepth=\count188
+\es@quotdepth=\count184
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -68,10 +72,10 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: xetex.def on input line 105.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
@@ -82,7 +86,7 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
@@ -100,9 +104,8 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \everycr=\toks20
 \minrowclearance=\skip51
 )
-\rownum=\count189
+\rownum=\count185
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -155,31 +158,36 @@ ex
 \pgf@yd=\dimen155
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count190
-\c@pgf@countb=\count191
-\c@pgf@countc=\count192
-\c@pgf@countd=\count193
+\c@pgf@counta=\count186
+\c@pgf@countb=\count187
+\c@pgf@countc=\count188
+\c@pgf@countd=\count189
 \t@pgf@toka=\toks25
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count194
+\pgf@sys@id@count=\count190
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
 f
 File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)
+\pgfsys@objnum=\count191
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count195
-\pgfsyssoftpath@bigbuffer@items=\count196
+\pgfsyssoftpath@smallbuffer@items=\count192
+\pgfsyssoftpath@bigbuffer@items=\count193
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -193,7 +201,7 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen156
-\pgfmath@count=\count197
+\pgfmath@count=\count194
 \pgfmath@box=\box50
 \pgfmath@toks=\toks28
 \pgfmath@stack@operand=\toks29
@@ -217,7 +225,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count198
+\c@pgfmathroundto@lastzeros=\count195
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
@@ -256,7 +264,7 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box51
 \pgf@hbox=\box52
 \pgf@layerbox@main=\box53
-\pgf@picture@serial@count=\count199
+\pgf@picture@serial@count=\count196
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -289,8 +297,8 @@ File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen180
-\pgf@sys@shading@range@num=\count266
-\pgf@shadingcount=\count267
+\pgf@sys@shading@range@num=\count197
+\pgf@shadingcount=\count198
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -346,15 +354,15 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count268
+\etb@tempcnta=\count199
 )
 \tcb@titlebox=\box56
 \tcb@upperbox=\box57
 \tcb@lowerbox=\box58
 \tcb@phantombox=\box59
-\c@tcbbreakpart=\count269
-\c@tcblayer=\count270
-\c@tcolorbox@number=\count271
+\c@tcbbreakpart=\count266
+\c@tcblayer=\count267
+\c@tcolorbox@number=\count268
 \tcb@temp=\box60
 \tcb@temp=\box61
 \tcb@temp=\box62
@@ -364,9 +372,9 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.42'
-\c@tcbrastercolumn=\count272
-\c@tcbrasterrow=\count273
-\c@tcbraster=\count274
+\c@tcbrastercolumn=\count269
+\c@tcbrasterrow=\count270
+\c@tcbraster=\count271
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '4.42'
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
@@ -390,7 +398,7 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count275
+\pgf@plot@mark@count=\count272
 \pgfplotmarksize=\dimen185
 )
 \tikz@lastx=\dimen186
@@ -405,18 +413,18 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@figbox@bg=\box65
 \tikz@tempbox=\box66
 \tikz@tempbox@bg=\box67
-\tikztreelevel=\count276
-\tikznumberofchildren=\count277
-\tikznumberofcurrentchild=\count278
-\tikz@fig@count=\count279
+\tikztreelevel=\count273
+\tikznumberofchildren=\count274
+\tikznumberofcurrentchild=\count275
+\tikz@fig@count=\count276
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count280
-\pgfmatrixcurrentcolumn=\count281
-\pgf@matrix@numberofcolumns=\count282
+\pgfmatrixcurrentrow=\count277
+\pgfmatrixcurrentcolumn=\count278
+\pgf@matrix@numberofcolumns=\count279
 )
-\tikz@expandcount=\count283
+\tikz@expandcount=\count280
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -439,8 +447,10 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
-Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
 \tcb@testbox=\box69
 \tcb@totalupperbox=\box70
 \tcb@totallowerbox=\box71
@@ -469,13 +479,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count284
+\inf@bad=\count281
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count285
-\leftroot@=\count286
+\uproot@=\count282
+\leftroot@=\count283
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count287
-\DOTSCASE@=\count288
+\classnum@=\count284
+\DOTSCASE@=\count285
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -484,15 +494,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen196
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count289
-\c@MaxMatrixCols=\count290
+\macc@depth=\count286
+\c@MaxMatrixCols=\count287
 \dotsspace@=\muskip16
-\c@parentequation=\count291
-\dspbrk@lvl=\count292
+\c@parentequation=\count288
+\dspbrk@lvl=\count289
 \tag@help=\toks37
-\row@=\count293
-\column@=\count294
-\maxfields@=\count295
+\row@=\count290
+\column@=\count291
+\maxfields@=\count292
 \andhelp@=\toks38
 \eqnshift@=\dimen197
 \alignsep@=\dimen198
@@ -512,17 +522,24 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '4.42'
 \tcbfitdim=\dimen259
 \tcb@lowerfitdim=\dimen260
 \tcb@upperfitdim=\dimen261
-\tcb@cur@hbadness=\count296
+\tcb@cur@hbadness=\count293
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.42'
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-01-09 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2020-01-29 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count294
+\l__color_backend_stack_int=\count295
+\g__graphics_track_int=\count296
 \l__pdf_internal_box=\box74
+\g__pdf_backend_object_int=\count297
+\g__pdf_backend_annotation_int=\count298
+\g__pdf_backend_link_int=\count299
 ))
 Package: xparse 2020-10-27 L3 Experimental document command parser
 
@@ -532,23 +549,23 @@ Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.42'
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '4.42'
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count298
+\lst@mode=\count300
 \lst@gtempboxa=\box75
 \lst@token=\toks41
-\lst@length=\count299
+\lst@length=\count301
 \lst@currlwidth=\dimen262
-\lst@column=\count300
-\lst@pos=\count301
+\lst@column=\count302
+\lst@pos=\count303
 \lst@lostspace=\dimen263
 \lst@width=\dimen264
-\lst@newlines=\count302
-\lst@lineno=\count303
+\lst@newlines=\count304
+\lst@lineno=\count305
 \lst@maxwidth=\dimen265
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count304
-\lst@skipnumbers=\count305
+\c@lstnumber=\count306
+\lst@skipnumbers=\count307
 \lst@framebox=\box76
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -565,24 +582,17 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 ))
-\c@tcblisting=\count306
+\c@tcblisting=\count308
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/listingsutf8/listingsutf8.sty
-Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
 )
-
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-))))
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbexternal.code.tex
 Library (tcolorbox): 'tcbexternal.code.tex' version '4.42'
 ) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcbmagazine.code.tex
@@ -605,9 +615,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count307
-\Gm@cntv=\count308
-\c@Gm@tempcnt=\count309
+\Gm@cnth=\count309
+\Gm@cntv=\count310
+\c@Gm@tempcnt=\count311
 \Gm@bindingoffset=\dimen266
 \Gm@wd@mp=\dimen267
 \Gm@odd@mp=\dimen268
@@ -640,6 +650,9 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
@@ -653,13 +666,11 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen274
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
@@ -667,7 +678,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count312
+\Hy@SavedSpaceFactor=\count314
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -675,7 +686,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count313
+\c@Hy@tempcnt=\count315
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -691,7 +702,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count314
+\Fld@menulength=\count316
 \Field@Width=\dimen276
 \Fld@charsize=\dimen277
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -709,26 +720,36 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hxetex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020-05-15 v7.00e Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box77
+\c@Hy@AnnotLevel=\count320
+\HyField@AnnotCount=\count321
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count318
-\c@bookmark@seq@number=\count319
-
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
 (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -746,16 +767,152 @@ m lists of items.
 
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count320
-\decimalpart=\count321
+\integerpart=\count324
+Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
+\decimalpart=\count325
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 86 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 102 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 114 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 120 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 125 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 147 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 182 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 183 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 184 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 185 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 189 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 190 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 193 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 208 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 221 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 241 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 266 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 295 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 300 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 301 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 302 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 303 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 332 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 333 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 334 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 406 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 409 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 410 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 428 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 434 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 457 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 464 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 466 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 541 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 588 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 595 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 597 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 599 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 602 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 605 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 610 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 615 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 632 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 633 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 635 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 637 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 647 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 653 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 678 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 700 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 705 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 715 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 719 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 732 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 741 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 742 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 762 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 773 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 774 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 797 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 810 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 824 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 831 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 838 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 846 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 861 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 862 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 864 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 908 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 909 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 934 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 936 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 940 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 962 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 964 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 965 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 1006 replaced by U+FFFD.
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@layerbox@background=\box77
-\pgf@layerboxsaved@background=\box78
+\pgf@layerbox@background=\box78
+\pgf@layerboxsaved@background=\box79
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
@@ -781,8 +938,8 @@ File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 s.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-\pgf@layerbox@smart diagram arrow back=\box79
-\pgf@layerboxsaved@smart diagram arrow back=\box80
+\pgf@layerbox@smart diagram arrow back=\box80
+\pgf@layerboxsaved@smart diagram arrow back=\box81
 
 (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.d
 efinitions.code.tex)
@@ -791,13 +948,13 @@ tyles.code.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.c
 ommands.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/zed-csp/zed-csp.sty
 Package: zed-csp 95/01/11 0c zed-csp package
-\c@mv@zed=\count322
+\c@mv@zed=\count326
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `zed'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/m/n on input line 86.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `zed'
-(Font)                  OT1/cmr/bx/n --> OT1/cmr/bx/n on input line 86.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 86.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `zed'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 86.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 86.
 \symitalics=\mathgroup4
 LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 86.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 86.
@@ -813,13 +970,13 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 308.
 \zedtab=\dimen280
 \zedbar=\dimen281
 \zedskip=\skip65
-\interzedlinepenalty=\count323
-\preboxpenalty=\count324
+\interzedlinepenalty=\count327
+\preboxpenalty=\count328
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen282
 \WF@size=\dimen283
-\c@WF@wrappedlines=\count325
-\WF@box=\box81
+\c@WF@wrappedlines=\count329
+\WF@box=\box82
 \WF@everypar=\toks43
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -863,34 +1020,34 @@ File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfcalendar.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-\pgfcalendarcurrentjulian=\count326
-\pgf@cal@easter@Y=\count327
-\pgf@cal@easter@G=\count328
-\pgf@cal@easter@C=\count329
-\pgf@cal@easter@X=\count330
-\pgf@cal@easter@Z=\count331
-\pgf@cal@easter@D=\count332
-\pgf@cal@easter@E=\count333
-\pgf@cal@easter@N=\count334
-\pgf@cal@easter@M=\count335
-\pgf@cal@easter@julianday=\count336
+\pgfcalendarcurrentjulian=\count330
+\pgf@cal@easter@Y=\count331
+\pgf@cal@easter@G=\count332
+\pgf@cal@easter@C=\count333
+\pgf@cal@easter@X=\count334
+\pgf@cal@easter@Z=\count335
+\pgf@cal@easter@D=\count336
+\pgf@cal@easter@E=\count337
+\pgf@cal@easter@N=\count338
+\pgf@cal@easter@M=\count339
+\pgf@cal@easter@julianday=\count340
 ))
-\gtt@currentline=\count337
-\gtt@lasttitleline=\count338
-\gtt@currgrid=\count339
-\gtt@chartwidth=\count340
-\gtt@lasttitleslot=\count341
-\gtt@elementid=\count342
-\gtt@today@slot=\count343
-\gtt@startjulian=\count344
-\gtt@endjulian=\count345
-\gtt@chartid=\count346
-\gtt@vrule@slot=\count347
-\gtt@calendar@slots=\count348
-\gtt@calendar@weeknumber=\count349
-\gtt@calendar@startofweek=\count350
-\gtt@left@slot=\count351
-\gtt@right@slot=\count352
+\gtt@currentline=\count341
+\gtt@lasttitleline=\count342
+\gtt@currgrid=\count343
+\gtt@chartwidth=\count344
+\gtt@lasttitleslot=\count345
+\gtt@elementid=\count346
+\gtt@today@slot=\count347
+\gtt@startjulian=\count348
+\gtt@endjulian=\count349
+\gtt@chartid=\count350
+\gtt@vrule@slot=\count351
+\gtt@calendar@slots=\count352
+\gtt@calendar@weeknumber=\count353
+\gtt@calendar@startofweek=\count354
+\gtt@left@slot=\count355
+\gtt@right@slot=\count356
 )
 (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
@@ -903,69 +1060,73 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count353
+\FV@CodeLineNo=\count357
 \FV@InFile=\read5
-\FV@TabBox=\box82
-\c@FancyVerbLine=\count354
-\FV@StepNumber=\count355
+\FV@TabBox=\box83
+\c@FancyVerbLine=\count358
+\FV@StepNumber=\count359
 \FV@OutFile=\write6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
-)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count356
+Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
+\linenopenalty=\count360
 \output=\toks44
-\linenoprevgraf=\count357
+\linenoprevgraf=\count361
 \linenumbersep=\dimen285
 \linenumberwidth=\dimen286
-\c@linenumber=\count358
-\c@pagewiselinenumber=\count359
-\c@LN@truepage=\count360
-\c@internallinenumber=\count361
-\c@internallinenumbers=\count362
+\c@linenumber=\count362
+\c@pagewiselinenumber=\count363
+\c@LN@truepage=\count364
+\c@internallinenumber=\count365
+\c@internallinenumbers=\count366
 \quotelinenumbersep=\dimen287
 \bframerule=\dimen288
 \bframesep=\dimen289
-\bframebox=\box83
+\bframebox=\box84
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count363
-\c@FV@TrueTabCounter=\count364
-\FV@TabBox@Group=\box84
+\c@FV@TrueTabGroupLevel=\count367
+\c@FV@TrueTabCounter=\count368
+\FV@TabBox@Group=\box85
 \FV@TmpLength=\skip66
-\c@FV@HighlightLinesStart=\count365
-\c@FV@HighlightLinesStop=\count366
-\FV@LoopCount=\count367
-\FV@NCharsBox=\box85
+\c@FV@HighlightLinesStart=\count369
+\c@FV@HighlightLinesStop=\count370
+\FV@LoopCount=\count371
+\FV@NCharsBox=\box86
 \FV@BreakIndent=\dimen290
-\FV@BreakIndentNChars=\count368
+\FV@BreakIndentNChars=\count372
 \FV@BreakSymbolSepLeft=\dimen291
-\FV@BreakSymbolSepLeftNChars=\count369
+\FV@BreakSymbolSepLeftNChars=\count373
 \FV@BreakSymbolSepRight=\dimen292
-\FV@BreakSymbolSepRightNChars=\count370
+\FV@BreakSymbolSepRightNChars=\count374
 \FV@BreakSymbolIndentLeft=\dimen293
-\FV@BreakSymbolIndentLeftNChars=\count371
+\FV@BreakSymbolIndentLeftNChars=\count375
 \FV@BreakSymbolIndentRight=\dimen294
-\FV@BreakSymbolIndentRightNChars=\count372
-\c@FancyVerbLineBreakLast=\count373
-\FV@LineBox=\box86
-\FV@LineIndentBox=\box87
+\FV@BreakSymbolIndentRightNChars=\count376
+\c@FancyVerbLineBreakLast=\count377
+\FV@LineBox=\box87
+\FV@LineIndentBox=\box88
 \FV@LineWidth=\dimen295
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count374
-\calc@Bcount=\count375
+\calc@Acount=\count378
+\calc@Bcount=\count379
 \calc@Adimen=\dimen296
 \calc@Bdimen=\dimen297
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count376
+\calc@Ccount=\count380
 \calc@Cskip=\skip69
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
@@ -994,19 +1155,19 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count377
+\c@float@type=\count381
 \float@exts=\toks45
-\float@box=\box88
+\float@box=\box89
 \@float@everytoks=\toks46
-\@floatcapt=\box89
+\@floatcapt=\box90
 )
 \minted@appexistsfile=\read6
-\minted@bgbox=\box90
+\minted@bgbox=\box91
 \minted@code=\write7
-\c@minted@FancyVerbLineTemp=\count378
-\c@minted@pygmentizecounter=\count379
+\c@minted@FancyVerbLineTemp=\count382
+\c@minted@pygmentizecounter=\count383
 \@float@every@listing=\toks47
-\c@listing=\count380
+\c@listing=\count384
 )
 runsystem(mkdir -p _minted-trabajo-final)...executed.
 
@@ -1022,16 +1183,16 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pagewidth=\dimen304
 \AM@pageheight=\dimen305
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2021/01/09 v0.5r Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2021/01/09 v0.5r Pdfpages driver for XeTeX (AM)
 )
-\pdfpages@includegraphics@status=\count381
-\AM@pagebox=\box91
+\pdfpages@includegraphics@status=\count385
+\AM@pagebox=\box92
 \AM@global@opts=\toks48
-\AM@pagecnt=\count382
+\AM@pagecnt=\count386
 \AM@toc@title=\toks49
-\c@AM@survey=\count383
-\AM@templatesizebox=\box92
+\c@AM@survey=\count387
+\AM@templatesizebox=\box93
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -1039,19 +1200,22 @@ Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
 )
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip71
 \bibsep=\skip72
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count384
+\c@NAT@ctr=\count388
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fmtcount 2020/01/30 v3.07
 
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
@@ -1062,46 +1226,50 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks50
 \XKV@tempa@toks=\toks51
 )
-\XKV@depth=\count385
+\XKV@depth=\count389
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fcprefix 2012/09/28
 
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Invalid UTF-8 byte or sequence at line 10 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 22 replaced by U+FFFD.
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count386
+\fc@digit@counter=\count390
 ))
-\c@padzeroesN=\count387
-\fc@tmpcatcode=\count388
-\@DT@modctr=\count389
-\@ordinalctr=\count390
-\@orgargctr=\count391
-\@strctr=\count392
-\@tmpstrctr=\count393
-\@DT@loopN=\count394
-\@DT@X=\count395
+\c@padzeroesN=\count391
+\fc@tmpcatcode=\count392
+\@DT@modctr=\count393
+\@ordinalctr=\count394
+\@orgargctr=\count395
+\@strctr=\count396
+\@tmpstrctr=\count397
+\@DT@loopN=\count398
+\@DT@X=\count399
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count396
-\@month=\count397
-\@year=\count398
-\c@HOUR=\count399
-\c@HOURXII=\count400
-\c@MINUTE=\count401
-\c@TOHOUR=\count402
-\c@TOMINUTE=\count403
-\c@SECOND=\count404
-\currenthour=\count405
-\currentminute=\count406
-\currentsecond=\count407
+\@day=\count400
+\@month=\count401
+\@year=\count402
+\c@HOUR=\count403
+\c@HOURXII=\count404
+\c@MINUTE=\count405
+\c@TOHOUR=\count406
+\c@TOMINUTE=\count407
+\c@SECOND=\count408
+\currenthour=\count409
+\currentminute=\count410
+\currentsecond=\count411
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count408
-\dayofyear=\count409
-\dayofweek=\count410
+\@dtctr=\count412
+\dayofyear=\count413
+\dayofweek=\count414
 LaTeX Info: Redefining \today on input line 736.
 
 (/usr/share/texlive/texmf-dist/tex/latex/datetime/dt-spanish.def
@@ -1139,6 +1307,14 @@ LaTeX Font Info:    ... okay on input line 95.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
@@ -1146,40 +1322,16 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
 LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count411
-\scratchdimen=\dimen306
-\scratchbox=\box93
-\nofMPsegments=\count412
-\nofMParguments=\count413
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count414
-\MPscratchDim=\dimen307
-\MPnumerator=\count415
-\makeMPintoPDFobject=\count416
-\everyMPtoPDFconversion=\toks55
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-\c@lstlisting=\count417
+\c@lstlisting=\count415
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1220,7 +1372,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count418
+\c@section@level=\count416
 )
 LaTeX Info: Redefining \ref on input line 95.
 LaTeX Info: Redefining \pageref on input line 95.
@@ -1231,48 +1383,25 @@ LaTeX Info: Redefining \nameref on input line 95.
 \openout8 = `trabajo-final.out'.
 
  (./cuerpo/portada/caratula.tex
-<imagenes/Portada/arriba.png, id=419, 829.0975pt x 948.54375pt>
-File: imagenes/Portada/arriba.png Graphic file (type png)
-<use imagenes/Portada/arriba.png>
-Package pdftex.def Info: imagenes/Portada/arriba.png  used on input line 7.
-(pdftex.def)             Requested size: 149.21846pt x 170.71652pt.
-<imagenes/Portada/abajo.jpg, id=420, 983.675pt x 983.675pt>
-File: imagenes/Portada/abajo.jpg Graphic file (type jpg)
-<use imagenes/Portada/abajo.jpg>
-Package pdftex.def Info: imagenes/Portada/abajo.jpg  used on input line 10.
-(pdftex.def)             Requested size: 170.70477pt x 170.71652pt.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./imagenes/Portada/unl_escudo.pdf): PDF
- inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<imagenes/Portada/unl_escudo.pdf, id=421, 597.23125pt x 845.1575pt>
+File: imagenes/Portada/arriba.png Graphic file (type bmp)
+<imagenes/Portada/arriba.png>
+File: imagenes/Portada/abajo.jpg Graphic file (type bmp)
+<imagenes/Portada/abajo.jpg>
 File: imagenes/Portada/unl_escudo.pdf Graphic file (type pdf)
 <use imagenes/Portada/unl_escudo.pdf>
-Package pdftex.def Info: imagenes/Portada/unl_escudo.pdf  used on input line 12
-.
-(pdftex.def)             Requested size: 120.63792pt x 170.71652pt.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./imagenes/Portada/fich.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<imagenes/Portada/fich.pdf, id=422, 597.23125pt x 845.1575pt>
 File: imagenes/Portada/fich.pdf Graphic file (type pdf)
 <use imagenes/Portada/fich.pdf>
-Package pdftex.def Info: imagenes/Portada/fich.pdf  used on input line 14.
-(pdftex.def)             Requested size: 120.63792pt x 170.71652pt.
-<imagenes/Portada/fich_logo.png, id=423, 398.48875pt x 127.47626pt>
-File: imagenes/Portada/fich_logo.png Graphic file (type png)
-<use imagenes/Portada/fich_logo.png>
-Package pdftex.def Info: imagenes/Portada/fich_logo.png  used on input line 38.
+File: imagenes/Portada/fich_logo.png Graphic file (type bmp)
+<imagenes/Portada/fich_logo.png>
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
-(pdftex.def)             Requested size: 355.65944pt x 113.78027pt.
-) [1
+)
+[1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/Portada/arriba.
-png> <./imagenes/Portada/abajo.jpg> <./imagenes/Portada/unl_escudo.pdf> <./imag
-enes/Portada/fich.pdf> <./imagenes/Portada/fich_logo.png>]
-(./trabajo-final.toc
+] (./trabajo-final.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 9.
@@ -1281,8 +1410,7 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 9.
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 9.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 9.
@@ -1292,140 +1420,57 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2
 
 ]
-Overfull \hbox (2.55557pt too wide) detected at line 72
-\OT1/cmr/m/n/10 15.10. 
+Overfull \hbox (2.55997pt too wide) detected at line 74
+\TU/lmr/m/n/10 15.10. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 73
-\OT1/cmr/m/n/10 15.10.1. 
+Overfull \hbox (1.34003pt too wide) detected at line 75
+\TU/lmr/m/n/10 15.10.1. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 74
-\OT1/cmr/m/n/10 15.10.2. 
+Overfull \hbox (1.34003pt too wide) detected at line 81
+\TU/lmr/m/n/10 15.10.2. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 75
-\OT1/cmr/m/n/10 15.10.3. 
+Overfull \hbox (2.55997pt too wide) detected at line 83
+\TU/lmr/m/n/10 15.11. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 76
-\OT1/cmr/m/n/10 15.10.4. 
+Overfull \hbox (2.55997pt too wide) detected at line 84
+\TU/lmr/m/n/10 15.12. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 77
-\OT1/cmr/m/n/10 15.10.5. 
+Overfull \hbox (1.34003pt too wide) detected at line 85
+\TU/lmr/m/n/10 15.12.1. 
  []
 
 
-Overfull \hbox (1.33342pt too wide) detected at line 78
-\OT1/cmr/m/n/10 15.10.6. 
+Overfull \hbox (1.34003pt too wide) detected at line 95
+\TU/lmr/m/n/10 15.12.2. 
  []
 
-
-Overfull \hbox (1.33342pt too wide) detected at line 79
-\OT1/cmr/m/n/10 15.10.7. 
- []
-
-
-Overfull \hbox (2.55557pt too wide) detected at line 80
-\OT1/cmr/m/n/10 15.11. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 81
-\OT1/cmr/m/n/10 15.11.1. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 82
-\OT1/cmr/m/n/10 15.11.2. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 83
-\OT1/cmr/m/n/10 15.11.3. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 84
-\OT1/cmr/m/n/10 15.11.4. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 86
-\OT1/cmr/m/n/10 15.11.5. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 88
-\OT1/cmr/m/n/10 15.11.6. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 89
-\OT1/cmr/m/n/10 15.11.7. 
- []
-
-
-Overfull \hbox (2.55557pt too wide) detected at line 90
-\OT1/cmr/m/n/10 15.12. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 91
-\OT1/cmr/m/n/10 15.12.1. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 92
-\OT1/cmr/m/n/10 15.12.2. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 93
-\OT1/cmr/m/n/10 15.12.3. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 94
-\OT1/cmr/m/n/10 15.12.4. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 95
-\OT1/cmr/m/n/10 15.12.5. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 97
-\OT1/cmr/m/n/10 15.12.6. 
- []
-
-
-Overfull \hbox (1.33342pt too wide) detected at line 99
-\OT1/cmr/m/n/10 15.12.7. 
- []
-
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
-[3])
+)
 \tf@toc=\write9
 \openout9 = `trabajo-final.toc'.
 
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
- [4]
+ [3]
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+ [4
+
+]
 \openout2 = `cuerpo/paginas/capitulo1.aux'.
 
  (./cuerpo/paginas/capitulo1.tex
-Cap\'{\i }tulo 1.
+Capítulo 1.
 [1
-
 
 
 ])
@@ -1437,7 +1482,7 @@ LaTeX Info: Redefining \% on input line 108.
 \openout2 = `cuerpo/paginas/capitulo2.aux'.
 
  (./cuerpo/paginas/capitulo2.tex
-Cap\'{\i }tulo 2.
+Capítulo 2.
 ) [3
 
 
@@ -1447,7 +1492,7 @@ Cap\'{\i }tulo 2.
 \openout2 = `cuerpo/paginas/capitulo3.aux'.
 
  (./cuerpo/paginas/capitulo3.tex
-Cap\'{\i }tulo 3.
+Capítulo 3.
 ) [4
 
 
@@ -1457,7 +1502,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `cuerpo/paginas/capitulo4.aux'.
 
  (./cuerpo/paginas/capitulo4.tex
-Cap\'{\i }tulo 4.
+Capítulo 4.
 ) [5
 
 
@@ -1467,7 +1512,7 @@ Cap\'{\i }tulo 4.
 \openout2 = `cuerpo/paginas/capitulo5.aux'.
 
  (./cuerpo/paginas/capitulo5.tex
-Cap\'{\i }tulo 5.
+Capítulo 5.
 ) [6
 
 
@@ -1477,7 +1522,7 @@ Cap\'{\i }tulo 5.
 \openout2 = `cuerpo/paginas/capitulo6.aux'.
 
  (./cuerpo/paginas/capitulo6.tex
-Cap\'{\i }tulo 6.
+Capítulo 6.
 ) [7
 
 
@@ -1487,7 +1532,7 @@ Cap\'{\i }tulo 6.
 \openout2 = `cuerpo/paginas/capitulo7.aux'.
 
  (./cuerpo/paginas/capitulo7.tex
-Cap\'{\i }tulo 7.
+Capítulo 7.
 [8
 
 
@@ -1503,18 +1548,22 @@ LaTeX Info: Redefining \% on input line 120.
 \openout2 = `cuerpo/paginas/capitulo8.aux'.
 
  (./cuerpo/paginas/capitulo8.tex
-Cap\'{\i }tulo 8.
-) [11
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [11
 
 
 
+]
+Capítulo 8.
+) [12
 
 ]
 \openout2 = `cuerpo/paginas/capitulo9.aux'.
 
  (./cuerpo/paginas/capitulo9.tex
-Cap\'{\i }tulo 9.
-) [12
+Capítulo 9.
+) [13
 
 
 
@@ -1523,8 +1572,8 @@ Cap\'{\i }tulo 9.
 \openout2 = `cuerpo/paginas/capitulo10.aux'.
 
  (./cuerpo/paginas/capitulo10.tex
-Cap\'{\i }tulo 10.
-) [13
+Capítulo 10.
+) [14
 
 
 
@@ -1533,8 +1582,8 @@ Cap\'{\i }tulo 10.
 \openout2 = `cuerpo/paginas/capitulo11.aux'.
 
  (./cuerpo/paginas/capitulo11.tex
-Cap\'{\i }tulo 11.
-) [14
+Capítulo 11.
+) [15
 
 
 
@@ -1543,60 +1592,53 @@ Cap\'{\i }tulo 11.
 \openout2 = `cuerpo/paginas/capitulo12.aux'.
 
  (./cuerpo/paginas/capitulo12.tex
-Cap\'{\i }tulo 12.
+Capítulo 12.
 )
-Overfull \hbox (18.82439pt too wide) in paragraph at lines 33--130
+Overfull \hbox (18.82616pt too wide) in paragraph at lines 33--130
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
+ [16
 
 
 
 
 ]
-Overfull \vbox (39.30765pt too high) has occurred while \output is active []
+Overfull \vbox (39.47076pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
 
-[16]
+[17]
 \openout2 = `cuerpo/paginas/capitulo13.aux'.
 
  (./cuerpo/paginas/capitulo13.tex
-Cap\'{\i }tulo 13.
-[17
+Capítulo 13.
+[18
 
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [18]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
  [19]
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
+LaTeX Info: Redefining \. on input line 143.
+LaTeX Info: Redefining \% on input line 143.
  [20]
-LaTeX Info: Redefining \. on input line 258.
-LaTeX Info: Redefining \% on input line 258.
+LaTeX Info: Redefining \. on input line 207.
+LaTeX Info: Redefining \% on input line 207.
  [21]
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
+ [22]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Info: Redefining \. on input line 324.
-LaTeX Info: Redefining \% on input line 324.
- [22
-
-])
+))
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
  [23]
@@ -1604,226 +1646,197 @@ LaTeX Info: Redefining \% on input line 132.
 
 
 (./cuerpo/paginas/capitulo14.tex
-Cap\'{\i }tulo 14.
-<imagenes/red/diagrama.png, id=700, 944.52875pt x 733.74126pt>
-File: imagenes/red/diagrama.png Graphic file (type png)
-<use imagenes/red/diagrama.png>
-Package pdftex.def Info: imagenes/red/diagrama.png  used on input line 37.
-(pdftex.def)             Requested size: 349.8593pt x 271.7837pt.
-[24
+Capítulo 14.
+File: imagenes/red/diagrama.png Graphic file (type bmp)
+<imagenes/red/diagrama.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [24
 
 
 
 
-])
+]
 LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
- [25pdfTeX warning (ext4): destination with the same identifier (name{figure.14
-.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.134     \include{cuerpo/paginas/capitulo14.tex}
-                                                  <./imagenes/red/diagrama.png>
-]
+ [25]
 \openout2 = `cuerpo/paginas/capitulo15.aux'.
 
  (./cuerpo/paginas/capitulo15.tex
-Cap\'{\i }tulo 15.
-[26
+Capítulo 15.
+
+Underfull \vbox (badness 2050) has occurred while \output is active []
+
+ [26
 
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [27]
-LaTeX Info: Redefining \. on input line 151.
-LaTeX Info: Redefining \% on input line 151.
- [28]
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
- [29] (./_minted-trabajo-final/default-pyg-prefix.pygstyle)
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
+
+[27]
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+ [28] (./_minted-trabajo-final/default-pyg-prefix.pygstyle)
 (./_minted-trabajo-final/default.pygstyle)
-(./_minted-trabajo-final/5518A8F5EEE53694CDADC259EDCAAF835014C335809E263680BDCB
-29020DFCED.pygtex)
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
+(./_minted-trabajo-final/C1BBB9358830A4DF6CAF00F5927FE9565014C335809E263680BDCB
+29020DFCED.pygtex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+ [29])
+LaTeX Info: Redefining \. on input line 220.
+LaTeX Info: Redefining \% on input line 220.
  [30]
-(./_minted-trabajo-final/54F710D6E613B41D35C9C8C1238915BCE492133B3779B493E4EDDE
-6E7C1D6497.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 10.
-)
-(./_minted-trabajo-final/53598763324C343DA635C8B77B2159EDC9A239CD6EFDE5A9724831
-5874DC69F5.pygtex)
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+ [31]
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+ [32]
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
+ [33]
+LaTeX Info: Redefining \. on input line 420.
+LaTeX Info: Redefining \% on input line 420.
+ [34]
+LaTeX Info: Redefining \. on input line 470.
+LaTeX Info: Redefining \% on input line 470.
+ [35]
+LaTeX Info: Redefining \. on input line 523.
+LaTeX Info: Redefining \% on input line 523.
+ [36]
+Overfull \hbox (51.83667pt too wide) in paragraph at lines 557--558
+[][][][] 
+ []
+
+LaTeX Info: Redefining \. on input line 575.
+LaTeX Info: Redefining \% on input line 575.
+[37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 286.
-LaTeX Info: Redefining \% on input line 286.
- [31
-
-]
-LaTeX Info: Redefining \. on input line 360.
-LaTeX Info: Redefining \% on input line 360.
-
-[32]
-(./_minted-trabajo-final/6ECE77A7EF33E047BA6C30046DFD78BCCBCC82CB6957BBC0FB7203
-C1659B53DF.pygtex)
-Underfull \vbox (badness 1173) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 395.
-LaTeX Info: Redefining \% on input line 395.
- [33]
-LaTeX Info: Redefining \. on input line 444.
-LaTeX Info: Redefining \% on input line 444.
-
-[34]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-497.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Info: Redefining \. on input line 522.
-LaTeX Info: Redefining \% on input line 522.
- [35]
-LaTeX Info: Redefining \. on input line 587.
-LaTeX Info: Redefining \% on input line 587.
- [36]
-(./_minted-trabajo-final/14DCAF7285FD7315DCC34CC932DE29C2D20E840DCE918459C05E86
-7C9729D749.pygtex)
-LaTeX Info: Redefining \. on input line 620.
-LaTeX Info: Redefining \% on input line 620.
- [37]
-<imagenes/docker/nextcloud/configurarNextcloud.png, id=902, 1349.04pt x 612.287
-5pt>
-File: imagenes/docker/nextcloud/configurarNextcloud.png Graphic file (type png)
-
-<use imagenes/docker/nextcloud/configurarNextcloud.png>
-Package pdftex.def Info: imagenes/docker/nextcloud/configurarNextcloud.png  use
-d on input line 680.
-(pdftex.def)             Requested size: 407.66867pt x 185.02368pt.
-
-Underfull \vbox (badness 5490) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 689.
-LaTeX Info: Redefining \% on input line 689.
+LaTeX Info: Redefining \. on input line 639.
+LaTeX Info: Redefining \% on input line 639.
  [38]
-<blueshade.png, id=917, 301.125pt x 301.125pt>
-File: blueshade.png Graphic file (type png)
-<use blueshade.png>
-Package pdftex.def Info: blueshade.png  used on input line 692.
-(pdftex.def)             Requested size: 453.00967pt x 55.41777pt.
-<imagenes/docker/nextcloud/creacionUsuarios.png, id=918, 1365.1pt x 745.78625pt
->
-File: imagenes/docker/nextcloud/creacionUsuarios.png Graphic file (type png)
-<use imagenes/docker/nextcloud/creacionUsuarios.png>
-Package pdftex.def Info: imagenes/docker/nextcloud/creacionUsuarios.png  used o
-n input line 700.
-(pdftex.def)             Requested size: 407.66867pt x 222.71342pt.
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
+LaTeX Info: Redefining \. on input line 695.
+LaTeX Info: Redefining \% on input line 695.
 
-[39pdfTeX warning (ext4): destination with the same identifier (name{figure.15.
-1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.719 			E
-          mby trabaja con el contenido multimedia almacenado en servidor loc...
-pdfTeX warning (ext4): destination with the same identifier (name{figure.15.2})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.719 			E
-          mby trabaja con el contenido multimedia almacenado en servidor loc...
- <./imagenes/docker/nextcloud/configurarNextcloud.png> </usr/share/texlive/texm
-f-dist/tex/latex/tcolorbox/blueshade.png (PNG copy)> <./imagenes/docker/nextclo
-ud/creacionUsuarios.png>]
-LaTeX Info: Redefining \. on input line 760.
-LaTeX Info: Redefining \% on input line 760.
+[39]
+LaTeX Info: Redefining \. on input line 734.
+LaTeX Info: Redefining \% on input line 734.
  [40]
-(./_minted-trabajo-final/E2DCA88235352D637065711F111380620AB7E6568C1CE8968EECB7
-3C43CA6D1B.pygtex)
-LaTeX Info: Redefining \. on input line 814.
-LaTeX Info: Redefining \% on input line 814.
- [41
+LaTeX Info: Redefining \. on input line 774.
+LaTeX Info: Redefining \% on input line 774.
+ [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
-<imagenes/docker/emby/emby-dashboard.png, id=951, 1365.1pt x 745.78625pt>
-File: imagenes/docker/emby/emby-dashboard.png Graphic file (type png)
-<use imagenes/docker/emby/emby-dashboard.png>
-Package pdftex.def Info: imagenes/docker/emby/emby-dashboard.png  used on input
- line 824.
-(pdftex.def)             Requested size: 407.66867pt x 222.71342pt.
-)
+LaTeX Info: Redefining \. on input line 845.
+LaTeX Info: Redefining \% on input line 845.
+ [42]
+Overfull \hbox (58.36166pt too wide) in paragraph at lines 906--907
+[]\TU/lmr/bx/n/10 actionstart\TU/lmr/m/n/10 : Es la acción que se realizará cua
+ndo Fail2ban comience. Se ejecutará el script \TU/lmr/m/it/10 send[]telegram[]n
+otif.sh
+ []
+
+LaTeX Info: Redefining \. on input line 911.
+LaTeX Info: Redefining \% on input line 911.
+[43]
+LaTeX Info: Redefining \. on input line 954.
+LaTeX Info: Redefining \% on input line 954.
+ [44]
+LaTeX Info: Redefining \. on input line 1004.
+LaTeX Info: Redefining \% on input line 1004.
+ [45]
+LaTeX Info: Redefining \. on input line 1054.
+LaTeX Info: Redefining \% on input line 1054.
+ [46]
+LaTeX Info: Redefining \. on input line 1105.
+LaTeX Info: Redefining \% on input line 1105.
+ [47]
+LaTeX Info: Redefining \. on input line 1157.
+LaTeX Info: Redefining \% on input line 1157.
+ [48]
+LaTeX Info: Redefining \. on input line 1207.
+LaTeX Info: Redefining \% on input line 1207.
+ [49]
+LaTeX Info: Redefining \. on input line 1247.
+LaTeX Info: Redefining \% on input line 1247.
+ [50]
+LaTeX Info: Redefining \. on input line 1310.
+LaTeX Info: Redefining \% on input line 1310.
+ [51]
+LaTeX Info: Redefining \. on input line 1357.
+LaTeX Info: Redefining \% on input line 1357.
+ [52]
+LaTeX Info: Redefining \. on input line 1409.
+LaTeX Info: Redefining \% on input line 1409.
+ [53]
+Missing character: There is no ﬁ in font [lmmono8-regular]:!
+LaTeX Info: Redefining \. on input line 1466.
+LaTeX Info: Redefining \% on input line 1466.
+ [54]
+LaTeX Info: Redefining \. on input line 1524.
+LaTeX Info: Redefining \% on input line 1524.
+ [55]
+Overfull \hbox (24.96175pt too wide) in paragraph at lines 1526--1526
+[]\TU/lmr/m/n/10 Este VirtualHost está configurado para mostrar el sitio Nextcl
+oud en el dominio ”aulavirtual.duckdns.org”
+ []
+
+Missing character: There is no ﬁ in font [lmmono8-regular]:!
+LaTeX Info: Redefining \. on input line 1589.
+LaTeX Info: Redefining \% on input line 1589.
+[56]
+LaTeX Info: Redefining \. on input line 1628.
+LaTeX Info: Redefining \% on input line 1628.
+ [57]
+Missing character: There is no ﬁ in font [lmmono8-regular]:!
+Missing character: There is no ﬁ in font [lmmono8-regular]:!
+LaTeX Info: Redefining \. on input line 1681.
+LaTeX Info: Redefining \% on input line 1681.
+ [58])
 LaTeX Info: Redefining \. on input line 136.
 LaTeX Info: Redefining \% on input line 136.
- [42pdfTeX warning (ext4): destination with the same identifier (name{figure.15
-.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.136     \include{cuerpo/paginas/capitulo15.tex}
-                                                  %problemas con los espacio...
- <./imagenes/docker/emby/emby-dashboard.png>]
+ [59]
 \openout2 = `cuerpo/paginas/capitulo16.aux'.
 
  (./cuerpo/paginas/capitulo16.tex
-Cap\'{\i }tulo 16.
-) [43
+Capítulo 16.
+) [60
 
 
 
 
-]
-No file trabajo-final.bbl.
-(./trabajo-final.aux
+] (./trabajo-final.bbl) [61
+
+
+
+
+] (./trabajo-final.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (./cuerpo/paginas/capitulo1.aux)
-(./cuerpo/paginas/capitulo2.aux) (./cuerpo/paginas/capitulo3.aux)
-(./cuerpo/paginas/capitulo4.aux) (./cuerpo/paginas/capitulo5.aux)
-(./cuerpo/paginas/capitulo6.aux) (./cuerpo/paginas/capitulo7.aux)
-(./cuerpo/paginas/capitulo8.aux) (./cuerpo/paginas/capitulo9.aux)
-(./cuerpo/paginas/capitulo10.aux) (./cuerpo/paginas/capitulo11.aux)
-(./cuerpo/paginas/capitulo12.aux) (./cuerpo/paginas/capitulo13.aux)
-(./cuerpo/paginas/capitulo14.aux) (./cuerpo/paginas/capitulo15.aux)
-(./cuerpo/paginas/capitulo16.aux))
 
-Package rerunfilecheck Warning: File `trabajo-final.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `trabajo-final.out':
-(rerunfilecheck)             Before: 00008F1B719C7A7BA965D2FDC420043E;10803
-(rerunfilecheck)             After:  F3DE517564B48F9BD54366CF30381995;6552.
+(./cuerpo/paginas/capitulo1.aux) (./cuerpo/paginas/capitulo2.aux)
+(./cuerpo/paginas/capitulo3.aux) (./cuerpo/paginas/capitulo4.aux)
+(./cuerpo/paginas/capitulo5.aux) (./cuerpo/paginas/capitulo6.aux)
+(./cuerpo/paginas/capitulo7.aux) (./cuerpo/paginas/capitulo8.aux)
+(./cuerpo/paginas/capitulo9.aux) (./cuerpo/paginas/capitulo10.aux)
+(./cuerpo/paginas/capitulo11.aux) (./cuerpo/paginas/capitulo12.aux)
+(./cuerpo/paginas/capitulo13.aux) (./cuerpo/paginas/capitulo14.aux)
+(./cuerpo/paginas/capitulo15.aux) (./cuerpo/paginas/capitulo16.aux))
+Package rerunfilecheck Info: File `trabajo-final.out' has not changed.
+(rerunfilecheck)             Checksum: D97BF9A34FD0D4AA668551C0F3E0DB0A;8004.
  ) 
 Here is how much of TeX's memory you used:
- 34744 strings out of 479304
- 700234 string characters out of 5869780
- 1494920 words of memory out of 5000000
- 50749 multiletter control sequences out of 15000+600000
- 418888 words of font info for 87 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 101i,7n,108p,1123b,2021s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/latxfont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/latxfont/lasy9.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb
-!pdfTeX error: /usr/bin/pdflatex (file /usr/share/texmf/fonts/type1/public/cm-s
-uper/sftt0800.pfb): unexpected end of file
- ==> Fatal error occurred, no output PDF file produced!
+ 37062 strings out of 477220
+ 728754 string characters out of 5832723
+ 2053886 words of memory out of 5000000
+ 55916 multiletter control sequences out of 15000+600000
+ 411010 words of font info for 90 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 101i,7n,108p,1105b,1884s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on trabajo-final.pdf (65 pages).

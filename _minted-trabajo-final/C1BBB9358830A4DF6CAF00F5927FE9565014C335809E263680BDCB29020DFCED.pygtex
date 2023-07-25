@@ -5,8 +5,8 @@
 \PYG{n+nv}{UUID}\PYG{o}{=}\PYG{l+m}{2321}\PYGZhy{}DD09  /boot/efi       vfat    \PYG{n+nv}{umask}\PYG{o}{=}\PYG{l+m}{0077}      \PYG{l+m}{0}       \PYG{l+m}{1}
 /dev/mapper/ema\PYGZhy{}home /home ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0}  \PYG{l+m}{2}
 /dev/mapper/ema\PYGZhy{}opt	/opt ext4 rw,exec,auto,nodev,nosuid,noatime,async,nouseri \PYG{l+m}{0} \PYG{l+m}{0}
-/dev/mapper/ema\PYGZhy{}srv	/srv ext4 defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
-/dev/mapper/ema\PYGZhy{}docker	/var/lib/docker	ext4	defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}ISOS	/mnt/ISOS	ext4	defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
+/dev/mapper/ema\PYGZhy{}MV	    /mnt/MV	    ext4	defaults	\PYG{l+m}{0}	\PYG{l+m}{0}
 /dev/mapper/ema\PYGZhy{}var\PYGZhy{}\PYGZhy{}log /var/log ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0} \PYG{l+m}{0}
 /dev/mapper/ema\PYGZhy{}var\PYGZhy{}\PYGZhy{}tmp /var/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  \PYG{l+m}{0} \PYG{l+m}{0}
 /dev/mapper/ema\PYGZhy{}tmp	/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser \PYG{l+m}{0} \PYG{l+m}{0}

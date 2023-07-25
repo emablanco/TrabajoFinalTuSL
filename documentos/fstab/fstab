@@ -4,8 +4,8 @@
 UUID=2321-DD09  /boot/efi       vfat    umask=0077      0       1
 /dev/mapper/ema-home /home ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0  2
 /dev/mapper/ema-opt	/opt ext4 rw,exec,auto,nodev,nosuid,noatime,async,nouseri 0 0
-/dev/mapper/ema-srv	/srv ext4 defaults	0	0
-/dev/mapper/ema-docker	/var/lib/docker	ext4	defaults	0	0
+/dev/mapper/ema-ISOS	/mnt/ISOS	ext4	defaults	0	0
+/dev/mapper/ema-MV	    /mnt/MV	    ext4	defaults	0	0
 /dev/mapper/ema-var--log /var/log ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0 0
 /dev/mapper/ema-var--tmp /var/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser  0 0
 /dev/mapper/ema-tmp	/tmp ext4 rw,noexec,auto,nodev,nosuid,noatime,async,nouser 0 0

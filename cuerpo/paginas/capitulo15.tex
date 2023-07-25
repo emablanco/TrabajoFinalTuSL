@@ -1,141 +1,104 @@
-\chapter{Servidor Local}\label{ch:servidor}
+\chapter{Servidor de Virtualizacion}\label{ch:servidor}
 
-	\section{¿Que es un Servidor Loca?}
+	\section{¿Que es un Servidor de Virtualizacion?}
 	
-	Un servidor local se refiere a una computadora que se mantiene encendida y conectada a una red LAN de manera constante. Su función principal consiste en proporcionar una variedad de servicios y contenidos a través de dicha red, sin importar el dispositivo que los usuarios utilicen. Al no requerir acceso directo por parte de los usuarios, no es necesario contar con un monitor ni un teclado conectados a esta computadora.
 		
-	\section{Uso del servidor}
-	
-El servidor local ofrece servicios de alojamiento de archivos y streaming. Estos servicios permiten a los usuarios almacenar y acceder a archivos de manera remota, así como transmitir contenido multimedia a través de la red local. El servidor local despliega su capacidad para gestionar y distribuir eficientemente estos servicios, brindando a los usuarios la posibilidad de compartir y acceder a sus archivos y contenido multimedia de manera conveniente y segura.		
+		Un servidor de virtualización es un sistema de hardware o software que permite la creación y gestión de máquinas virtuales (VM, por sus siglas en inglés). Las máquinas virtuales son entornos de software aislados que se ejecutan dentro de un servidor físico, y cada una de ellas actúa como un sistema independiente con su propio sistema operativo y aplicaciones.
 		
-		\begin{itemize}
-
-\item\textbf{Servidor de archivos:} permite alojar, sincronizar y compartir archivos con otros usuarios y dispositivos conectados a la misma red. Al almacenar los archivos localmente, proporciona un control total sobre los datos, asegurando la privacidad y permitiendo un acceso rápido y eficiente a los archivos compartidos.
-
-\item\textbf{Servidor Streaming:} se encarga de gestionar el contenido multimedia, como música, películas, series y documentales. Este servicio permite reproducir dicho contenido en cualquier dispositivo conectado a la misma red, brindando una experiencia de entretenimiento fluida y accesible.
-
-Ambos servicios del servidor local trabajan en conjunto para facilitar el intercambio y la reproducción de archivos y contenido multimedia dentro de la red local, ofreciendo comodidad y flexibilidad a los usuarios.\par
+		El servidor de virtualización proporciona una capa de abstracción entre el hardware físico y las máquinas virtuales, permitiendo que múltiples VMs se ejecuten en el mismo servidor físico de manera eficiente. Esto ayuda a maximizar la utilización de los recursos del servidor, ya que se pueden consolidar múltiples sistemas virtuales en una única máquina física.
 		
-		\end{itemize}
+		Existen diferentes tecnologías de virtualización, como VMware, Microsoft Hyper-V, KVM (Kernel-based Virtual Machine), Xen, entre otras. Estas tecnologías permiten la creación, gestión y asignación de recursos a las máquinas virtuales, así como la migración de las mismas entre servidores físicos.
+		
+		Los servidores de virtualización son ampliamente utilizados en entornos empresariales, centros de datos y proveedores de servicios en la nube, ya que ofrecen flexibilidad, eficiencia y escalabilidad en la gestión de los recursos computacionales. Además, facilitan la implementación y administración de aplicaciones, simplificando la infraestructura y reduciendo los costos operativos.	
+			
+				
+			\section{Usos del servidor de virtualización}
+			
+		El servidor de virtualización se utilizará para ofrecer servicios de alojamiento de archivos y streaming. Estos servicios permiten a los usuarios almacenar y acceder a archivos de forma remota, así como transmitir contenido multimedia a través de la red local. El servidor demuestra su capacidad para gestionar y distribuir eficientemente estos servicios, brindando a los usuarios la posibilidad de compartir y acceder a sus archivos y contenido multimedia de manera conveniente y segura. Además, el servidor se utilizará como laboratorio para realizar prácticas y experimentos, lo que proporciona un entorno controlado y flexible para el aprendizaje y desarrollo de nuevas habilidades en el ámbito de la virtualización y los servicios de red.
+				
 		
 	\section{Sistema Operativo}
 				
-			Por las características propias de Debian no necesitare buscar un sistema operativo orientado a 	servidores, dado que me permitirá crear un potente servidor, al poseer estabilidad/escalabilidad y buenos repositorios.\par
+	Se ha elegido implementar el sistema operativo Debian debido a sus destacadas características y beneficios previamente mencionados. Esta distribución de Linux es reconocida por su sólida estabilidad, alto nivel de seguridad y el amplio respaldo que recibe de la comunidad.\par
+	
+
 		
 	\section{Instalación del Sistema Operativo}\label{install}
 			
-		Una vez que comience el proceso de instalación, seguiré una serie de pasos que me permitirán instalar y configurar el sistema operativo :
-		
-		\begin{itemize}
-			
-			\item \textbf{Graphical Install}
-			
-			\item \textbf{Localización:} Seleccionar el idioma de instalación que será el idioma utilizado por el sistema. (Por motivos de compatibilidad, se recomienda seleccionar English) Después indicar la localización geográfica del servidor.
-			
-			\item \textbf{Configure Locale:} Seleccionar “United Estates” para evitar conflictos de compatibilidad.
-			
-			\item \textbf{Configuración del teclado:} Seleccionar Spanish o Latin America.
-			
-			\item \textbf{Conexión a Internet:} Para conectarse a Internet se necesita la asignación de una dirección IP a la interfaz de red. La dirección IP y los demás parámetros de la red pueden obtenerse de forma automática a partir de un servidor DHCP o se pueden configurar manualmente.
-			
-			\item \textbf{Nombre del sistema:} Nombre con el que se conocerá al sistema en la red.
-			
-			\item \textbf{Cuentas de usuario y passwords:} El programa instalador solicita la creación y configuración de dos cuentas de usuario del sistema o logins. La primera es la cuenta de root y la segunda es una cuenta de usuario ‘normal’, con permisos limitados.
-			
-			\item \textbf{Reloj del sistema y huso horario:} El instalador intentará sincronizar el reloj del sistema con uno de los servidores que establecen la hora oficial en el Internet.
-			
-			\item \textbf{Particionado:} Por fines prácticos creare un LVM y seleccionare el método guiado para usar todo el disco. Luego Gestionare el GV de la siguiente manera:
-			
-			GNU/Linux tiene un nivel de personalización muy amplio, es por ello, que seguramente no todos verán necesario lo que realizare, así como quizás haya alguien que piense que hay muchos otros directorios más susceptibles que no se mencionan y deben alojarse en un (LV).
-			
-			La gestión de volúmenes consistirá en organizar la raíz del sistema en varios volúmenes. Cada uno de estos pueden tener un objetivo y/o un tipo de sistema de archivos distinto y específico. 
-			
-			A continuación mencionare los directorios que tendrán su propio (LV), dado el uso que le
-			daré al servidor.	
-			
-			\vspace{0.3cm}
+		Esta guía proporcionará los pasos necesarios para llevar a cabo una instalación exitosa de Debian, desde la configuración del medio de instalación hasta la personalización de las opciones de seguridad.\par
 
-			
-			\begin{itemize}
-				
-				\item \textbf{Directorio /var:} En este directorio se encontraran todo tipo de archivos, de los cuales se espera que en una ejecución normal del sistema estén cambiando continuamente. Estos podrían ser “logs, bases de datos, spool, cachés, e-mail, etc”. \par
-									
-				\item \textbf{Directorio /tmp:} En este directorio es donde las aplicaciones almacenarán archivos temporales. Tiene la particularidad de que siempre será borrado tras un reinicio del sistema.\par
-				
-				\item \textbf{Directorio /usr:} Es con frecuencia grande, debido a que todos los programas están instalados aquí. 
-				
-				\item \textbf{Directorio /srv:}	Sirve para almacenar archivos y directorios relativos a servidores.	
-				
-				\item \textbf{/var/lib/docker} Los volúmenes se almacenan en /var/lib/docker/volumes/. Docker almacena los datos dentro de este directorio. 
-				
-				\item \textbf{Directorio /home:} Es donde se crean los directorios de los usuarios normales.
-				
-				\item \textbf{Directorio /opt:} En este directorio se instalan algunos programas de terceros, además es el directorio donde suelo guardar ejecutables.
-				
-			\end{itemize}
-			
-			\item \textbf{Instalación del sistema base:} En este paso el instalador comenzará la instalación de los paquetes de aplicaciones necesarios para crear un sistema base. Este proceso puede tardar algún tiempo.
-			
-			\item \textbf{Configuración del gestor de paquetes apt:} Seleccionar el repositorio geográficamente más cercano al equipo que se está instalando. En primer lugar se debe elegir el país y luego escoger el mirror más próximo.
-			
-			\item \textbf{Concurso de popularidad:} La comunidad Debian mantiene un concurso de popularidad interno, con el fin de obtener estadísticas sobre los sistemas instalados. La instalación de este	paquete implica la instalación de otros paquetes. No se recomienda instalar el paquete de popularidad para que el sistema sea lo más ligero posible.
-			
-			\item \textbf{Finalizar instalación:} El instalador permite la instalación automática de diversas configuraciones del sistema. Como se busca personalizar totalmente el sistema, se anulará cualquier selección existente. De esta forma se instalará un sistema con un mínimo de funcionalidades.
-			
-			\item \textbf{Instalación del gestor de arranque grub:} En este punto el sistema ya está casi completamente instalado. Sin embargo, para que el sistema pueda arrancar hay que instalar el gestor de arran	que “grub” en el master boot record (mbr) del disco.
-			Una vez instalado el grub se debe seleccionar continuar, y el equipo se reiniciara automática mente para el primer login.
+	
+		\subsection{Preparación:}\label{preparación}
 		
-		\end{itemize}
+		 Antes de iniciar la instalación, es crucial contar con el medio de instalación adecuado, como un DVD o una unidad USB que contenga la imagen de Debian. Además, se debe seleccionar el idioma preferido y los ajustes regionales pertinentes para garantizar una experiencia personalizada.\par
+
+		\subsection{Proceso de instalación:}\label{proceso de instalacion}
+
+		\begin{enumerate}
+	
+			\item\textbf{Arranque e inicio de instalación:} Al arrancar el sistema desde el medio de instalación, se presenta una pantalla de inicio donde se selecciona la opción ''Instalar''. Esto dará inicio al proceso de instalación de Debian en el disco duro del equipo.
+
+			\item\textbf{Configuración inicial:} Durante esta etapa, se establecen el idioma del sistema y la ubicación geográfica de acuerdo a las preferencias del usuario. Asimismo, si es necesario, se configura la red proporcionando los detalles de conexión correspondientes.
+
+			\item\textbf{Particionamiento:} Para tener un control total sobre la configuración de las particiones, se elige la opción ''Manual'' en la sección de particionamiento. A continuación, se selecciona el disco donde se desea instalar Debian y se procede a crear una partición primaria o extendida que abarque todo el espacio disponible en el disco. Esta partición será utilizada como contenedor de LVM (Logical Volume Manager).
+
+			\item\textbf{Configuración de volúmenes lógicos:} Dentro de la partición creada, se configura el gestor de volúmenes lógicos. Aquí, se crea un grupo de volúmenes asignándole un nombre y seleccionando la partición anteriormente creada como miembro del grupo. Posteriormente, se crea un único volumen lógico con el tamaño suficiente para completar la instalación.
+
+			\item\textbf{Detalles de configuración:} En esta etapa, se definen los detalles del volumen lógico, como asignarle un nombre y establecer un punto de montaje, como por ejemplo, el volumen raíz (''/''). Esto permitirá un correcto funcionamiento del sistema operativo.
+
+			\item\textbf{Configuración adicional:} Una vez completada la instalación básica, se continúa con la selección de componentes y paquetes deseados, así como la configuración del gestor de arranque según las necesidades del usuario. También se realizan configuraciones adicionales para adaptar el sistema a requerimientos específicos.
+
+			\item\textbf{Seguridad y usuarios:} Durante la instalación, se solicita al usuario que elija una contraseña para el usuario root y se ofrecen opciones para configurar otros usuarios y opciones de seguridad adicionales según sea necesario. Estas medidas garantizan la protección de los datos y la integridad del sistema.
+		
+		\end{enumerate}
+
 	
 	\section{LVM}
 	
 		\subsection{¿Que es LVM?}
 		
-			LVM es una capa de abstracción entre un dispositivo de almacenamiento y un sistema de ficheros. Las ventajas que tienen son múltiples, pero la inicial y por la cual lo uso, es por la flexibilidad frente al particionado tradicional. Con LVM las limitaciones en el redimencionado y particionado desaparecen. Se puede aumentar el tamaño  de los volúmenes lógicos independientemente de que no haya espacio libre contiguo.
-				
-				\begin{itemize}
-					
-					\item \textbf{Volumen físico o Physical Volume (PV):} Un volumen físico es un dispositivo de bloque que se le entregará al LVM para que este lo gestione.
-					
-					\item \textbf{Grupo de volúmenes o Volume Group (VG):} Para poder usar el espacio de almacenamiento de un PV, éste debe pertenecer a un Grupo de volúmenes. Un VG es una especie de disco duro virtual compuesto de uno o más PVs. 
-					
-					\item \textbf{Volumen Lógico o Logical Volume (LV):} Los volúmenes lógicos son dispositivos en los cuales se crea sistemas de archivos. Por seguir con la analogía del \textit{«disco duro virtual»} que es el VG, los LVs serían las particiones. 
-					
-				\end{itemize}
+			LVM (Logical Volume Manager) es una tecnología de administración de volúmenes lógicos que se utiliza en sistemas operativos como Linux. Proporciona una capa de abstracción entre los sistemas de archivos y los dispositivos físicos de almacenamiento, lo que permite una gestión más flexible y eficiente de los recursos de almacenamiento.\par
+
+			En lugar de manejar directamente las particiones físicas del disco duro, LVM organiza el espacio de almacenamiento en volúmenes físicos (Physical Volumes), que pueden ser particiones individuales, discos duros completos o incluso dispositivos de almacenamiento en red. Estos volúmenes físicos se agrupan en grupos de volúmenes (Volume Groups), que actúan como contenedores para los volúmenes lógicos.\par
+
+			Los volúmenes lógicos (Logical Volumes) son unidades de almacenamiento virtuales creadas a partir de los grupos de volúmenes. Se pueden asignar diferentes tamaños y configuraciones a los volúmenes lógicos según las necesidades del usuario. Además, los volúmenes lógicos pueden ser redimensionados de forma dinámica, lo que facilita la administración del espacio de almacenamiento en tiempo real.\par
+
+			Una ventaja importante de LVM es la capacidad de agregar varios volúmenes físicos en un grupo de volúmenes y distribuir el espacio de manera más flexible entre los volúmenes lógicos. Esto permite combinar varios discos duros en un solo espacio de almacenamiento lógico, lo que mejora la capacidad de expansión y la tolerancia a fallos del sistema.\par
+
+			Además, LVM proporciona características avanzadas como instantáneas (snapshots), que permiten crear copias puntuales de los volúmenes lógicos para fines de respaldo o recuperación de datos.\par
+
+			En resumen, LVM es una tecnología de administración de volúmenes lógicos que ofrece flexibilidad, escalabilidad y características avanzadas de gestión de almacenamiento en sistemas operativos Linux. Permite una asignación más eficiente de los recursos de almacenamiento y facilita la administración y expansión del espacio de almacenamiento en tiempo real.\par
 			
 	
 		\subsection{Gestión volúmenes lógicos}
 		
-			Los volúmenes lógicos son donde todos los datos se almacenan en un LVM. Para crear los nuevos volúmenes lógicos, utilizare los siguiente comandos.
+			Se crearán los volúmenes lógicos correspondientes y se les asignarán los sistemas de archivos adecuados.\par
+			
+			La sintaxis básica para crear volúmenes lógicos es la siguiente:
+			
+			lvcreate \textbf{-L} \textit{«tamaño»}\textbf{G} \textbf{-n} \textit{«nombre del volumen»} \textit{«nombre del grupo»}
 
+			\begin{itemize}
+	
+				\item \textbf{-L} Tamaño en GB o MB.
+				\item \textbf{-n} Nombre para el (LV) y el nombre del VG con el que se trabajara.
+	
+			\end{itemize}
 			
 			\begin{lstlisting}[language=Bash, caption=Creación de LV]
 				
-			lvcreate -L 10G -n home ema
-			lvcreate -L 10G -n docker ema
-			lvcreate -L 100G -n srv ema
+			lvcreate -L 2G -n home ema
+			lvcreate -L 100G -n ISOS ema
+			lvcreate -L 100G -n MV ema
 			lvcreate -L 5G -n opt ema
 			lvcreate -L 1G -n tmp ema
-			lvcreate -L 15G -n usr ema
+			lvcreate -L 10G -n usr ema
 			lvcreate -L 1G -n var-tmp ema
-			lvcreate -L 1G -n var-log ema
+			lvcreate -L 3G -n var-log ema
 			lvcreate -L 2G -n swap ema
 								
 			\end{lstlisting}
 		
-			La sintaxis básica para crear volúmenes lógicos es:
-			
-			lvcreate \textbf{-L} \textit{«tamaño»}\textbf{G} \textbf{-n} \textit{«nombre del volumen»} \textit{«nombre del grupo»}
-			
-			\begin{itemize}
-				
-				\item \textbf{-L} Tamaño en GB o MB.
-				\item \textbf{-n} Nombre que tendrá el (LV) Nombre del VG con el que se trabajara.
-			 
-			\end{itemize}
-			
-		
-			Luego de que los (LVs) estén disponibles, les creare un sistema de archivo:
 			
 			\begin{lstlisting}[language=Bash, caption=Crear Sistema de Archivo]
 						
@@ -144,694 +107,1626 @@ Ambos servicios del servidor local trabajan en conjunto para facilitar el interc
 			mkfs.ext4 /dev/mapper/ema-tmp
 			mkfs.ext4 /dev/mapper/ema-opt
 			mkfs.ext4 /dev/mapper/ema-home
-			mkfs.ext4 /dev/mapper/ema-docker
+			mkfs.ext4 /dev/mapper/ISOS
+			mkfs.ext4 /dev/mapper/MV
 			mkfs.ext4 /dev/mapper/ema-usr
-			mkfs.ext4 /dev/mapper/ema-srv
 			mkswap /dev/mapper/ema-swap
 			
 			\end{lstlisting}
 			
 			\vspace{0.3cm}
-			
-			Una vez creados los sistemas de archivo es hora montar los (LVs) y mover el contenido de los directorios al (LV) correspondiente.
-			
-			\begin{lstlisting}[language=Bash, caption=Crear directorios y montar los (LVs)]
 				
-			mv /mnt
-			
-			mkdir {var-log,opt,home,usr,srv}
-			
-			mount /dev/mapper/ema-var--log var-log
-			mount /dev/mapper/ema-opt opt
-			mount /dev/mapper/ema-home home
-			mount /dev/mapper/ema-usr usr
-			mount /dev/mapper/ema-srv srv
-			
-			\end{lstlisting}
-			
-			\vspace{0.3cm}
-			
-			Mover todo el contenido de los directorios a su	 (LV) correspondiente.
-			
-			\begin{lstlisting}[language=Bash, caption=Mover directorios]
-			
-			#Mover el contenido de los directorios
-			mv -f var/log/* var-log
-			mv opt/* opt
-			mv -f home/* home
-			mv usr/* usr
-			mv srv/* srv
-			#Eliminar archivos temporales
-			rm -rf var/tmp/*
-			rm -rf tmp/*
-			
-			\end{lstlisting}
+		Una vez que se han creado los sistemas de archivos correspondientes, llega el momento de montar los volúmenes lógicos (LV) y mover el contenido de los directorios a sus respectivos LV.\par 
 		
+		El primer paso es montar cada LV en un punto de montaje adecuado utilizando el comando mount. Por ejemplo:\par 
+		
+				
+	\begin{lstlisting}[language=Bash, caption=Crear directorios y montar los (LVs)]
+		
+		mv /mnt
+		
+		mkdir {var-log,opt,home,usr,ISOS,MV}
+		
+		mount /dev/mapper/ema-var--log var-log
+		mount /dev/mapper/ema-opt opt
+		mount /dev/mapper/ema-home home
+		mount /dev/mapper/ema-usr usr
+		
+	\end{lstlisting}
+	¸
+	
+		Una vez montados los LV, se procede a mover el contenido de los directorios a los LV correspondientes. Esto se puede realizar utilizando comando mv o los comandos de copia, como cp o rsync. Por ejemplo:\par
+		
+	\begin{lstlisting}[language=Bash, caption=Mover directorios]
+		
+		#Mover el contenido de los directorios
+		mv -f var/log/* var-log
+		mv opt/* opt
+		mv -f home/* home
+		mv usr/* usr
+		mv srv/* srv
+		#Eliminar archivos temporales
+		rm -rf var/tmp/*
+		rm -rf tmp/*
+		
+	\end{lstlisting}
+		
+		El comando anterior movera recursivamente todo el contenido del directorio original al LV correspondiente, preservando permisos y propiedades.\par
+		
+		Es importante verificar que todos los archivos y directorios se hayan movido correctamente al LV antes de continuar.\par
+	
+
+		\vspace{0.3cm}
 		
 		\section{fstab}
+						
+			El archivo fstab (File System Table) es un archivo de configuración en sistemas operativos basados en Linux que contiene información sobre los sistemas de archivos y sus opciones de montaje durante el arranque del sistema.\par
 			
-			El archivo /etc/fstab es el archivo de configuraciones que une dispositivos con punto de montaje. Le indica al sistema cómo montar cada dispositivo y qué configuración utilizar.\par
+			En el archivo fstab, se definen las particiones, dispositivos y volúmenes lógicos (LV) que deben montarse automáticamente en puntos específicos del sistema de archivos. Cada línea del archivo fstab corresponde a un sistema de archivos y sigue una estructura específica con campos separados por espacios o tabulaciones.\par
 			
-			Tabla de configuración del archivo fstab: 
+			Los campos en una línea típica del archivo fstab son los siguientes:
 			
-			\begin{lstlisting}[language=Bash, caption=fstab]
-					
-			# <file system> <mount point> <type> <options> <dump> <pass>
+			\begin{enumerate}
+				
+				\item \textbf{Dispositivo:} Especifica el dispositivo de almacenamiento (como una partición o un LV) que se va a montar.
+				Punto de montaje: Indica el directorio en el cual se montará el dispositivo.
 			
-			\end{lstlisting}
+				\item \textbf{Tipo de sistema de archivos:} Especifica el tipo de sistema de archivos del dispositivo, como ext4, ntfs, xfs, entre otros.
 			
-			\begin{itemize}
-				 
-				\item \textbf{file system:} Esta primera columna guarda el dispositivo a montar. 
-				
-				\item \textbf{mount point:}	Esta opción permite definir el directorio que se va a asociar con el (LV) definido en la primera columna. 
-				
-				\item \textbf{Tipo:} Este campo se refiere al tipo de filesystem, por ejemplo, ext4, xfs, entre otros.
-				
-				\item \textbf{Opciones:} Hace referencia a las opciones de montaje. Deben ir separadas por comas. 
-				
-				Algunas de las opciones que se pueden usar son:
-				
-				\begin{itemize}
-				 	
-					\item \textbf{auto:} para que la partición se monte al arrancar.
-					
-					\item \textbf{noauto:} opción que impide que la partición se monte durante el arranque.
-					
-					\item \textbf{user:} los usuarios tienen permitido montar la partición.
-					
-					\item \textbf{nouser:} solo el usuario root tiene permitido realizar el montaje de la partición.
-					
-					\item \textbf{ro:} partición que solo permite la lectura.
-					
-					\item \textbf{rw:} opción que permite la lectura escritura.
-					
-					\item \textbf{exec:} es posible ejecutar los binarios pertenecientes a esa partición.
-					
-					\item \textbf{async:} esta opción permite que el sistema continúe trabajando luego de una petición de escritura del equipo, aunque no haya recibido la confirmación.
-				
-					\item \textbf{suid:} esta opción permite las operaciones con los bits suid y sgid. Es utilizado para permitir a los usuarios diferentes del root, ejecutar binarios con ciertos privilegios otorgados temporalmente para que realicen una labor determinada.
-					
-					\item \textbf{nosui:} se encarga de impedir el funcionamiento de los bits suid y sgid.
-					
-					\item \textbf{noatime:} esta opción no actualiza el nodo-i de los ficheros con el tiempo de acceso. Además, permite aumentar las prestaciones del sistema, debido a que accede menos al disco.
-					
-					\item \textbf{nodiratime:} con esta opción se impide la actualización del nodo-i de los directorios con el tiempo de acceso. Al igual que la opción noatime, también puede aumentar las prestaciones del sistema.
-				
-					\item \textbf{defaults:} establece que las opciones sean asignadas por defecto gracias al sistema operativo. Estas opciones predeterminadas son  rw, suid, dev, exec, auto, nouser y async.
-				
-				\end{itemize}
-	
-				\item \textbf{Soporte a Dump:} Este campo es requerido por algunas soluciones de backup. Además, determina la frecuencia con la que debe realizarse la copia de seguridad.
-				
-				\item \textbf{Chequeo automático:} Es el campo encargado de especificar si el sistema de ficheros debe ser revisado durante el arranque, si el formato es correcto, entre otros. Normalmente ese campo se deshabilita para todas las particiones, a excepción del /.
-				
-			\end{itemize}
+				\item \textbf{Opciones de montaje:} Define las opciones de montaje específicas para el dispositivo, como la configuración de permisos, la gestión de errores, el modo de acceso, entre otros.
+			
+				\item \textbf{Opciones de respaldo:} Establece opciones de respaldo para el dispositivo, como la frecuencia de respaldo y otras opciones relacionadas con la integridad de los datos.
+			
+				\item \textbf{Campo de comprobación:} Este campo se utiliza por herramientas de verificación de sistemas de archivos y generalmente se establece en 0 o 1.
+			
+			\end{enumerate}
 		
-			\subsection{Configurar fstab}
-			
-				Es necesario que defina que los (LVs) se monten automáticamente cuando se está iniciando el sistema operativo. La forma correcta para resolver este problema es modificando el archivo fstab.
-				
-				Finalizada la configuración mi archivo fstab quedara de la siguiente manera:
+			La edición del archivo fstab permite configurar los sistemas de archivos y volúmenes lógicos para que se monten automáticamente durante el inicio del sistema, evitando la necesidad de realizar montajes manuales.
 
 				\vspace{0.3cm}
 									
 				\inputminted{bash}{documentos/fstab/fstab}
+				
+			
+			\section{Hypervisor}
+			
+			Un hypervisor, también conocido como monitor de máquina virtual o VMM (Virtual Machine Monitor), es un software o firmware que permite la virtualización y gestión de máquinas virtuales (VM) en un entorno de computación.\par
+			
+			El hypervisor se ejecuta directamente sobre el hardware físico de un servidor y proporciona una capa de abstracción que permite crear y ejecutar múltiples máquinas virtuales, cada una de las cuales puede ejecutar su propio sistema operativo y aplicaciones de forma aislada. Esto permite que varios sistemas operativos y aplicaciones se ejecuten simultáneamente en un único servidor físico, lo que maximiza la utilización de recursos y proporciona una mayor flexibilidad y eficiencia.\par
 	
-	\section{Controlar cambios en el sistema}
-		
-		Por cuestiones de seguridad tomo como buena practica generar HASH de los archivos que se encuentran en algunos directorios que considero importante, por si en algún momento tengo la duda de que se generaron cambios en el sistema, poder realizar las comparaciones de HASH.
-	
-		\clearpage
-		
-		\subsection{Generar Hash}
-			
-			md5sum es un algoritmo de reducción criptográfico de 128-bits desarrollado por MIT. Se utiliza con frecuencia como herramienta para validar un archivo.
-			
-			\inputminted{bash}{documentos/seguridad/generarHash.sh}
-					
-		
-		\subsection{Comparar Hash}
-			
-			Si por alguna razon necesito validar la integridad de los archivos del sistema, utilizo el siguiente script en bash.
-		
-			\inputminted{bash}{documentos/seguridad/compararHash.sh}
-			
-	\section{Configuración de red}
-	
-		\subsection{Asignar una IP estática}
-			
-			El servidor tendrá una dirección IP estática, la cual se la asignare editando el archivo \textit{"interfaces"}.\par
-			
-			\begin{lstlisting}[language=Bash, caption=Interfaces]		
-				nvim /etc/network/interfaces	
-			\end{lstlisting}
-			
-			A continuación presento el contenido del archivo /etc/network/interfaces con una configuración de IP estática:
-			
-			\begin{lstlisting}[language=Bash, caption=Configuración de IP estática]	
-				# This file describes the network interfaces available on your system
-				# and how to activate them. For more information, see interfaces(5).	
-				source /etc/network/interfaces.d/*
-				# The loopback network interface
-				auto lo
-				iface lo inet loopback	
-				# Interfaz de red enp2s0
-				auto enp2s0
-				allow-hotplug enp2s0
-				iface enp2s0 inet static
-					address   192.168.1.222
-					netmask   255.255.255.0
-					network   192.168.1.0
-					broadcast 192.168.1.255
-					gateway   192.168.1.1
-			\end{lstlisting}
+			Existen dos tipos principales de hypervisors:
 			
 			\begin{itemize}
-				
-				\item \textbf{iface enp2s0 inet static:} define el nombre lógico de la interfaz de red enp2s0,
-				la \textit{address\_family} que es \textbf{inet} y el método de configuración de la interfaz que es \textbf{static}.
-				
-				\item \textbf{address:} define la IP que tendrá el servidor.
 			
-				\item \textbf{netmask:} define la máscara de subred.
+			\item\textbf{Hypervisor de tipo 1 o "bare metal":} Este hypervisor se instala directamente en el hardware del servidor y gestiona directamente los recursos del sistema, sin necesidad de un sistema operativo adicional. Proporciona un rendimiento y una eficiencia óptimos y se utiliza comúnmente en entornos empresariales y de centros de datos.
 			
-				\item \textbf{network:} define la dirección de red.
-			
-				\item \textbf{broadcast:} define la IP de difusión (broadcast).
-			
-				\item \textbf{gateway:} define la IP de la puerta de enlace (gateway).
-			
+			\item\textbf{Hypervisor de tipo 2 o "hosted":} Este hypervisor se ejecuta como una aplicación dentro de un sistema operativo existente. Requiere un sistema operativo base para funcionar y es más comúnmente utilizado en entornos de desarrollo y pruebas, así como en entornos de escritorio virtual.
+
 			\end{itemize}
-						
-			Una vez finalizada la edición del archivo reiniciare el servicio de red para aplicar los cambios. \par
 			
-									
-			\begin{lstlisting}[language=Bash, caption=Reiniciar servicio de RED]			
-				systemctl restart networking.service
-			\end{lstlisting}
+			Los hypervisors permiten la consolidación de servidores físicos, el aislamiento de recursos, la migración en vivo de máquinas virtuales, la creación rápida de entornos de prueba y muchas otras capacidades que facilitan la administración y el despliegue de infraestructuras de TI. Son fundamentales en la virtualización y son ampliamente utilizados en entornos de servidores y centros de datos modernos.\par
 			
+			Es válido recalcar que se puede denominar al hypervisor como un "servidor de virtualización". Sin embargo, es importante tener en cuenta que el término "servidor de virtualización" puede ser interpretado de diferentes maneras según el contexto.\par
+			
+			En un sentido, el hypervisor puede considerarse como el componente principal de un servidor de virtualización, ya que su función principal es administrar las máquinas virtuales y los recursos del sistema. De esta forma, se puede afirmar que el hypervisor desempeña el rol de un servidor de virtualización.\par
+			
+			Por otro lado, el término "servidor de virtualización" también puede referirse al hardware físico en el cual se ejecutan las máquinas virtuales. En este caso, el servidor de virtualización sería el equipo físico que aloja y ejecuta las máquinas virtuales, y el hypervisor sería el software que posibilita la virtualización en dicho servidor.\par
+			
+			En resumen, aunque el hypervisor es el software encargado de administrar la virtualización de las máquinas virtuales, el término "servidor de virtualización" puede hacer referencia tanto al hypervisor como al hardware físico en el cual se lleva a cabo la ejecución de las máquinas virtuales.\par
+			
+			
+			\subsection{KVM}
 		
-		\subsection{Servidor DNS}
-			
+				KVM (Kernel-based Virtual Machine) es un hypervisor de código abierto de tipo 1, también conocido como "bare metal". Esto 	significa que se instala directamente en el hardware físico de un servidor y actúa como una capa de virtualización entre el hardware y los sistemas operativos invitados.\par
 		
-			Es necesario que tambien configure los servidores DNS. Para configurarlos editare el archivo /etc/resolv.conf:\par
+				Como hypervisor de tipo 1, KVM no requiere un sistema operativo adicional para funcionar.\par
+		
+				Permite convertir el kernel de Linux en un hypervisor, permitiendo la virtualización de servidores y la ejecución de múltiples sistemas operativos invitados en un solo host.\par
+		
+				KVM utiliza las extensiones de virtualización de hardware presentes en los procesadores modernos (como Intel VT-x o AMD-V) para mejorar el rendimiento y la eficiencia de la virtualización. Proporciona una capa de abstracción entre el hardware físico y los sistemas operativos invitados, lo que permite que cada uno de ellos se ejecute de manera aislada y con sus propios recursos asignados.\par
+		
+				Al ser parte del kernel de Linux, KVM ofrece una integración estrecha con el ecosistema Linux y aprovecha las características y funcionalidades del kernel. Permite la virtualización de sistemas operativos Linux y también es compatible con la virtualización de sistemas operativos Windows y otros sistemas operativos invitados.\par
+		
+				KVM es ampliamente utilizado en entornos empresariales y en la nube para la consolidación de servidores, la creación de entornos de desarrollo y pruebas, la implementación de infraestructuras virtuales y otros casos de uso de virtualización. Además, cuenta con una gran comunidad de desarrollo y soporte, lo que garantiza su continua mejora y actualización.\par
+				
+		
+			\subsection{QEMU/KVM}
+		
+				QEMU (Quick Emulator) es un software de emulación y virtualización de código abierto que se utiliza junto con KVM (Kernel-based Virtual Machine) para proporcionar capacidades de virtualización completas en sistemas Linux.\par
+		
+				QEMU es un emulador de sistema completo que permite ejecutar sistemas operativos y aplicaciones de diferentes arquitecturas en un entorno virtualizado. Proporciona emulación de hardware a nivel de instrucción, lo que le permite simular diferentes arquitecturas de CPU y ejecutar sistemas operativos diseñados para esas arquitecturas en un sistema anfitrión diferente.\par
+		
+				En combinación con KVM, QEMU permite la virtualización de sistemas completos y proporciona una capa de abstracción entre el hardware físico y los sistemas operativos invitados. KVM se encarga de la virtualización de hardware y proporciona un rendimiento óptimo, mientras que QEMU emula los dispositivos y brinda soporte para sistemas operativos invitados que no son nativos de la arquitectura del host.\par
+		
+				QEMU también puede utilizarse de forma independiente para emular hardware y ejecutar sistemas operativos en un entorno puramente emulado, sin utilizar la virtualización de hardware de KVM. Esto puede ser útil para el desarrollo y la depuración de software, así como para ejecutar sistemas operativos antiguos o exóticos en un entorno moderno.\par
+		
+				En resumen, QEMU es un software de emulación y virtualización que, en combinación con KVM, proporciona una solución completa para la virtualización de sistemas operativos en entornos Linux. Es utilizado tanto en entornos de desarrollo como en la construcción de infraestructuras de nube y ofrece flexibilidad y compatibilidad con diferentes arquitecturas y sistemas operativos invitados.\par
+				
+				
+			\subsection{libvirt} 
+		
+				Libvirt es una biblioteca y conjunto de herramientas de administración de virtualización de código abierto que brinda una capa de abstracción y una interfaz unificada para administrar diferentes tecnologías de virtualización, incluyendo QEMU/KVM.\par
+		
+				En el contexto de QEMU/KVM, libvirt se utiliza como una interfaz de administración para gestionar las máquinas virtuales y los recursos del sistema. Proporciona una API y una interfaz de línea de comandos (CLI) que permiten realizar tareas como la creación, configuración, inicio, parada, migración y supervisión de las máquinas virtuales.\par
+		
+				Libvirt se encarga de interactuar con el hypervisor KVM y el emulador QEMU para gestionar las operaciones de virtualización. Permite la gestión centralizada de múltiples hosts y proporciona una capa de abstracción que permite la interoperabilidad entre diferentes tecnologías de virtualización.\par
+		
+				Además de la administración de máquinas virtuales, libvirt ofrece características como el control de almacenamiento, la configuración de redes virtuales, la gestión de dispositivos y la monitorización de recursos. También permite la integración con otras herramientas de administración de virtualización y orquestación, como virt-manager, oVirt, OpenStack y Kubernetes.\par
+		
+				En resumen, libvirt es una biblioteca y conjunto de herramientas de administración de virtualización que se utiliza en combinación con QEMU/KVM para proporcionar una interfaz unificada y una gestión centralizada de las máquinas virtuales y los recursos del sistema. Facilita la administración y el despliegue de entornos de virtualización basados en QEMU/KVM.\par
+				
+				
+			\subsection{Instalación}\label{instalación de las herramientas}
+		
+				En esta etapa, se instalaran las herramientas necesarias para configurar el servidor de virtualización. Algunas de las herramientas importantes que se deben instalar incluyen:
 	
+				\begin{lstlisting}[language=Bash, caption=instalación de las herramientas]
+			
+				apt install qemu qemu-kvm qemu-system qemu-utils libvirt-clients libvirt-daemon-system virtinst virt-manager bridge-utils		
+				
+				\end{lstlisting}		
+			
+				\begin{itemize}
+			
+					\item\textbf{qemu:} Es un emulador de procesador utilizado en la virtualización de sistemas completos.
+	
+					\item\textbf{qemu-kvm:} Permite utilizar la virtualización basada en hardware KVM junto con QEMU.
+	
+					\item\textbf{qemu-system:} Proporciona la funcionalidad principal del sistema QEMU.
+	
+					\item\textbf{qemu-utils:} Incluye utilidades adicionales para QEMU.
+	
+					\item\textbf{libvirt-clients:} Contiene herramientas de línea de comandos para administrar libvirt y los servidores de virtualización.
+	
+					\item\textbf{libvirt-daemon-system:} Es el demonio principal de libvirt que permite la gestión y administración de los servidores de virtualización.
+	
+					\item\textbf{virtinst:} Proporciona herramientas para crear y administrar máquinas virtuales.
+	
+					\item\textbf{virt-manager:} Es una interfaz gráfica de usuario para administrar máquinas virtuales y servidores de virtualización.
+	
+					\item\textbf{bridge-utils:} Incluye herramientas para configurar y administrar puentes de red en el sistema.
+				
+			\end{itemize}		
+		
+		
+	\section{Conﬁguración de Red}
+	
+		Una vez completada la instalación, el servidor de virtualización estará listo para su funcionamiento. Sin embargo, es importante realizar la configuración de red adicional para garantizar la conectividad de las máquinas virtuales con la red local.\par
+	
+		En primer lugar, se debe crear una interfaz llamada br0, que actuará como un puente entre la interfaz física del servidor y las máquinas virtuales. Esta configuración permitirá que las máquinas virtuales obtengan direcciones IP del mismo rango que las computadoras de la red local, en lugar de obtener IPs de una red virtual.\par
+	
+		La creación de la interfaz br0 se puede realizar utilizando herramientas como ''bridge-utils''. A través de la configuración de este puente, se establecerá una conexión entre la interfaz física del servidor y las máquinas virtuales, lo que permitirá la comunicación fluida entre ellas y los dispositivos de la red local.\par
+	
+		\begin{lstlisting}[language=Bash, caption=Interfaces]
+		vi /etc/network/interfaces
+		\end{lstlisting}
+		
+			
+		La configuración proporcionada indica la configuración de la interfaz de red principal en el archivo \textit{/etc/network/interfaces}.
+		
+		\begin{lstlisting}[language=Bash, caption=Configuración de red]
+			
+			The primary network interface
+			allow-hotplug eth1
+			iface eth1 inet static
+			auto br0
+			iface br0 inet static
+			address 192.168.1.222
+			netmask 255.255.255.0
+			gateway 192.168.1.1
+			bridge_ports eth1
+			up /usr/sbin/brctl std br0 on
+			
+		\end{lstlisting}			
+
+		
+		
+		Estas líneas definen la configuración para la interfaz física de red eth1. La directiva '' allow-hotplug'' permite que la interfaz se active automáticamente cuando se conecta en caliente. La opción ''inet static'' especifica que se utilizará una configuración de IP estática para la interfaz.\par
+				
+		\begin{lstlisting}[language=Bash, caption=interfaz]	
+		allow-hotplug eth1
+		iface eth1 inet static
+	    \end{lstlisting}
+
+		Estas líneas definen la configuración para la interfaz de puente virtual br0, que se utiliza para conectar las máquinas virtuales a la red física. La directiva ''auto'' asegura que la interfaz de puente se active automáticamente durante el inicio del sistema.\par
+
+		Las líneas ''address'', ''netmask'' y ''gateway'' especifican la dirección IP, la máscara de red y la puerta de enlace para la interfaz de puente br0. Estos valores deben ajustarse según la configuración específica de la red.\par
+		
+		La línea ''bridge\_ports'' especifica la interfaz física (eth1) que se conectará al puente.\par
+		
+		La directiva ''up'' ejecuta el comando especificado (/usr/sbin/brctl std br0 on) cuando se activa la interfaz. Este comando habilita la interfaz de puente.\par
+		
+		Después de realizar estos cambios en el archivo \textit{/etc/network/interfaces}, se debe guardar y reiniciar el servicio de red para que la configuración tenga efecto.\par
+		
+		\begin{lstlisting}[language=Bash, caption=interfaz]
+		
+		auto br0
+		iface br0 inet static
+		address 192.168.1.222
+		netmask 255.255.255.0
+		gateway 192.168.1.1
+		bridge_ports eth1
+		up /usr/sbin/brctl std br0 on
+		
+		\end{lstlisting}
+
+		\subsection{iproute}
+		
+		Iproute2 es una suite de herramientas de red utilizada en sistemas Linux para administrar y configurar aspectos relacionados con el enrutamiento de paquetes IP y otras funcionalidades de red. Esta suite reemplazó a la antigua utilidad net-tools y ofrece un conjunto más avanzado y flexible de herramientas para el control y monitoreo de la red.\par
+		
+		Algunas de las herramientas clave incluidas en Iproute2 son:
+		
+		\begin{itemize}
+			
+			\item\textbf{ip:} Esta herramienta es la más importante de la suite y se utiliza para administrar y configurar interfaces de red, direcciones IP, enrutamiento, túneles y otras funcionalidades de red. Proporciona una amplia gama de opciones para el control y monitoreo de la configuración de red.
+		
+			\item\textbf{tc:} Esta herramienta se utiliza para configurar y administrar la calidad de servicio (QoS) en el sistema. Permite controlar el ancho de banda, la prioridad y otras características de tráfico de red.
+		
+			\item\textbf{ss:} Esta herramienta se utiliza para mostrar estadísticas detalladas de sockets y conexiones de red en el sistema. Proporciona información sobre el estado de los sockets, las conexiones establecidas y los puertos utilizados.
+		
+			\item\textbf{bridge:} Esta herramienta se utiliza para configurar y administrar puentes de red (bridge) en el sistema. Permite crear puentes virtuales para interconectar diferentes interfaces de red y facilitar el tráfico entre ellas.
+		
+			\item\textbf{rtacct:} Esta herramienta se utiliza para recopilar estadísticas de enrutamiento en el sistema. Permite monitorear el tráfico de red, los caminos de enrutamiento y otras métricas relacionadas.
+		
+			\item\textbf{Iproute2} proporciona una mayor flexibilidad y control sobre la configuración de red en comparación con las herramientas más antiguas como ifconfig y route. Es ampliamente utilizado en entornos de red avanzados y sistemas Linux modernos para la gestión y el control precisos de la configuración de red.
+		
+			\end{itemize}
+		
+		
+		Haciendo uso de IP, se creará un script que se ejecutará al inicio del sistema mediante crontab para configurar las tres interfaces 	asociadas a la interfaz virtual br0. Estas interfaces funcionarán como un puente entre la interfaz física y otras redes.\par
+	
+		A continuación se presenta el contenido del script:
+	
+	
+		\begin{lstlisting}[language=Bash, caption=script de configuración de red]
+	
+			#! /bin/bash
+			echo "Configuración de las interfaces."
+			ip link add link br0 name dmz type vlan id 100
+			ip addr add 192.168.100.1/24 brd 192.168.100.255 dev dmz
+			ip link set dmz up
+			ip link add link br0 name lan1 type vlan id 101
+			ip addr add 192.168.101.1/24 brd 192.168.101.1 dev lan1
+			ip link set lan1 up
+			ip link add link br0 name lan2 type vlan id 102
+			ip addr add 192.168.102.1/24 brd 192.168.102.255 dev lan2
+			ip link set lan2 up
+			echo "Se han creado las interfaces de red correctamente."
+	
+		\end{lstlisting}
+	
+		El siguiente código configura las interfaces de red en Linux:
+		
+		\begin{itemize}
+			\item Se muestra el mensaje 'Configuración de las interfaces'.
+		    \item Se añade una interfaz virtual llamada ''dmz'' a la interfaz ''br0'' con el identificador de VLAN 100.
+			\item Se asigna la dirección IP 192.168.100.1/24 a la interfaz ''dmz'' y se establece la dirección de broadcast.
+			\item Se activa la interfaz ''dmz''.
+			\item Se añade una interfaz virtual llamada ''lan1'' a la interfaz ''br0'' con el identificador de VLAN 101.
+			\item Se asigna la dirección IP 192.168.101.1/24 a la interfaz ''lan1'' y se establece la dirección de broadcast.
+			\item Se activa la interfaz ''lan1''.
+			\item Se añade una interfaz virtual llamada ''lan2'' a la interfaz ''br0'' con el identificador de VLAN 102.
+			\item Se asigna la dirección IP 192.168.102.1/24 a la interfaz ''lan2'' y se establece la dirección de broadcast.
+			\item Se activa la interfaz ''lan2''.
+			\item Se muestra el mensaje 'Se han creado las interfaces de red correctamente.'
+		\end{itemize}
+	
+		Para programar la ejecución del script al inicio del sistema mediante crontab, se deben seguir los siguientes pasos:
+	
+		\begin{itemize}
+		
+			\item Abrir una terminal y ejecutar el siguiente comando para editar la lista de tareas cron:
+	
+			\begin{lstlisting}[language=Bash, caption=crontab]
+	
+				crontab -e
+	
+			\end{lstlisting}
+	
+			\item En el archivo crontab, agregar la siguiente línea al final para programar la ejecución del script al inicio del sistema:
+	
+			\begin{lstlisting}[language=Bash, caption=ruta del archivo]
+	
+				@reboot /ruta/al/script.sh
+		
+			\end{lstlisting}
+	
+			\item Guardar y cerrar el archivo crontab.
+	
+		\end{itemize}
+	
+		Con esta configuración, el script se ejecutará automáticamente al inicio del sistema utilizando crontab. Las tres interfaces serán creadas y configuradas según las especificaciones dentro del script, y estarán asociadas a la interfaz virtual br0, lo que permitirá el puenteo entre la interfaz física y otras redes.
+					
+		\subsection{Servidor DNS}
+		
+		
+			Es importante mencionar que, también es necesario configurar los servidores DNS. Para realizar esta configuración, se debe editar el archivo \textit{/etc/resolv.conf}.\par
+
+			Dentro de este archivo, se especifican los servidores DNS que el sistema utilizará para resolver las consultas de nombres de dominio. Para este caso en particular, se utilizará la dirección IP 1.1.1.1 como servidor DNS.
+
+			Al editar el archivo \textit{/etc/resolv.conf}, se debe agregar la siguiente línea:
+		
 		
 			\begin{lstlisting}[language=Bash, caption=Editar archivo resolv]		
-				nvim /etc/resolv.conf
-			\end{lstlisting}
-		
-			
-			A continuación presento el contenido del archivo /etc/resolv.conf con dos servidores DNS:
-
-		
-			\begin{lstlisting}[language=Bash, caption=Servidores DNS]	
-			# Dynamic resolv.conf(5) file for glibc resolver(3) generated by resolvconf(8)
-			#     DO NOT EDIT THIS FILE BY HAND -- YOUR CHANGES WILL BE OVERWRITTEN	
-			nameserver 1.1.1.1    
-			nameserver 8.8.8.8
+				nameserver 1.1.1.1
 			\end{lstlisting}
 		
 
-			\begin{itemize}
-				
-				\item \textbf{1.1.1.1:} Es un DNS público operado por Cloudflare que ofrece una forma rápida y privada de navegar por Internet. A diferencia de la mayoría de los servidores de DNS, 1.1.1.1 no vende los datos de los usuarios a los anunciantes.
-
-				\item \textbf{8.8.8.8:} Como una forma de hacer más rápida la web Google tiene, Google Public DNS. Que es una forma de navegar fuera de los límites del proveedor de servicios de internet.
-
-			\end{itemize}
-
-				
-	\section{Firewall}
 		
-		\subsection{¿Que es iptables?}
+		\begin{itemize}
+			
+			\item \textbf{La dirección IP ''1.1.1.1''} corresponde a un servidor DNS público operado por Cloudflare. Este servidor ofrece una solución rápida y privada para la navegación por Internet. A diferencia de la mayoría de los servidores de DNS, 1.1.1.1 se distingue por su política de no vender los datos de los usuarios a los anunciantes. Esto implica que se compromete a mantener la privacidad de la información relacionada con las consultas DNS realizadas a través de su servicio.
+		\end{itemize}
+	
+		\subsection{NFS}
 		
-			Iptables es una herramienta de filtrado de paquetes en Linux. Se encarga de analizar cada uno de los paquetes del tráfico de red que entra en una máquina y decidir, en función de un conjunto de reglas, qué hacer con ese paquete.
-			
-			Gracias a la capacidad de analizar el tráfico y ver las características del paquete, se puede implementar un cortafuegos que controle qué paquetes puede llegar al equipo.
-			
-			\subsubsection{Características de iptables:}
-			
-				\begin{itemize}
-					\item Es el sucesor de ipfwadm e ipchains, un software previo que existía en sistemas Linux.
+		NFS (Network File System) es un protocolo de red ampliamente utilizado que posibilita a los sistemas operativos Unix y Linux compartir archivos y directorios entre computadoras conectadas en una red. Este protocolo facilita la colaboración y el acceso compartido a datos de forma transparente, como si los archivos estuvieran almacenados localmente en cada sistema.
+		
+		En la configuración implementada, se utilizará NFS para compartir directorios entre dos máquinas virtuales. La primera máquina virtual albergará el servidor multimedia Emby, que ofrecerá la capacidad de administrar y transmitir contenido multimedia a través de la red. Mediante NFS, se compartirá un directorio que contendrá el contenido multimedia centralizado, lo que permitirá a Emby acceder a los archivos de manera eficiente y proporcionar una experiencia de visualización fluida a los usuarios.
+		
+		La segunda máquina virtual albergará el servidor Nextcloud, una plataforma de colaboración y almacenamiento en la nube. Nuevamente, se utilizará NFS para compartir otro directorio donde se almacenarán los datos de los usuarios que utilizarán el servidor Nextcloud. Esta configuración permitirá un acceso rápido y seguro a los datos de los usuarios, mejorando la eficiencia y el rendimiento del servidor Nextcloud.
 				
-					\item Se encuentra disponible desde la rama 2.4 del kernel de Linux, que se lanzó el año 2001.
+		La instalación y configuración de NFS para compartir los directorios con contenido multimedia para el servidor Emby y el almacenamiento de datos de los usuarios que utilizarán el servidor Nextcloud es una forma eficiente de centralizar y acceder a los archivos en una red. A continuación, se presentan los pasos generales para lograr esto:
+		
+		
+		\begin{itemize}
+			\item \textbf{Paso 1:} Instalar el paquete nfs-kernel-server
+			\begin{lstlisting}[language=Bash, caption=nfs]
+		vi install nfs-kernel-server
+			\end{lstlisting}
+		
+			\item\textbf{Paso 2:} Configurar el servidor NFS
+			\begin{lstlisting}[language=Bash, caption=export]
+			vi /etc/exports
+			#Agrega las líneas siguientes al archivo para compartir los dos directorios:
+			/ruta/multimedia 192.168.100.2(rw,sync,no_subtree_check)
+			/ruta/datos 192.168.100.3(rw,sync,no_subtree_check)
+			\end{lstlisting}
 				
-					\item Está desarrollado por el proyecto netfilter. Este mismo proyecto ha desarrollado también el sucesor de iptables, que se denomina nftables, aunque en la actualidad todavía está mucho más extendido el uso de iptables que el de nftables.
-					
-				\end{itemize}		
+			\item\textbf{Paso 3:} Reiniciar el servidor NFS\par
+			Una vez que se hayan configurado los directorios que se deseas compartir, se debe reinicia el servicio NFS para aplicar los cambios.
+			\begin{lstlisting}[language=Bash, caption=export]
+			systemctl restart nfs-kernel-server
+			\end{lstlisting}
+				
+			Ahora, los dos directorios estarán compartidos mediante NFS y podrán ser montados en el servidor Emby y el servidor Nextcloud para acceder a los archivos de contenido multimedia y almacenar los datos de los usuarios, respectivamente. 
+		\end{itemize}
+		
+		\subsection{IP forwarding}
+		
+		IP forwarding, o reenvío de IP, es una funcionalidad en los sistemas operativos que permite al sistema enrutar y reenviar paquetes IP entre diferentes interfaces de red. En otras palabras, cuando un paquete IP llega a una interfaz de red en un sistema con IP forwarding habilitado, el sistema puede determinar la mejor ruta para enviar el paquete a través de otra interfaz de red hacia su destino final.\par
+		
+		El IP forwarding es una característica clave en el enrutamiento de redes, ya que permite que los paquetes IP atraviesen múltiples saltos o routers para llegar a su destino final. En un sistema con IP forwarding habilitado, actúa como un enrutador al tomar decisiones sobre la ruta óptima para reenviar los paquetes IP según las tablas de enrutamiento configuradas.\par
+		
+		Cuando se habilita el IP forwarding, el sistema opera en el nivel de red (capa 3) del modelo OSI, permitiendo la conectividad entre diferentes redes y subredes.\cite{Hobbyists}
+		
+		\subsubsection{Habilitar IP forwarding}
+		
+		Para habilitar el IP forwarding (reenvío de IP) en un sistema Linux, se puede realizar a través de la modificación del archivo de configuración \textit{/etc/sysctl.conf}.
+		
+		\begin{lstlisting}[language=Bash, caption=IP forwarding]
+			vi /etc/sysctl.conf
+		\end{lstlisting}
+		
+		\begin{itemize}
 			
-			\subsection{Reglas iptables}
+			\item descomentar net.ipv4.ip\_forward y colocar el valor en 1 (por defecto, puede estar comentada).
 			
-				El siguiente script en bash me permitirá configurar el el firewall de linux.
+		\end{itemize}
+		
+		Para aplicar los cambios realizados en el archivo \textit{/etc/sysctl.conf}, se debe ejecutar el siguiente comando que cargara la configuración:
+		
+		\begin{lstlisting}[language=Bash, caption=Cargar Configuración]
 			
-				\inputminted{bash}{documentos/firewall/firewall.sh}
+			sudo sysctl -p
+			
+		\end{lstlisting}
+		
+		
+				
+		\section{iptables}
+		
+		IPTABLES es una herramienta de administración de firewall en sistemas operativos Linux. Permite configurar reglas y políticas de filtrado de paquetes IP para controlar el tráfico de red entrante y saliente.\par
+		
+		Mediante IPTABLES, se pueden establecer reglas para permitir o denegar el paso de paquetes según diversos criterios, como dirección IP de origen o destino, puerto de origen o destino, protocolo, estado de la conexión, entre otros. También es posible realizar traducción de direcciones de red (NAT) y redirección de puertos (port forwarding).\par
+		
+		La sintaxis para configurar reglas en IPTABLES puede variar según la versión del sistema operativo y las preferencias del administrador del sistema. Sin embargo, el proceso general implica especificar las condiciones de la regla (como dirección IP, puerto y protocolo) y la acción que se debe tomar (permitir, denegar, redirigir, etc.).\par
+	
+		\subsection{Configurar reglas}
+		
+		Una vez finalizadas las configuraciones de red, se procederá a definir una serie de reglas en IPTABLES con el objetivo de permitir el acceso a los servicios desde Internet, proteger las distintas redes y proporcionar salida a Internet para los hosts de cada red.\par
+		
+		Para lograr esto, se configurarán las reglas en IPTABLES teniendo en cuenta los siguientes aspectos:
+		
+		\begin{itemize}
+			
+			\item\textbf{Acceso a servicios desde Internet:} Se establecerán reglas que permitan el acceso a los servicios específicos que se deseen exponer al tráfico proveniente de Internet. Estas reglas estarán basadas en los puertos y protocolos utilizados por los servicios.
+		
+			\item\textbf{Protección de redes:} Se crearán reglas en IPTABLES para proteger las distintas redes, bloqueando o limitando el acceso no autorizado desde Internet. Esto se logrará mediante reglas de filtrado de paquetes que permitan únicamente el tráfico necesario y bloqueen cualquier intento de acceso no autorizado.
+		
+			\item\textbf{Salida a Internet:} Se configurarán reglas que permitan a los hosts de cada red acceder a Internet, asegurando que el tráfico saliente esté correctamente encaminado y que se apliquen políticas de seguridad según sea necesario.
+	
+	\end{itemize}
+			
+			
+		A continuación se presenta el contenido del script que se ejecutará en cada inicio del sistema, el cual contiene la definición de las reglas de IPTABLES:\par
+		
+		\begin{lstlisting}[language=Bash, caption=iptables]
+			
+		! /bin/bash
+		######################################################################################################
+		#SERVIDOR DE VIRTUALIZACION
+		#br0 => red local => 192.198.1.222
+		#dmz => vlan => dentro del servidor => 192.168.100.0/24
+		#lan1 => vlan => dentro del servidor => 192.168.101.0/24
+		#lan2 => vlan => dentro del servidor => 192.168.102.0/24
+		echo "Comienzo de las Reglas"
+		
+	    ########################################################################################
+		#VARIABLES
+		MAC_PC1="00:00:00:00:00:00"	
+		MAC_NET="00:00:00:00:00:00"	
+		MAC_CEL="00:00:00:00:00:00"	
+		########################################################################################
+		#LIMPIAR REGLAS
+		/usr/sbin/iptables -F
+		/usr/sbin/iptables -X
+		/usr/sbin/iptables -Z
+		/usr/sbin/iptables -t nat -F
+		
+		########################################################################################
+		#POLITICAS POR DEFECTO
+		/usr/sbin/iptables -P INPUT DROP
+		/usr/sbin/iptables -P FORWARD DROP
+		/usr/sbin/iptables -P OUTPUT DROP
+		
+		########################################################################################
+		#LO QUE LLEGUE DE INTERNET
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2220 -j DNAT --to 192.168.100.2:2222
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8096 -j DNAT --to 192.168.100.2:8096
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2221 -j DNAT --to 192.168.100.3:2222
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8080 -j DNAT --to 192.168.100.3:80
+		
+		########################################################################################
+		#RESPUESTA A LAS COMUNICACIONES YA ESTABLECIDAS
+		/usr/sbin/iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+		/usr/sbin/iptables -A OUTPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
+		
+		########################################################################################
+		#PERMITEN LOS PING
+		/usr/sbin/iptables -A INPUT -i dmz -p icmp --icmp-type echo-request -j ACCEPT #PING
+		/usr/sbin/iptables -A INPUT -i lan1 -p icmp --icmp-type echo-request -j ACCEPT #PING
+		/usr/sbin/iptables -A INPUT -i lan2 -p icmp --icmp-type echo-request -j ACCEPT #PING
+		/usr/sbin/iptables -A OUTPUT -o dmz -p icmp --icmp-type echo-request -j ACCEPT #PING
+		/usr/sbin/iptables -A OUTPUT -o lan1 -p icmp --icmp-type echo-request -j ACCEPT #PING
+		/usr/sbin/iptables -A OUTPUT -o lan2 -p icmp --icmp-type echo-request -j ACCEPT #PING
+		#/usr/sbin/iptables -A FORWARD -i dmz -o br0 -p icmp --icmp-type echo-request -j ACCEPT
+		#/usr/sbin/iptables -A FORWARD -i lan1 -o br0 -p icmp --icmp-type echo-request -j ACCEPT
+		#/usr/sbin/iptables -A FORWARD -i lan2 -o br0 -p icmp --icmp-type echo-request -j ACCEPT
+		
+		########################################################################################
+		#ADMINISTRAR FIREWALL DESDE MI RED LAN (NETBOOK,CELULAR,PC DESKTOP)
+		
+		/usr/sbin/iptables -A INPUT -i br0 -m mac --mac-source $MAC_CEL -p tcp --dport 2222 -j ACCEPT #CELULAR
+		/usr/sbin/iptables -A INPUT -i br0 -m mac --mac-source $MAC_PC1 -p tcp --dport 2222 -j ACCEPT #MI PC
+		/usr/sbin/iptables -A INPUT -i br0 -m mac --mac-source $MAC_PC1 -p tcp --dport 5900:5920 -j ACCEPT #SPICE
+		/usr/sbin/iptables -A INPUT -i br0 -m mac --mac-source $MAC_NET -p tcp --dport 2222 -j ACCEPT #NET
+		/usr/sbin/iptables -A INPUT -i br0 -m mac --mac-source $MAC_NET -p tcp --dport 5900:5920 -j ACCEPT #SPICE
+		
+		########################################################################################
+		#NFS => COMPARTIR DISCO CON CONTENIDO MULTIMEDIA
+		/usr/sbin/iptables -A INPUT -s 192.168.100.2 -p tcp --dport 2049 -j ACCEPT #NFS
+		/usr/sbin/iptables -A INPUT -s 192.168.100.2 -p udp --dport 2049 -j ACCEPT #NFS
+		/usr/sbin/iptables -A INPUT -s 192.168.100.3 -p tcp --dport 2049 -j ACCEPT #NFS
+		/usr/sbin/iptables -A INPUT -s 192.168.100.3 -p udp --dport 2049 -j ACCEPT #NFS
+		
+		########################################################################################
+		#CONEXION SSH DESDE EL FIREWALL A LAS DEMAS REDES
+		/usr/sbin/iptables -A OUTPUT -o dmz -p tcp --dport 2222 -j ACCEPT #SSH
+		/usr/sbin/iptables -A OUTPUT -o lan1 -p tcp --dport 2222 -j ACCEPT #SSH
+		/usr/sbin/iptables -A OUTPUT -o lan2 -p tcp --dport 2222 -j ACCEPT #SSH
+		/usr/sbin/iptables -A OUTPUT -o br0 -p tcp --dport 2222 -j ACCEPT #SSH
+		
+		########################################################################################
+		#PUERTOS QUE USA EL FIREWALL
+		/usr/sbin/iptables -A OUTPUT -o br0 -p tcp --dport 2222 -j ACCEPT #SSH
+		/usr/sbin/iptables -A OUTPUT -o br0 -p tcp --dport 80 -j ACCEPT #HTTP
+		/usr/sbin/iptables -A OUTPUT -o br0 -p tcp --dport 443 -j ACCEPT #HTTPS
+		/usr/sbin/iptables -A OUTPUT -o br0 -p tcp --dport 53 -j ACCEPT #DNS TCP
+		/usr/sbin/iptables -A OUTPUT -o br0 -p udp --dport 53 -j ACCEPT #DNS UDP
+		
+		########################################################################################
+		#PUERTOS POR LOS QUE SE PODRA SALIR DE LA RED
+		
+		#dmz
+		/usr/sbin/iptables -A FORWARD -i dmz -o br0 -p tcp --dport 80 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i dmz -o br0 -p tcp --dport 443 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i dmz -o br0 -p tcp --dport 53 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i dmz -o br0 -p udp --dport 53 -j ACCEPT
+		
+		#lan1
+		/usr/sbin/iptables -A FORWARD -i lan1 -o br0 -p tcp --dport 80 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan1 -o br0 -p tcp --dport 443 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan1 -o br0 -p tcp --dport 53 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan1 -o br0 -p udp --dport 53 -j ACCEPT
+		
+		#lan2
+		/usr/sbin/iptables -A FORWARD -i lan2 -o br0 -p tcp --dport 80 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan2 -o br0 -p tcp --dport 443 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan2 -o br0 -p tcp --dport 53 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i lan2 -o br0 -p udp --dport 53 -j ACCEPT
+		
+		#######################################################################################
+		#LAS REDIRECCIONES QUE REALIZARA EL FIREWALL A LOS SERVIDORES
+		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 8096 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 80 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 2222 -j ACCEPT
+		
+		#######################################################################################
+		#EL TRAFICO QUE SE ORIGINE EN LAS SIGUIENTES REDES SE ENMASCARA
+		/usr/sbin/iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -j MASQUERADE
+		/usr/sbin/iptables -t nat -A POSTROUTING -s 192.168.101.0/24 -j MASQUERADE
+		/usr/sbin/iptables -t nat -A POSTROUTING -s 192.168.102.0/24 -j MASQUERADE
+	
+		\end{lstlisting}
+		
+		
+		Este script en bash contiene las reglas de iptables y se guardará en el mismo directorio donde se encuentra el script de configuraciones de red. De manera similar al script anterior, este script se ejecutará en cada inicio del sistema utilizando crontab.\par
+		
+	
+		
+		\section{Seguridad}
+		
+		En la configuración del servidor de virtualización, se procederá a instalar Fail2ban, una herramienta de seguridad que brinda protección contra ataques de fuerza bruta y otros intentos de intrusión. Además, se configurará un bot de Telegram para recibir notificaciones sobre las direcciones IP que son bloqueadas por Fail2ban.
+		
+		Como medida adicional de seguridad, se implementará la generación de hashes para los archivos que se encuentran en directorios específicos considerados importantes. Esto permitirá realizar comparaciones de hashes en caso de sospechar cambios en el sistema, lo que facilitará la detección de modificaciones no autorizadas.
+		
+		Al instalar Fail2ban y configurar el bot de Telegram, se fortalecerá la seguridad del servidor, ya que se estarán bloqueando las IP maliciosas y recibiendo notificaciones en tiempo real. Asimismo, mediante la generación de hashes de los archivos, se podrá realizar un seguimiento de su integridad y detectar cualquier alteración no autorizada.
+		
+		Estas prácticas de seguridad contribuirán a mantener el servidor de virtualización protegido contra posibles amenazas y a garantizar la integridad del sistema en todo momento.
+		
+	
+		
+		\subsection{Fail2ban}
+		
+			Fail2Ban es una herramienta de seguridad utilizada para proteger servidores contra ataques de fuerza bruta y otros intentos de intrusión. Su objetivo principal es monitorear los registros del sistema en busca de actividades sospechosas y tomar medidas para mitigar dichos ataques.\par
+
+			Cuando Fail2Ban detecta comportamientos maliciosos, como múltiples intentos fallidos de inicio de sesión desde una misma dirección IP, toma medidas para bloquear temporalmente dicha IP y evitar que el atacante continúe sus intentos de acceso. Además del bloqueo de direcciones IP, Fail2Ban también puede enviar notificaciones al administrador del sistema sobre eventos sospechosos y realizar ajustes en la configuración de seguridad para fortalecer la protección del servidor.\par
+
+			Fail2Ban es altamente personalizable y configurable, lo que permite adaptarlo a las necesidades específicas del servidor y a los patrones de ataque más comunes. Es ampliamente utilizado en entornos de servidores para mejorar la seguridad y proteger los recursos de la red contra posibles amenazas.\par
+
+			\subsubsection{Instalación}
+			
+				Para realizar la instalación de Fail2Ban, se ejecuta el comando:\par
+				\begin{lstlisting}[language=Bash, caption=Install]
+				apt install fail2ban -y
+				\end{lstlisting}
+				Una vez instalado, se inicia el servicio de Fail2Ban mediante el comando 
+				\begin{lstlisting}[language=Bash, caption=iniciar servicio]
+				systemctl start fail2ban
+				\end{lstlisting}
+				Se verifica el estado actual del servicio de Fail2Ban ejecutando 
+				\begin{lstlisting}[language=Bash, caption=Ver estado del servicio]
+				systemctl status fail2ban
+				\end{lstlisting}
+				Para comprobar la versión instalada de Fail2Ban, se utiliza el comando 
+				\begin{lstlisting}[language=Bash, caption=Comprobar version]
+				fail2ban-client version
+				\end{lstlisting}
+				A fin de garantizar que Fail2Ban se ejecute automáticamente después de los reinicios del sistema, se habilita el servicio mediante 
+				\begin{lstlisting}[language=Bash, caption=habilitar servicio]
+				systemctl enable fail2ban.service
+				\end{lstlisting}
+				Además, se reinicia el servicio rsyslog para aplicar los cambios realizados, a través del comando 
+				\begin{lstlisting}[language=Bash, caption=Reiniciar rsyslog]
+				systemctl restart rsyslog.service
+				\end{lstlisting}
+
+			Al seguir estos pasos, Fail2Ban se encontrará instalado y configurado en el sistema. Es importante tener en cuenta que se pueden ajustar y personalizar las opciones de configuración según las necesidades particulares del sistema.\par
+			
+		\subsubsection{Configuración}
+			
+			En el contexto de la configuración de Fail2ban, se creará un archivo llamado ''telegram'' dentro del directorio \textit{/etc/fail2ban/action.d}. Este archivo contendrá las definiciones necesarias para habilitar las notificaciones a través de Telegram. El propósito de este archivo es permitir una personalización detallada de los mensajes y acciones que Fail2ban ejecutará al enviar notificaciones mediante el servicio de mensajería Telegram cuando ocurran eventos de seguridad relevantes.
+			
+			Junto con la creación del archivo ''telegram'', se desarrollará un script que incluirá el token de Telegram y contendrá los mensajes que se enviarán. Este script se encargará de interactuar con la API de Telegram y enviar las notificaciones correspondientes cuando sea requerido. Se configurará el archivo ''telegram'' dentro de \textit{/etc/fail2ban/action.d} para que Fail2ban utilice este script como la acción a ejecutar para las notificaciones por Telegram.
+			
+			Asimismo, se procederá a crear o modificar el archivo ''jail.local'', que contendrá la definición de la jaula (jail) específica para el servicio SSH. En dicho archivo, se establecerán las reglas y parámetros necesarios para detectar intentos fallidos de inicio de sesión y, en consecuencia, se llamará a Telegram como parte de las acciones de respuesta.
+			
+			La incorporación de la notificación a través de Telegram en el archivo de la jaula SSH en ''jail.local'' permitirá activar esta funcionalidad específicamente cuando se detecten intentos maliciosos de acceso a través del servicio SSH. De esta manera, Fail2ban utilizará la configuración del archivo ''telegram'' en el directorio \textit{/etc/fail2ban/action.d} para enviar notificaciones a través de Telegram cuando se produzcan eventos de seguridad relacionados con SSH, ayudando a mantener el servidor protegido y a mantener al administrador informado de posibles amenazas y ataques de fuerza bruta o intrusión no autorizada.\par
+	
+	\subsubsection{Script}
+	
+		Se ha desarrollado un script para enviar notificaciones a través del servicio de mensajería Telegram. El objetivo principal del script es mantener informado al administrador del sistema sobre eventos relacionados con la seguridad en Fail2ban.
+		
+		El script se ha almacenado en un archivo llamado \textit{send\_telegram\_notif.sh}. Este archivo contiene una serie de funciones y comandos que permiten la interacción con la API de Telegram para enviar mensajes de notificación a un grupo o chat específico.
+		
+		Para poder utilizar el servicio de Telegram y enviar notificaciones, el script incluye dos parámetros esenciales que deben configurarse adecuadamente antes de su uso:
+		
+		\begin{itemize}
+			\item 	El ''TOKEN'' es un valor alfanumérico único que actúa como clave de acceso para el bot de Telegram. Este token permite la autenticación del bot para interactuar con la API de Telegram y enviar mensajes.
+			\item 	El ''ID'' del chat o grupo define el destino de las notificaciones. Debe proporcionarse el identificador numérico del chat o grupo de Telegram al que se desean enviar las notificaciones. Es importante tener en cuenta que, si el bot va a enviar notificaciones a un grupo, debe tener permisos de administrador para poder realizar esta acción.
+		\end{itemize}
+	
+
+		El script incluye una función llamada \textit{enviarMensajeAlBot()} que se encarga de enviar los mensajes a través de la API de Telegram. Esta función toma como parámetro el mensaje que se desea enviar y utiliza el comando \textbf{curl} para realizar una solicitud HTTP POST a la API de Telegram. El mensaje se enviará al chat o grupo definido previamente por medio del ''TOKEN'' y ''ID''.\par
+		
+		Además, el script acepta diferentes argumentos. Estos argumentos permiten especificar el tipo de notificación que se enviará, como el inicio o detención de Fail2ban, o cuando una dirección IP ha sido bloqueada o desbloqueada.\par
+		
+		El script se encarga de analizar los argumentos pasados utilizando el comando \textbf{getopts}. Dependiendo de los argumentos proporcionados, el script selecciona el mensaje apropiado y lo envía a través de la función \textit{enviarMensajeAlBot()}.\par
+		
+		En caso de que no se pase ningún argumento o se pase un argumento no válido, el script mostrará un mensaje de uso para guiar al usuario sobre cómo utilizarlo correctamente. Además, finalizará la ejecución con un código de salida de error para evitar un uso incorrecto.\par
+		
+		\begin{lstlisting}[language=Bash, caption=Script - send telegram notif]
+			
+			#!/bin/bash
+			
+			#TOKEN
+			TOKEN='xxxxxxxxx:AAH9_Hjw-4P7xxxxxxxxxxxLbEH0Ywx3pPUo'
+			
+			# ID DEL CHAT O GRUPO
+			ID='-98xxxxxx' #ID DE MI GRUPO DE TELEGRAM O DEL CHAT
+			#para que el bot funcione en grupos debe tener permisos de administrador
+			
+			function enviarMensajeAlBot() {
+				
+				#$0 -> REPRESENTA EL NOMBRE DEL ARCHIVO
+				
+				#$1 -> REPRESENTA EL PRIMER ARGUMENTO QUE SE PASA
+				
+				#$2 -> REPRESENTA EL SEGUNDO ARGUMENTO QUE SE PASA
+				
+				#${3,4,5,6,7,8,9} -> REPRESENTA ARGUMENTOS
+				
+				message=$1
+				
+				#ENVIA UN MENSAJE 
+				curl -s -X POST https://api.telegram.org/bot${TOKEN}/sendMessage -d text="${message}" -d chat_id=${ID} > /dev/null 2>&1
+			}
+			
+			#COMPARA LA CANTIDAD DE ARGUMENTOS PASADOS AL SCRIPT
+			# 0 -> no se pasó ningún argumento
+			#imprime en pantalla los parámetros que se deben pasar
+			
+			if [ $# -eq 0 ]; then
+			
+			#-a -> start o stop
+			#-b -> IP baneada
+			#-u -> IP desbaneada
+			#
+			echo "Usage $0 -a ( start || stop ) || -b \$IP || -u \$IP"
+			
+			#FINALIZA EL SCRIPT
+			exit 1;
+			fi
+			
+			
+			#PARAMETROS ACEPTADOS
+			#-a, -n , -b , -u
+			
+			while getopts "a:n:b:u:" opcion; do
+			
+			case "$opcion" in
+			a)
+			accion=$OPTARG
+			;;
+			n)
+			nombre_jaula=$OPTARG
+			;;
+			b)
+			ban=y #se crea una variable con el caracter "y"
+			ip_add_ban=$OPTARG #se guarda la IP dentro de esta variable
+			;;
+			u)
+			unban=y # se crea una variable con el caracter "y"
+			ip_add_unban=$OPTARG # la IP se guarda dentro de esta variable
+			;;
+			\?)  #cualquier otro parámetro es inválido y termina el script
+			echo "OPCION INVALIDA. -$OPTARG" 
+			exit 1
+			;;
+			esac
+			done
+			
+			# -z -> Verdadero si la longitud de la cadena es cero.
+			#si la variable string no está vacía devuelve false y ! la niega y cambia a true.
+			
+			if [[ ! -z ${accion} ]]; then
+			
+			case "${accion}" in
+			
+			start) #si la variable "accion" contiene la cadena "start"
+			
+			enviarMensajeAlBot "FAIL2BAN START"
+			;;
+			
+			stop) # si la variable "accion" contiene la cadena "stop"
+			
+			enviarMensajeAlBot "FAIL2BAN STOP"
+			;;
+			
+			*) # si la variable "accion" contiene cualquier otra cadena
+			
+			echo "OPCION INCORRECTA"
+			
+			exit 1; #termina el script
+			;;
+			
+			esac
+			
+			elif [[ ${ban} == "y" ]]; then
+			
+			#se llama a la función con un solo argumento
+			#[nombre de la jaula] IP y el mensaje
+			enviarMensajeAlBot "[${nombre_jaula}] LA IP: ${ip_add_ban} FUE BANEADA"
+			
+			exit 0;
+			
+			elif [[ ${unban} == "y" ]]; then
+			
+			#se llama a la función con un solo argumento que es nombre de la jaula, ip y mensaje
+			enviarMensajeAlBot "[${nombre_jaula}] LA IP: ${ip_add_unban} FUE DESBANEADA"
+			
+			#finaliza el script correctamente
+			exit 0;
+			
+			else
+			
+			info
+			fi
+			
+	
+		\end{lstlisting}
+	
+		\subsubsection{Action}
+	
+		Se procederá a crear el archivo ''telegram.conf'' dentro del directorio \textit{/etc/fail2ban/action.d/} con el propósito de configurar las notificaciones a través del servicio de mensajería Telegram en Fail2ban.\par
+	
+		El contenido del archivo ''telegram.conf'' será el siguiente:\par
+	
+		\begin{lstlisting}[language=Bash, caption= Action]	
+		
+		[Definition]
+		actionstart = /etc/fail2ban/scripts/send_telegram_notif.sh -a start
+		actionstop = /etc/fail2ban/scripts/send_telegram_notif.sh -a stop
+		actioncheck =
+		actionban = /etc/fail2ban/scripts/send_telegram_notif.sh -b <ip>
+		actionunban = /etc/fail2ban/scripts/send_telegram_notif.sh -u <ip>
+		
+		[Init]
+		init = 123
 	
 			
-	\section{Servidor Docker}
-	
-		\subsection{¿Que es Docker?}
-			Docker es una plataforma de contenerización de código abierto. Permite a los desarrolladores empaquetar aplicaciones en contenedores. Los contenedores combinan el código fuente de la aplicación con las bibliotecas del sistema operativo y las dependencias necesarias para ejecutar el código en cualquier entorno. Los contenedores simplifican la entrega de aplicaciones distribuidas.\par
-			Docker es esencialmente un kit de herramientas que permite a los desarrolladores crear, implementar, ejecutar, actualizar y detener contenedores utilizando comandos a través de una única API.
+		\end{lstlisting}
 			
-		\subsection{Funcionamiento de los contenedores?}
-			Los contenedores son posibles gracias al aislamiento de procesos y a las capacidades de virtualización integradas en el kernel de Linux. Estas funcionan como grupos de control (Cgroups) para asignar recursos entre procesos, y espacios de nombres para restringir un acceso de procesos o visibilidad a otros recursos o áreas del sistema.\par	
-			
-			Como resultado, los contenedores ofrecen toda la funcionalidad y beneficios de las máquinas virtuales, incluyendo aislamiento de aplicaciones, escalabilidad y capacidad de disposición. Sus ventajas son las siguientes:\par
+		Dentro de la configuración de Fail2ban en el archivo "telegram.conf", se han especificado una serie de acciones que el sistema ejecutará en respuesta a ciertos eventos relevantes para la seguridad. Estas acciones están definidas en la sección ''[Definition]'' del archivo y tienen el siguiente propósito:\par
 			
 			\begin{itemize}
-				\item \textbf{Ligero:} Los contenedores sólo incluyen los procesos y dependencias del sistema operativo necesarias para ejecutar el código.
 				
-				\item \textbf{Mejor manejo de los recursos:} Con contenedores se puede ejecutar varias veces las mismas copias de una aplicación en el mismo hardware.
-				
-				\item \textbf{Mayor productividad de los desarrolladores:} En comparación con las VM, los contenedores son más rápidos y fáciles de implementar, suministrar y reiniciar.
+			\item \textbf{actionstart}: Es la acción que se realizará cuando Fail2ban comience. Se ejecutará el script \textit{send\_telegram\_notif.sh} con el argumento ''-a start'', lo que enviará una notificación a través de Telegram indicando que Fail2ban ha iniciado.
 			
-			\end{itemize}
+			\item \textbf{actionstop}: Es la acción que se llevará a cabo cuando Fail2ban se detenga. Se ejecutará el script 
+			\textit{send\_telegram\_notif.sh} con el argumento ''-a stop'', lo que enviará una notificación a través de Telegram indicando que Fail2ban se ha detenido.
 			
-		\subsection{Características}
-		
-			\vspace{0.3cm}
-				
-			\begin{itemize}
-					
-				\item \textbf{Portabilidad:} Los contenedores LXC suelen hacer referencia a 		configuraciones especificas de la máquina, mientras que los contenedores Docker se ejecutan sin modificaciones en cualquier entorno de escritorios, centro de datos y nube.
-				
-				\item \textbf{Ligeros:} Con los contenedores Docker solo se puede ejecutar un proceso en cada contenedor. Esto permite crear una aplicación que puede continuar ejecutándose mientras una de sus partes se desactiva.
-									
-				\item \textbf{Creación automática de contenedores:} Docker puede crear automáticamente un contenedor basado en el código de origen de la aplicación.
-				
-				\item \textbf{Control de versiones:} Docker puede rastrear versiones de una imagen de contenedor, retroceder a versiones anteriores y rastrear quién creó una versión. 
+			\item \textbf{actioncheck}: No se define ninguna acción específica para esta opción, lo que significa que no se realizará ninguna acción adicional al realizar la comprobación de los servicios de Fail2ban.
 			
-				\item \textbf{Reutilizar contenedores:} Los contenedores existentes se pueden utilizar como imágenes base, esencialmente como plantillas para crear nuevos contenedores.
-				
-				\item \textbf{Repositorio de contenedores:} Los desarrolladores pueden acceder a un registro de código abierto que contiene miles de contenedores aportados por los usuarios.
+			\item \textbf{actionban}: Esta acción se llevará a cabo cuando una dirección IP sea bloqueada (baneada) por Fail2ban. Se ejecutará el script \textit{send\_telegram\_notif.sh} con el argumento ''-b <ip>'', donde ''<ip>'' representa la dirección IP bloqueada. Esto enviará una notificación a través de Telegram indicando que la IP ha sido bloqueada.
 			
-			\end{itemize}
+			\item \textbf{actionunban}: Es la acción que se llevará a cabo cuando una dirección IP sea desbloqueada (desbaneada) por Fail2ban. Se ejecutará el script ''send\_telegram\_notif.sh'' con el argumento ''-u <ip>'', donde ''<ip>'' representa la dirección IP desbloqueada. Esto enviará una notificación a través de Telegram indicando que la IP ha sido desbloqueada.
 			
-		\subsection{Herramientas de Docker}
+			\item \textbf{La sección [Init]} contiene una única línea que establece el valor ''123'' para la opción ''init''.
 			
-			\vspace{0.3cm}
-			
-			\begin{itemize}
-					
-				\item \textbf{DockerFile:} Cada contenedor Docker se inicia con un archivo de texto simple que contiene instrucciones para crear la imagen del contenedor Docker. El DockerFile es una lista de instrucciones de interfaz de línea de comandos que Docker Engine ejecutará para ensamblar la imagen.
-				
-				\item \textbf{Imágenes Docker:} Las imágenes Docker contienen el código de origen de la aplicación, herramientas, bibliotecas y dependencias que el código de la aplicación debe ejecutar como contenedor.\par
-				
-				Las imágenes Docker son archivos de sólo lectura.
-				
-				\item \textbf{Contenedores Docker:} Los contenedores Docker son las instancias activas en ejecución de imágenes Docker.\par
-				 
-				Los contenedores son contenido en vivo, efímero y ejecutable. Se pueden interactuar con ellos utilizando comandos Docker.
-				
-				\item \textbf{Docker Hub:} Es el repositorio público de imágenes Docker. Las imágenes de contenedor provienen de proveedores de software comercial, proyectos de código abierto y desarrolladores individuales. Ademas de las imágenes que han sido producidas por Docker, Inc.\par
-				
-				\item \textbf{Daemon Docker:} El daemon Docker es un servicio que se ejecuta en el sistema operativo. Este servicio crea y gestiona las imágenes Docker.
-				
-
-			\end{itemize}
-		
-		
-		\subsection{Instalación Docker}
-			
-			\vspace{0.1cm}
-			
-			Antes de comenzar con la instalación es necesario que se instalen unas herramientas:
-					
-			\begin{itemize}
-				
-				\item\textbf{apt-transport-https:} permite que el administrador de paquetes transfiera datos a través de https.
-				
-				\item\textbf{ca-certificates:} permite que el navegador web y el sistema verifiquen los certificados de seguridad.
-				
-				\item\textbf{curl:} transfiere datos.
-				
-				\item \textbf{software-properties-common:} agrega scripts para administrar el software.
-				
 			\end{itemize}	
-				
-				
-			\begin{lstlisting}[language=Bash, caption=Paquetes necesarios]
-	#actualizar lista de paquetes
-	apt update
-	#instalar herramientas
-	apt install curl apt-transport-https ca-certificates software-properties-common
-	
-			\end{lstlisting}
+			Una vez que el archivo "telegram.conf" se haya creado con la configuración adecuada, Fail2ban estará listo para enviar notificaciones a través de Telegram cuando ocurran eventos de seguridad relevantes, como el inicio o detención de Fail2ban, o cuando se bloquee o desbloquee una dirección IP debido a intentos de intrusión detectados. Esta integración mejorará significativamente la capacidad del administrador del sistema para supervisar y responder rápidamente a incidentes de seguridad en el servidor protegido por Fail2ban.
 			
-			\textbf{Clave GPG:}\par
+			\subsubsection{Jail}
 			
-			\begin{lstlisting}[language=Bash, caption=Clave GPG]
-	#crear directorio
-	mkdir -p /etc/apt/keyrings
-	#descargar key
-	curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-			\end{lstlisting}
-		
-			\textbf{Agrega el repositorio:}
-	
-			\begin{lstlisting}[language=Bash, caption=Repositorio]
-
-	#agregar repositorio
-	echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-			\end{lstlisting}
-	
-			\textbf{Instalar Docker Engine.}\par
-	
-	
-			\begin{lstlisting}[language=Bash,caption=docker]
-	#actualizar lista de paquetes
-	apt update
-	#instalar docker
-	apt install docker-ce docker-ce-cli containerd.io docker-compose-plugins
-			\end{lstlisting}
-
-
-			Para verificar que docker se esta ejecutando correctamente ejecutare el contenedor de Hello-World, el cual da una bienvenida.
-	
-			\begin{lstlisting}[language=Bash,caption=Hello-World]
-	#descargar y ejecutar contenedor de bienvenida
-	docker run hello-world
-			\end{lstlisting}
-		
-		\subsection{¿Que es Docker Compose?}
-		
-			Docker Compose es una herramienta que permite simplificar el uso de Docker a partir de un archivo YAML. De esta manera es mas sencillo crear contendores, conectarlos, habilitar puertos, volúmenes, etc.\par 
-		
-		\subsection{Instalación Docker Compose}
 			
-			\vspace{0.2cm}
+			Para finalizar con la configurar Fail2ban, se debe crear un archivo llamado ''jail.local'' dentro del directorio \textit{/etc/fail2ban/}. Se recomienda crear este archivo debido a la diferencia en la gestión de los archivos de configuración de Fail2ban:\par
 			
-			Hay varias versiones de Docker Compose, aunque siempre es preferible la versión estable.
-
-									
-			\begin{lstlisting}[language=Bash,caption=Docker Compose]
-	#descargar binario de docker-compose	
-	curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-	#cambiar permisos
-	chmod +x /usr/local/bin/docker-compose
-	#controlar la version de docker-compose
-	docker-compose --version
+			El archivo ''jail.conf'' es el archivo de configuración predeterminado proporcionado por Fail2ban. Contiene la configuración predeterminada y comentarios que explican cómo se puede personalizar cada opción. Este archivo se utiliza para definir todos los ''jails'' (jaulas) que deberían existir en el sistema. Sin embargo, se aconseja no modificar directamente este archivo. En cambio, se sugiere crear un archivo separado.\par
+			
+			Por otro lado, el archivo ''jail.local'' es un archivo utilizado para realizar modificaciones personalizadas en la configuración de Fail2ban. Si existe un archivo llamado ''jail.local'', el programa leerá la configuración de ambos archivos, es decir, ''jail.conf'' y ''jail.local''. Sin embargo, las configuraciones en ''jail.local'' tienen prioridad sobre las de ''jail.conf''. Esto significa que cualquier cambio o adición realizada en ''jail.local'' no se verá afectado por actualizaciones futuras de Fail2ban, lo que garantiza que los ajustes personalizados no se sobrescriban y se mantengan a lo largo del tiempo.\par
+		
+			\begin{lstlisting}[language=Bash, caption=Jaula ssh]
+		
+			[DEFAULT]
+			bantime.increment    = true
+			bantime.rndtime      = 30m
+			bantime.maxtime      = 60d
+			bantime.factor       = 2
+			bantime.formula      = ban.Time * math.exp(float(ban.Count+1)*banFactor)/math.exp(1*banFactor)
+			bantime.overalljails = true
+			maxretry = 3
+			
+			[sshd]
+			enabled = true
+			action  = iptables[name=SSH, port=2222, protocol=tcp]
+			telegram
 			\end{lstlisting}
-				
-				
-	\section{Contenedor NextCloud}
 		
-		\subsection{¿Que es Nextcloud?}
 		
-			Nextcloud es un servidor para el intercambio de archivos que permite almacenar contenido personal (documentos e imágenes, videos, etc) en una ubicación centralizada. Al ser sus funciones de código abierto, ofrece una gran versatilidad, seguridad y cumplimiento a las normas de privacidad. También permite aplicar diferentes políticas a los datos, como cifrado, administración de usuarios y auditoría.\par
-		
-	
-			\subsection{Características:}
-		
+				En la sección "[DEFAULT]", se han definido varias opciones que afectarán el comportamiento general del sistema Fail2ban:\par
+			
 				\begin{itemize}
-					
-					\item Los archivos Nextcloud son almacenados en estructuras de directorio convencionales y se
-					pueden acceder vía WebDAV.
-					
-					\item Los archivos son cifrados en la transmisión y opcionalmente durante el almacenamiento.
-					
-					\item Los usuarios pueden manejar calendarios CalDAV, contactos CardDAV, tareas programadas y
-					reproducir contenido multimedia Ampache.
-					
-					\item Permite la administración de usuarios y grupos de usuarios, vía OpenID o LDAP y definir per-
-					misos de acceso.
-					
-					\item Posibilidad de añadir aplicaciones de un solo clic y conexiones con Dropbox, Google Drive y
-					Amazon S3.
-					
-					\item Disponibilidad de acceso a diferentes bases de datos, mediante SQLite, MariaDB, MySQL,
-					Oracle Database, y PostgreSQL
-					
-					\item Cuenta con aplicaciones clientes para Windows, MAC OSX, Linux, Android y IOS.\par
-					
-					
+					\item \textbf{bantime.increment:} Esta opción está habilitada, lo que significa que el tiempo de bloqueo de las direcciones IP baneadas aumentará con cada intento fallido.
+				
+					\item \textbf{bantime.rndtime:} Está configurada en ''30m'', lo que indica que el tiempo de bloqueo de las direcciones IP baneadas tendrá un valor aleatorio entre 0 y 30 minutos.
+				
+					\item \textbf{bantime.maxtime:} Está configurada en ''60d'', lo que significa que el tiempo de bloqueo máximo para las direcciones IP baneadas será de 60 días.
+				
+					\item \textbf{bantime.factor:} Está configurada en ''2'', lo que determina el factor por el cual se multiplicará el tiempo de bloqueo para cada intento fallido adicional.
+				
+					\item \textbf{bantime.formula:} Esta opción define una fórmula matemática personalizada para calcular el tiempo de bloqueo de una dirección IP baneada, basada en el tiempo del baneo anterior y la cantidad de intentos fallidos. La fórmula utiliza la variable "ban.Time" para representar el tiempo del baneo anterior, y "ban.Count" para la cantidad de intentos fallidos, además del valor de "bantime.factor". Esta configuración permite una personalización avanzada del tiempo de bloqueo.
+				
+					\item \textbf{bantime.overalljails:} Esta opción está habilitada, lo que indica que el tiempo de bloqueo será compartido entre todas las jaulas (jails) activas en el sistema.
+				
+					\item \textbf{maxretry:} Está configurada en ''3'', lo que significa que Fail2ban bloqueará una dirección IP después de 3 intentos fallidos.
 				\end{itemize}
-
-			\subsection{Requisitos:}
-		
 				
-				Al ejecutarse dentro de un contenedor todas sus dependencias se encuentran resueltas, solo se debera considerar la cantidad de memoria RAM.\par
-					
-				La documentación de Nextcloud indica que la cantidad de memoria que se necesita para ejecutar un servidor Nextcloud es muy variable, y dependerá de la cantidad de usuarios, aplicaciones, archivos y volumen de actividad del servidor.\par
+				A continuación, en la sección ''[sshd]'', se ha configurado una jaula (jail) específica para el servicio SSH:\par
+				
+				\begin{itemize}
+					\item \textbf{enabled:} Esta opción está habilitada, lo que activa esta jaula para el servicio SSH.
+				
+					\item \textbf{action:} Se ha definido como ''iptables[name=SSH, port=2222, protocol=tcp]'', lo que indica que se utilizará la acción de iptables para bloquear la dirección IP de origen del intento de conexión SSH fallido. Además, se especifica el nombre ''SSH'', el puerto ''2222'' y el protocolo ''tcp''.
+				
+					\item \textbf{telegram:} Se menciona la opción ''telegram'' en esta jaula, lo que indica que también se ha configurado el archivo ''telegram.conf'' que permitirá enviar notificaciones a través del servicio de mensajería Telegram cuando ocurran eventos relacionados con esta jaula.
 			
-			\subsection{Preparación del área de trabajo}
+			
+			\end{itemize}
+			
+
+		
+			\subsection{Controlar cambios en el sistema}
+			
+			En este caso, se utiliza la herramienta denominada comando md5sum para generar un hash MD5 de un archivo en el sistema. Al ejecutar este comando en un archivo específico, se realiza el cálculo de un hash único de 128 bits basado en el contenido del archivo.\par
+			
+			El hash MD5 generado puede ser empleado para verificar la integridad del archivo y detectar cualquier modificación no autorizada o corrupción. Al comparar el hash actual con un hash previamente almacenado, es posible determinar si el archivo ha experimentado algún cambio.\par
+			
+			Es importante destacar que, si bien el hash MD5 se utiliza ampliamente, se considera menos seguro en comparación con algoritmos más recientes debido a la posibilidad de colisiones. Las colisiones se producen cuando dos entradas diferentes generan el mismo hash. Por lo tanto, en entornos de seguridad más críticos, se recomienda el uso de algoritmos hash más robustos, como SHA-256. Estos algoritmos ofrecen una mayor resistencia a las colisiones y son más seguros en aplicaciones criptográficas y de seguridad.\par
+			
+			Es relevante tener en cuenta que los ataques de fuerza bruta a hashes criptográficos como MD5 resultan computacionalmente costosos y, en muchos casos, impracticables debido a la longitud y complejidad de la entrada.\par
+			
+			%\inputminted{bash}{documentos/seguridad/generarHash.sh}
+							\vspace{0.3cm}
+			\begin{lstlisting}[language=Bash, caption=Generar Hash]
 				
-				Mi directorio de trabajo sera \textit{/srv} donde creare un directorio que almacenara toda las configuraciones de Nextcloud, asi como la configuración de la base de datos.
+				#! /bin/bash
+				workdir=$PWD/seguridad
+				echo "Crear Base de datos del HASH de cada archivo"
+				find /usr -type f -exec md5sum {} \; > $workdir/usr.txt
+				find /boot -type f -exec md5sum {} \; > $workdir/boot.txt
+				find /opt -type f -exec md5sum {} \; > $workdir/opt.txt
+				find /etc -type f -exec md5sum {} \; > $workdir/etc.txt
+				find /var -type f -not -path "/var/pool/*" -not -path "/var/log/*" -not -path "/var/tmp/*" -exec md5sum {} \; > $workdir/var.txt
+				echo "Fin..."
 				
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-			#cambiar al directorio /srv
-			cd /srv
-			#crear directorio Nextcloud
-			mkdir nextcloud
-			#entrar al directorio Nextcloud
-			cd nextcloud
+			\end{lstlisting}
+			
+			El siguiente script proporcionado está diseñado para generar una base de datos de hashes de archivos en directorios específicos, con el fin de verificar la integridad de los archivos y detectar cambios no autorizados en el sistema.\par
+			
+			En primer lugar, el script crea una variable llamada \textbf{'workdir'} que almacena la ruta completa del directorio actual seguido de \textit{'/seguridad'}. Luego, mediante el uso del comando \textbf{'find}, se realizan búsquedas en varios directorios clave, como \textbf{'/usr'}, \textbf{'/boot'}, \textbf{'/opt'}, \textbf{'/etc'} y \textbf{'/var'}.
+			
+			Cada búsqueda se realiza en los archivos regulares del directorio correspondiente, y para cada archivo encontrado, se calcula el hash MD5 utilizando el comando ''md5sum''. Los resultados de cada búsqueda se redirigen a archivos de texto específicos en el directorio ''seguridad'' utilizando la variable ''workdir'' previamente definida.
+			
+			En resumen, este script demuestra una práctica de seguridad recomendada al generar y almacenar hashes de archivos en directorios importantes. Al comparar los hashes generados en un momento posterior con los hashes almacenados previamente, se puede detectar cualquier modificación o corrupción en los archivos del sistema.
+			
+			
+			\subsubsection{Comparar Hash}
+			
+			Si es necesario validar la integridad de los archivos del sistema, se puede utilizar el siguiente script en bash:
+			
+			%\inputminted{bash}{documentos/seguridad/compararHash.sh}
+			\vspace{0.3cm}
+			\begin{lstlisting}[language=Bash, caption=Comparar Hash]
+				
+				#! /bin/bash
+				#crear directorio llamado "seguridad"
+				workdir=$PWD/seguridad
+				echo "Crear Base de datos HASH "
+				echo ""
+				find /usr -type f -exec md5sum {} \; > $workdir/usr.tmp
+				find /boot -type f -exec md5sum {} \; > $workdir/boot.tmp
+				find /opt -type f -exec md5sum {} \; > $workdir/opt.tmp
+				find /etc -type f -exec md5sum {} \; > $workdir/etc.tmp
+				find /var -type f -not -path "/var/pool/*" -not -path "/var/log/*" \
+				-not -path "/var/tmp/*" -exec md5sum {} \; > $workdir/var.tmp
+				echo ""
+				echo "Diferencias..."
+				diff $workdir/usr.txt $workdir/usr.tmp
+				diff $workdir/boot.txt $workdir/boot.tmp
+				diff $workdir/opt.txt $workdir/opt.tmp
+				diff $workdir/etc.txt $workdir/etc.tmp
+				diff $workdir/var.txt $workdir/var.tmp
+				echo ""
+				echo "Limpiar"
+				rm -f $workdir/usr.tmp $workdir/boot.tmp $workdir/opt.tmp \
+				$workdir/etc.tmp $workdir/etc.tmp $workdir/var.tmp
+				
+				
+			\end{lstlisting}	
+		
+		\section{Snapshot}
+		
+	Una vez que se haya completado la configuración del servidor de virtualización, se procederá a crear un snapshot que posibilitará obtener una imagen congelada del volumen lógico ''Raiz'' en un punto determinado del tiempo. Este snapshot será utilizado con el propósito de recuperación en caso de que ocurra una instalación incorrecta o se detecte algún cambio indeseado en el sistema. La creación del snapshot permitirá revertir el estado del volumen a una versión previa, proporcionando una forma confiable de restaurar el sistema a un estado conocido y estable en caso de ser necesario. Esta funcionalidad resulta fundamental para mantener la integridad y la disponibilidad de los datos en el entorno de virtualización.\par
+	
+	Para crear un snapshot de la partición raíz se deben seguir los siguientes pasos:
+	
+	\begin{itemize}
+		\item \textbf{Paso 1:} Verificar el espacio disponible en el grupo de volúmenes LVM
+		Antes de crear el snapshot, es importante asegurarse de que haya suficiente espacio libre en el grupo de volúmenes para alojar la nueva instantánea.
+		\begin{lstlisting}[language=Bash, caption=vgdisplay]
+		vgdisplay
+		\end{lstlisting}
+			
+		\item\textbf{Paso 2:} Para crear el snapshot, se utilizará el siguiente comando.
+		\begin{lstlisting}[language=Bash, caption=snapshot]
+		lvcreate -L20G -s -n snapshot-raiz /dev/ema/ema-raiz
+		\end{lstlisting}
+				
+		\end{itemize}
+
+			
+		\section{Maquinas virtuales}
+		
+		Para la creación de máquinas virtuales, se utilizará la aplicación de interfaz gráfica llamada ''virt-manager''. Esta herramienta se basa en la biblioteca de administración de virtualización libvirt y ofrece una forma intuitiva de crear y administrar máquinas virtuales.\par
+		
+		Virt-manager proporciona una interfaz gráfica fácil de usar que permite configurar y personalizar diferentes aspectos de las máquinas virtuales, como la asignación de recursos, la configuración de la red y la instalación del sistema operativo invitado.\par
+		
+		Una característica destacada de virt-manager es la capacidad de utilizar el protocolo SSH con el parámetro -X para establecer conexiones gráficas remotas. Esto significa que se puede tunelizar el tráfico X11 a través de la conexión SSH, lo que permite acceder y administrar las máquinas virtuales de forma remota a través de una interfaz gráfica.\par
+		
+		Al utilizar el protocolo SSH con el parámetro -X, se establece una conexión segura entre el cliente y el servidor, y se habilita el reenvío de las aplicaciones gráficas de virt-manager a través de la conexión SSH. Esto permite que la interfaz gráfica de virt-manager se ejecute en el servidor y se muestre en el cliente remoto, lo que facilita la administración de las máquinas virtuales de manera gráfica incluso cuando se trabaja de forma remota.\par
+		
+		\begin{lstlisting}[language=Bash, caption=ssh]
+		
+		ssh root@192.168.1.222 -X
+		
+		virt-manager
+		
+		\end{lstlisting}
+		
+		Para cada equipo individual, se debe realizar la configuración de la interfaz de red de la misma manera que se hizo en el servidor. Esto implica seguir los pasos adecuados para establecer las direcciones IP, la configuración de la interfaz y cualquier otra configuración necesaria.
+		
+		Cada equipo deberá tener una interfaz de red física conectada a la red correspondiente. Se deberá editar el archivo de configuración de red apropiado, que puede variar según el sistema operativo utilizado (como /etc/network/interfaces en sistemas basados en Debian).
+		
+		Dentro del archivo de configuración de red, se deben agregar las líneas necesarias para establecer la dirección IP, la máscara de subred, la puerta de enlace y cualquier otra configuración requerida.\par
+		
+		A continuación se presenta un ejemplo de una configuración correcta de interfaces de red:
+		
+		\begin{lstlisting}[language=Bash, caption=Configurar Interfaz]
+		
+		#! /bin/bash
+		ip link add link enp1s0 name dmz type vlan id 100 #creo la vlan
+		ip addr add 192.168.100.2/24 brd 192.168.100.255 dev dmz #configuro la ip
+		ip link set dmz up #activo la interfaz
+		ip route add default via 192.168.100.1 #nueva ruta de ruteo
+		echo "nameserver 1.1.1.1" > /etc/resolv.conf # dns
+		ip addr del 192.168.1.124/24 dev enp1s0 #elimino la ip estatica anterio
+		
+		\end{lstlisting}
+	
+		\subsection{Servidor Docker}
+		
+			\subsubsection{¿Que es Docker?}
+	
+				Docker es una plataforma de código abierto que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones dentro de contenedores. Los contenedores son entornos de software livianos y portables que incluyen todo lo necesario para que una aplicación se ejecute, como código, bibliotecas y dependencias. Docker ofrece una solución para la virtualización a nivel de sistema operativo, lo que permite a las aplicaciones ejecutarse de manera consistente en cualquier entorno, ya sea en el desarrollo, pruebas o producción.
+		
+			\subsubsection{¿Qué es Docker Compose?}
+				Docker Compose es una herramienta que simplifica la administración de aplicaciones multi-contenedor en Docker. Permite definir y gestionar la configuración de varios contenedores dentro de una aplicación, incluyendo sus relaciones, redes y volúmenes necesarios. Todo esto se logra a través de un archivo YAML llamado "docker-compose.yml". Docker Compose facilita el despliegue y escalamiento de aplicaciones compuestas por múltiples servicios, lo que resulta especialmente útil para aplicaciones con arquitectura de microservicios.
+				
+	
+			\subsubsection{Maquina Virtual}
+			
+			
+			
+			\subsubsection{Instalación}
+			Las siguientes líneas se utilizan para configurar Docker en un sistema basado en Debian mediante la línea de comandos:
+			\begin{lstlisting}[language=Bash, caption=docker]
+				
+			#! /bin/bash
+			
+			sudo apt-get update
+			sudo apt-get install ca-certificates curl gnupg
+			
+			sudo install -m 0755 -d /etc/apt/keyrings
+			curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+			sudo chmod a+r /etc/apt/keyrings/docker.gpg
+			
+			echo \textbackslash\{\}
+			"deb [arch="\$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \textbackslash\{\}
+			"\$(. /etc/os-release \&\& echo "\$VERSION\_CODENAME")" stable" | \textbackslash\{\}
+			sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+			
+			sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+			
+			DOCKER\_CONFIG=\$\{DOCKER\_CONFIG:-\$HOME/.docker\}
+			mkdir -p \$DOCKER\_CONFIG/cli-plugins
+			curl -SL https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-linux-x86\_64 -o \$DOCKER\_CONFIG/cli-plugins/docker-compose
+			
+			chmod +x \$DOCKER\_CONFIG/cli-plugins/docker-compose
+			
+			docker compose version
+			
+		\end{lstlisting}
+		
+		
+		\begin{itemize}
+			\item Actualiza la lista de paquetes disponibles en los repositorios de apt:
+			
+			\begin{lstlisting}[language=Bash, caption=docker]
+			sudo apt update
+			\end{lstlisting}
+	
+		\item Instala los paquetes necesarios para gestionar certificados, realizar solicitudes web y utilizar claves de seguridad:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			sudo apt install ca-certificates curl gnupg
+			\end{lstlisting}
+	
+		\item Crea el directorio /etc/apt/keyrings con permisos de lectura, escritura y ejecució:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			sudo install -m 0755 -d /etc/apt/keyrings
+			\end{lstlisting}
+	
+		\item Descarga la clave GPG de Docker y la almacena en /etc/apt/keyrings/docker.gpg:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+			\end{lstlisting}
+		
+		\item Asigna permisos de lectura a la clave GPG para que sea accesible por otros usuarios:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			sudo chmod a+r /etc/apt/keyrings/docker.gpg
+			\end{lstlisting}
+		
+		\item Añade una entrada al archivo /etc/apt/sources.list.d/docker.list con información sobre el repositorio de Docker para la versión de Debian instalada:
+			
+			\begin{lstlisting}[language=Bash, caption=docker]
+			echo \ \ "deb [arch=\"\$(dpkg --print-architecture)\" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \ \ \"\$(. /etc/os-release \&\& echo \"\$VERSION_CODENAME\")\" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+			\end{lstlisting}
+		
+		\item Instala los paquetes de Docker y sus complementos:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+			\end{lstlisting}
+	
+		\item Configura el directorio donde se almacenarán los archivos de configuración de Docker, en este caso, se establece el valor de la variable DOCKER\_CONFIG como el directorio \$HOME/.docker si no se ha definido previamente:
+	
+			\begin{lstlisting}[language=Bash, caption=docker]
+			DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+			\end{lstlisting}
+		
+		\item Crea el directorio de complementos de la línea de comandos de Docker:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			mkdir -p $DOCKER_CONFIG/cli-plugins
+			\end{lstlisting}
+		
+		\item Descarga la última versión de Docker Compose y la almacena en el directorio de complementos de la línea de comandos de Docker:
+		
+			\begin{lstlisting}[language=Bash, caption=docker]
+			curl -SL https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+			\end{lstlisting}
+	
+		\item Asigna permisos de ejecución al archivo de Docker Compose:
+			
+			\begin{lstlisting}[language=Bash, caption=docker]
+			chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+			\end{lstlisting}
+		
+		\item Verifica la versión de Docker Compose instalada:
+			\begin{lstlisting}[language=Bash, caption=docker]
+			docker compose version
+			\end{lstlisting}
+
+		\end{itemize}
+		
+		\subsubsection{Contenedor Emby}
+		
+		
+		En el Aula virtual, uno de los problemas identificados es la velocidad de conexión a Internet, limitada a 2MB, lo que dificulta la reproducción adecuada de Vídeos Tutoriales y otro contenido multimedia recomendado por los docentes.
+		
+		Para abordar este desafío, se ha implementado una solución mediante el uso de Emby. Ahora, el contenido multimedia se 	descarga previamente y se almacena de forma segura en un lugar controlable dentro del Servidor Local. A través de Emby y su capacidad de realizar streaming, este contenido multimedia se comparte eficientemente con todos los usuarios de la red LAN del Aula virtual.
+		
+		Esta solución ha permitido optimizar la reproducción de los Vídeos Tutoriales y el contenido multimedia recomendado, ya que ahora los usuarios pueden acceder a estos recursos localmente, sin depender de la velocidad limitada de Internet. Además, al centralizar y controlar el almacenamiento de los archivos multimedia en el Servidor Local, se garantiza un acceso rápido y confiable para los estudiantes y docentes en el entorno educativo.
+		
+		\subsubsection{¿Que es Emby?}
+		
+		Emby es una plataforma de servidor de medios de comunicación de código abierto y gratuita que permite organizar, gestionar y transmitir contenido multimedia de manera eficiente. Similar a otras soluciones populares como Plex o Kodi, Emby está diseñado para brindar una experiencia completa de entretenimiento digital a los usuarios.
+		
+		Basado en un servidor multimedia centralizado, Emby se instala en servidores, dispositivos de almacenamiento conectado a la red (NAS) o incluso en máquinas virtuales. Una vez configurado, los usuarios pueden acceder y disfrutar de sus bibliotecas de medios, que incluyen películas, programas de televisión, música, fotos y videos, desde una amplia variedad de dispositivos compatibles, como computadoras, teléfonos inteligentes, tabletas, televisores inteligentes y consolas de juegos.
+		
+		La interfaz de usuario de Emby es elegante y de fácil navegación, lo que permite una experiencia intuitiva al explorar y buscar contenido multimedia. Además de las funcionalidades básicas de administración de medios, Emby ofrece características adicionales, como la capacidad de descargar y sincronizar contenido para visualización sin conexión, control de usuarios con diferentes niveles de acceso y transmisión remota fuera de la red local. 
+		
+		Emby se destaca por su flexibilidad y personalización, ya que admite el uso de complementos y extensiones de terceros que amplían sus funcionalidades y características. La integración de Emby con tecnologías de contenedores, como Docker y Docker Compose, facilita su implementación y administración en diferentes entornos y plataformas.
+		
+			
+		En la configuración proporcionada de Docker Compose, se define un servicio llamado ''emby''. Este servicio utiliza la imagen de Docker de Emby Server para ejecutar una aplicación de servidor de medios Emby.\par
+		
+		\begin{lstlisting}[language=bash, caption=docker compose]
+		services:
+		emby:
+		image: emby/embyserver
+		container_name: emby
+		restart: unless-stopped
+		ports:
+		- 8096:8096
+		environment:
+		- UID=1000 # The UID to run emby as (default: 2)
+		- GID=100 # The GID to run emby as (default 2)
+		- GIDLIST=100 # A comma-separated list of additional GIDs to run emby as (default: 2)
+		volumes:
+		- ./config:/config
+		- ./data:/data
+		- ./media:/media
+		
+		\end{lstlisting}		
+	
+		El servicio de Emby tiene los siguientes ajustes:
+	
+		\begin{itemize}
+		
+		\item \textbf{Imagen:} La imagen de Docker utilizada para el servicio de Emby es "emby/embyserver". Esta imagen contiene todos los componentes y configuraciones necesarios para ejecutar Emby Server.
+	
+		\item \textbf{Nombre del contenedor:} El nombre del contenedor que ejecuta el servicio de Emby se establece como "emby". Esto permite hacer referencia y gestionar el contenedor de manera sencilla.
+	
+		\item \textbf{Política de reinicio:} La política de reinicio se configura como "unless-stopped", lo que significa que el contenedor se reiniciará automáticamente a menos que sea detenido explícitamente por el usuario.
+	
+		\item  \textbf{Puertos:} El servicio expone el puerto 8096 del contenedor y lo mapea al puerto 8096 de la máquina anfitriona. Esto permite acceder al servidor Emby a través del puerto 8096 de la máquina anfitriona.
+	
+		\item  \textbf{Variables de entorno:} Se establecen varias variables de entorno para configurar el ID de usuario y de grupo del servidor Emby. Las variables son:
+		
+		\begin{itemize}
+		
+			\item \textbf{UID:} El ID de usuario (UID) con el que se ejecutará Emby, establecido por defecto en 1000.
+		
+			\item \textbf{GID:} El ID de grupo (GID) con el que se ejecutará Emby, establecido por defecto en 100.
+		
+			\item \textbf{GIDLIST:} Una lista separada por comas de IDs de grupo adicionales (GIDs) con los que se ejecutará Emby, establecido por defecto en 100.
+			
+			\item \textbf{Volúmenes:} Se montan tres directorios de la máquina anfitriona como volúmenes dentro del contenedor para persistir los cambios de configuración y los datos:
+			
+			\item \textbf{./config:/config:} Esto monta el directorio ''./config'' de la máquina anfitriona en el directorio ''/config'' dentro del contenedor para almacenar los archivos de configuración de Emby.
+	
+			\item \textbf{./data:/data:} Esto monta el directorio ''./data'' de la máquina anfitriona en el directorio ''/data'' dentro del contenedor para almacenar los archivos de datos de Emby.
+		
+			\item \textbf{./media:/media:} Esto monta el directorio ''./media'' de la máquina anfitriona en el directorio ''/media'' dentro del contenedor, lo que permite a Emby acceder a los archivos de medios almacenados en la máquina anfitriona.
+	
+		\end{itemize}
+	
+	\end{itemize}
+
+			\subsubsection{Configuración de red}
+			
+			Una vez finalizada la instalación y configuración de Docker, se procederá a configurar la interfaz de red y se colocará en la red DMZ del servidor de virtualización mediante el siguiente script:
+			
+			\begin{lstlisting}[language=Bash, caption=docker]
+			#! /bin/bash
+			ip link add link enp1s0 name dmz type vlan id 100 #creo la vlan
+			ip addr add 192.168.100.2/24 brd 192.168.100.255 dev dmz #configuro la ip
+			ip link set dmz up #activo la interfaz
+			ip route add default via 192.168.100.1 #nueva ruta de ruteo
+			echo "nameserver 1.1.1.1" > /etc/resolv.conf # dns
+			ip addr del 192.168.1.124/24 dev enp1s0 #elimino la ip estatica anterio
+			
+			\end{lstlisting}
+		
+			Este script realizará los pasos necesarios para configurar la interfaz de red ''dmz'' con la dirección IP ''192.168.100.2'' en la VLAN 100, conectándola a la red DMZ del servidor de virtualización. Además, establecerá la puerta de enlace predeterminada a través de ''192.168.100.1'' y configurará el servidor DNS con la dirección ''1.1.1.1''. Por último, eliminará la dirección IP estática ''192.168.1.124'' que estaba configurada en la interfaz ''enp1s0'' anteriormente.
+			
+			\subsubsection{Configuración NFS}
+			
+			Para montar el directorio compartido a través de NFS en el servidor Emby,se deben seguir los siguientes pasos:
+			
+			\begin{itemize}
+				\item Instalar nfs-common
+				\begin{lstlisting}[language=Bash, caption=nfs-common]
+				sudo apt install nfs-common
+				\end{lstlisting}
+				
+				\item Montar el directorio compartido utilizando el comando ''mount'' con la opción ''-t nfs'' y la dirección IP del servidor NFS seguido del directorio compartido:
+				\begin{lstlisting}[language=Bash, caption=mount]
+				sudo mount -t nfs 192.168.100.1:/ruta/directorio /ruta/media
 				\end{lstlisting}
 			
-				Dentro del directorio creare un documento llamado \textit{docker-compose.yaml} y dentro de el colocare el siguiente código:
-	
-				\inputminted{yaml}{documentos/docker/nextcloud/docker-compose.yml}
+				\item Para que el directorio compartido se monte automáticamente cada vez que el servidor Emby se inicie, se debe agregar la línea correspondiente al archivo ''/etc/fstab''.
+				\begin{lstlisting}[language=Bash, caption=fstab]
+			192.168.100.1:/ruta/directorio /ruta/media nfs defaults 0 0
+				\end{lstlisting}		
 			
-				\subsubsection{Estructura del docker-compose.yml}\label{estructura-docker}
-				
-					\begin{itemize}
-						
-						\item \textbf{version:} Un archivo de docker-compose comienza especificando la versión de docker compose que se utilizará.
-							
-						\item \textbf{services:} Después de la versión viene anidada la sección de \textit{services}. Puede haber tantos servicios como se necesiten, y cada servicio contará con sus propia estructura.
-						
-						\item \textbf{image:} La configuración \textit{image} establece la imagen a partir de la cual se generará el servicio.
-						
-						\item \textbf{container\_name:} El nombre que tendra el contenedor cuando se este ejecutando.
-						
-						\item \textbf{environment:} La configuración environment permite establecer una lista de variables de entorno que estarán disponibles en el servicio.
-						
-						\item \textbf{volumes:} Con volúmenes se puede compartir partes del sistema operativo con un servicio.
-						
-						\item \textbf{ports:} Los puertos que se expondrán al exterior y a cual puerto de la máquina se vincularán.
-						
-						\item \textbf{restart:}	Con restart se especifica la política de reinicio a los servicios.
-						
-						La opción restart puede tomar varios valores:
-					
-						\begin{itemize}
-							
-							\item \textbf{no:} nunca reinicia el contenedor.
-							
-							\item \textbf{always:} siempre lo reinicia.
-							
-							\item \textbf{on-failure:} lo reinicia si el contenedor devuelve un estado de error.
-							
-							\item \textbf{unless-stopped:} lo reinicia en todos los casos excepto cuando se detiene.
-						
-						\end{itemize}
-						
-					\end{itemize}
-				
+
 			
-		\subsection{Crear Contenedor}
+			\end{itemize}
 		
-			Para crear el contenedor de Nextcloud es necesario que se utilice el siguiente comando, el cual descargara las imágenes necesarias y realizara las configuraciones especificadas dentro del archivo YAML.
+			%	\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+			%	colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Estructura del documento,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]
 			
-			\begin{lstlisting}[language=bash,caption=Crear Contenedor Docker]		
+			\subsubsection{Personalizacion}
+			
+			
+			La configuración de la plataforma Emby dependerá de las necesidades de cada establecimiento. Cada institución o administrador podrá personalizar y ajustar la configuración de Emby de acuerdo con los requerimientos y preferencias específicas de su entorno y usuarios. Emby ofrece una amplia gama de opciones y ajustes que permiten una adaptación versátil de la plataforma para ofrecer una experiencia de visualización multimedia satisfactoria y a medida.
+						
+			\subsection{Servidor Nextcloud}
+			
+			\subsubsection{¿Que es Nextcloud?}
+			
+			Nextcloud es una plataforma de almacenamiento en la nube y colaboración de código abierto que permite a los usuarios almacenar, sincronizar y compartir archivos y datos en un servidor propio o en un proveedor de alojamiento. Es una alternativa popular a servicios comerciales de almacenamiento en la nube como Dropbox o Google Drive, pero con la diferencia de que Nextcloud permite a los usuarios tener un control completo sobre sus datos y la infraestructura utilizada.
+			
+			La característica principal de Nextcloud es su capacidad para acceder y gestionar archivos desde cualquier lugar y dispositivo con conexión a Internet. Los usuarios pueden utilizar la interfaz web de Nextcloud o las aplicaciones móviles y de escritorio para acceder a sus datos, lo que facilita la colaboración y el intercambio de archivos con otros usuarios.
+			
+			Además del almacenamiento y sincronización de archivos, Nextcloud ofrece una amplia gama de aplicaciones y extensiones que agregan funcionalidades adicionales. Estas incluyen la capacidad de compartir calendarios y contactos, editar documentos en línea de forma colaborativa, realizar videoconferencias y chatear con otros usuarios, administrar tareas y notas, entre otras opciones.
+			
+			Nextcloud también se destaca por sus características de seguridad y privacidad. Proporciona opciones de cifrado de extremo a extremo y autenticación de dos factores para proteger los datos de los usuarios y garantizar su privacidad.
+			
+			Al ser de código abierto, Nextcloud se beneficia de una comunidad activa de desarrolladores y usuarios que contribuyen con mejoras y nuevas características constantemente. Esto ha llevado a un ecosistema dinámico y en constante evolución, con una amplia variedad de complementos y aplicaciones de terceros disponibles para personalizar la experiencia de Nextcloud según las necesidades de cada usuario.
+			
+			En resumen, Nextcloud es una solución de almacenamiento en la nube de código abierto que brinda a los usuarios un mayor control sobre sus datos, así como una serie de herramientas de colaboración para mejorar la productividad y la gestión de archivos en un entorno seguro y personalizable.
+			
+			\subsubsection{Maquina Virtual}
+	
+			\subsubsection{Instalación}
+			
+			\begin{enumerate}
 				
-				docker-compose up -d
-			\end{lstlisting}	
+				\item Descargar Nextcloud
+				
+				\begin{itemize}
 					
-			\subsubsection{Explicación del comando anterior:}\par
+					\item Se descarga Nextcloud siguiendo los siguientes pasos:
+		
+						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						https://download.nextcloud.com/server/releases/latest.zip
+						\end{lstlisting}
+					\item Descompresión del archivo zip:	
+						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						unzip lates.zip
+						\end{lstlisting}
+					\item Movimiento del directorio Nextcloud a /opt:	
+						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						mv nextcloud /opt
+						\end{lstlisting}
+					\item Configuración de permisos y propiedad del directorio:
+						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						chmod o-rwx /opt/nextcloud
+						chown -R root:root /opt
+						\end{lstlisting}
+					\item Concesión de permisos al usuario "www-data":					
+						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						setfacl -R -m u:www-data:rwx /opt/nextcloud
+						\end{lstlisting}
+							
+				\end{itemize}
+				
+				\item Antes de iniciar la instalación de Nextcloud, es necesario abordar algunas dependencias mencionadas en su documentación. Se procede a instalar y configurar un servidor web con PHP y una base de datos MariaDB para satisfacer estos requisitos.
+				
+				En primer lugar, se lleva a cabo la instalación de las dependencias necesarias para el correcto funcionamiento de Nextcloud, según las indicaciones proporcionadas en la documentación oficial.
+				
+				Luego, se procede a la configuración del servidor web y PHP para habilitar las extensiones y ajustes requeridos por Nextcloud. Además, se instala y configura una base de datos MariaDB para que Nextcloud pueda almacenar y administrar sus datos.
+				
+				Con estas tareas completadas, se habrán resuelto las dependencias y se habrá preparado el entorno necesario para la instalación de Nextcloud. 
+				
+				
+				
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+		apt install php php-mysql php-mbstring php-json php7.4-common php7.4-xml php-zip php-gd curl php-curl php-pear php7.4-opcache php-intl mariadb-server
+				\end{lstlisting}
 			
 				\begin{itemize}
+					\item \textbf{php:} Es el paquete que instala el lenguaje de programación PHP, que es ampliamente utilizado en el desarrollo web.
+					
+					\item \textbf{php-mysql:} Este paquete proporciona soporte para la conexión a bases de datos MySQL/MariaDB desde PHP.
+					
+					\item \textbf{ php-mbstring:} Proporciona funciones para manipular cadenas de caracteres multibyte en PHP.
+					
+					\item \textbf{php-json:} Habilita el manejo de datos en formato JSON en PHP.
+					
+					\item \textbf{php7.4-common:} Contiene archivos compartidos y configuraciones comunes para PHP versión 7.4.
+					
+					\item \textbf{php7.4-xml:} Proporciona soporte para la manipulación de documentos XML en PHP.
+					
+					\item \textbf{php-zip:} Agrega soporte para la compresión y descompresión de archivos ZIP en PHP.
+					
+					\item \textbf{php-gd:} Habilita la manipulación de imágenes y la generación de gráficos en PHP mediante la biblioteca GD.
+					
+					\item \textbf{curl:} Es una herramienta y biblioteca para transferir datos con sintaxis URL. También es una dependencia común para muchas aplicaciones web y bibliotecas de PHP.
+					
+					\item \textbf{php-curl:} Extensión de PHP que permite realizar solicitudes HTTP y otras operaciones a través de cURL.
+					
+					\item \textbf{php-pear:} Gestor de paquetes para PHP, que permite instalar y administrar bibliotecas y extensiones.
+					
+					\item \textbf{php7.4-opcache:} Módulo de caché para PHP 7.4, que mejora el rendimiento y la velocidad de ejecución de los scripts PHP.
+					
+					\item \textbf{php-intl:} Proporciona funciones para la internacionalización y localización de aplicaciones PHP.
+					
+					\item \textbf{mariadb-server:} Paquete para instalar el servidor de base de datos MariaDB, una bifurcación de MySQL.
+			
+				\end{itemize}
+		
+				\item Una vez que la instalación de los programas ha finalizado, es necesario realizar algunas modificaciones en los valores predeterminados de PHP. Estas modificaciones son necesarias para asegurar que PHP esté correctamente configurado y pueda funcionar de manera óptima.
 				
-					\item \textbf{docker-compose:} Define y ejecute aplicaciones de varios contenedores con Docker.
+			
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				#hacer backup del archivo original
+				cp /etc/php/7.4/cli/php.ini /etc/php/7.4/cli/php.ini.bk
+				nvim /etc/php/7.4/cli/php.ini
 				
-					\item \textbf{up:} Crea e inicia el contenedor.
+				\end{lstlisting}
+				Dentro del documento se deben configurar los siguientes valores:
+						
+			    \begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				post_max_size = 512M
+				upload_max_ﬁlesize = 512M
+				memory_limit = 512M
+				\end{lstlisting}
 				
-					\item \textbf{-d:} Ejecuta contenedores en segundo plano.
-				 
+				
+				\begin{itemize}
+					
+				\item \textbf{post\_max\_size = 512M:} Se ajustó el límite máximo del tamaño de datos que pueden ser enviados mediante una petición POST al servidor a 512 megabytes (MB). Esto es relevante para aplicaciones que envían grandes cantidades de datos a través de formularios, por ejemplo.
+			
+				\item \textbf{upload\_max\_filesize = 512M:} Se modificó el tamaño máximo permitido para subir archivos al servidor a 512 megabytes (MB). Con esta configuración, las aplicaciones web podrán recibir y manejar archivos de hasta ese tamaño.
+			
+				\item \textbf{memory\_limit = 512M:} Se aumentó el límite de memoria asignada a los scripts de PHP a 512 megabytes (MB). Esto permite que los scripts de PHP puedan utilizar una cantidad mayor de memoria durante su ejecución, lo que es útil para aplicaciones más complejas que requieren mayor capacidad de memoria.
 				\end{itemize}
 			
-			En caso que Docker deba descargar las imágenes, este proceso puede demorar varios minutos, dependiendo de la velocidad de la conexión al Internet con la que se cuente.\par
-						
-			Para visualizar si los contenedores se están ejecutando correctamente Docker permite ver el estado de los contenedores con el siguiente comando:
+				Finalizada la configuracion se debe reiniciar apache:
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+					systemctl restart apache2
+				\end{lstlisting}
+					
+				\item MariaDB\par
+%				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+%				mysql_secure_installation
+%				\end{lstlisting}
 			
-			\begin{lstlisting}[language=bash,caption= Estado de los contenedores]
+				Crear usuario y base de datos para Nextcloud
+				\begin{itemize}
+					\item Acceder a la consola de MySQL/MariaDB:
+				
+					\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				
+				mysql -u root -p
+					\end{lstlisting}
+				
+					\item Crear la base de datos para Nextcloud:
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				
+				CREATE DATABASE nextclouddb;
+				\end{lstlisting}
 			
-			docker ps -a
-			\end{lstlisting}
-	
-		\subsection{Configuración de NextCloud}	
+					\item Crear un usuario para Nextcloud y asignarle una contraseña:	
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				CREATE USER 'nextcloud'@localhost IDENTIFIED BY '123456';
+				\end{lstlisting}
 			
-			Una vez que el contenedor de Nextcloud se encuentre corriendo, desde el navegador web terminare de realizar las configuraciones:
+					\item	Conceder todos los privilegios al usuario sobre la base de datos creada:		
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+					GRANT ALL privileges ON nextclouddb.* TO 'nextcloud'@localhost;
+				\end{lstlisting}
+			
+					\item Actualizar los privilegios para que los cambios tnegan efecto:
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+					FLUSH PRIVILEGES;
+				\end{lstlisting}
+			
+					\item Salir de la consola de MySQL/MariaDB:
+				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+					EXIT;
+				\end{lstlisting}
+			\end{itemize}
+			Con estos pasos, se habrá creado un usuario llamado ''nextcloud'' con la contraseña ''123456'' y una base de datos llamada ''nextclouddb'', los cuales podrán ser utilizados por Nextcloud para almacenar y gestionar sus datos.
 
 			
-			\begin{itemize}
-				
-				\item Crear usuario administrador.
-				\item Expecificar el directorio donde se guardan los datos que se almacenen en Nextcloud.
-				\item Configurar la base de datos.
-				
-			\end{itemize}
+			\item VirtualHost
+			''VirtualHost'' (anfitrión virtual) es una característica que permite configurar múltiples sitios web para que puedan compartir el mismo servidor web físico. 
 			
-			\begin{figure}[ht]
-				
-				\centering
-				
-				\includegraphics[width=0.9\textwidth]{imagenes/docker/nextcloud/configurarNextcloud.png}
-				
-				\caption{Configurar Nextcloud}
-				
-				\label{fig:nextcloud}
-				
-			\end{figure}
+			Abrir un editor de texto en el servidor:
 			
-			\pagebreak
-			
-			\begin{tcolorbox}[enhanced,frame style image=blueshade.png,opacityback=0.75,opacitybacktitle=0.25, colback=blue!5!white,colframe=blue!75!black,title=Nextcloud]
-				Para acceder a NextCloud en el navegador se debe colocar la dirección IP del servidor Docker y el puerto donde escucha el contenedor. En mi caso seria \href{http://192.168.1.222:8080/}{\color{blue}http://192.168.1.222:8080}
-			\end{tcolorbox}
-			
-			Finalizada la configuración y ya dentro del dashboard me dirigiré al perfil del usuario administrador, donde podre crear los usuarios que tendrán acceso al servicio de Nextcloud.
-			
-			\begin{figure}[ht]
-				
-				\centering
-				
-				\includegraphics[width=0.9\textwidth]{imagenes/docker/nextcloud/creacionUsuarios.png}
-				
-				\caption{Creación de Usuarios}
-				
-				\label{fig:usuarios}
-			\end{figure}	
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			sudo vim /etc/apache2/sites-available/nextcloud.conf
+			\end{lstlisting}
 		
-		Los alumnos podrán hacer uso de este servicio solamente desde la red lan a través de un navegador web. Donde cada uno accederá con su usuario y contraseña.\par
-		
-		\subsection{Conclusión}
+		Este VirtualHost está configurado para mostrar el sitio Nextcloud en el dominio ''aulavirtual.duckdns.org'' desde el directorio \textit{/opt/nextcloud/}, y permite el acceso completo a los archivos en ese directorio mientras deshabilita la compatibilidad con WebDAV para este sitio. Además, se habilita la posibilidad de usar archivos .htaccess para anular la configuración en el directorio.\par
 			
-			Con Nextcloud la información se almacena de forma segura en un lugar controlable. NextCloud replicar las capacidades de servicios externos de almacenamiento en la nube, permitiendo compartir contenido entre usuarios de la misma red local.
-
-	\section{Contenedor Emby}
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			
+			<VirtualHost *:80>
+			DocumentRoot /opt/nextcloud/
+			ServerName aulavirtual.duckdns.org
+			ServerAlias aulavirtual.duckdns.org
+			
+			<Directory /opt/nextcloud/>
+			Require all granted
+			AllowOverride All
+			Options FollowSymLinks MultiViews
+			<IfModule mod_dav.c>
+			Dav off
+			</IfModule>
+			</Directory>
+			</VirtualHost>
+			\end{lstlisting}
+		
 	
-		\subsection{¿Que es Emby?}
-		
-			Emby es un centro de multimedia multiplataforma que permite visualizar contenido desde cualquier tipo de dispositivo via Web, App o DLNA. 
-		
-			Emby trabaja con el contenido multimedia almacenado en servidor local, esto lo hace ideal dadas las características del Aula Virtual.\par
 			
-		\subsection{Características de Emby:}
+			Habilitar el sitio virtual creado mediante el comando a2ensite:
 			
-			\begin{itemize}
-				
-				\item El servidor de Emby convierte y envía automáticamente los vídeos a cualquier dispositivo.
-				
-				\item Cuenta con canales de vídeo en directo.
-				
-				\item Permite sincronizar librerías con los clientes móviles.
-				
-				\item La organización está muy cuidada para ser sencilla de ver y entender.
-				
-				\item Cuenta con controles parentales.
-				
-				\item Servidor DLNA para reproducir el contenido multimedia.
-				
-				\item Compatible con Chromecast.
-	
-			\end{itemize}
-		
-		\subsection{¿Qué es un centro multimedia?}
-		
-			Un centro multimedia es una aplicación que gestiona el contenido multimedia (fotografías, musica y vídeos), para que se pueda reproducir en el mismo dispositivo donde esta almacenado o en otros dispositivos, en este caso, conectados a la red LAN.
-		
-			Emby, cuentas con la aplicación servidor que gestiona el contenido y lo transmite por streaming, y por otro lado la aplicación que recibe el contenido. La cual puede ser el cliente que se encuentra disponible para la plataforma de Windows, Mac, Linux, FreeBSD, dispositivos NAS, Android, iOS, Windows Phone, Android TV, Fire TV, Apple TV, Kodi, Xbox, etc. O  cualquier navegador compatible con HTML5.
-		
-		\subsection{Preparación del área de trabajo}
-			
-			Mi directorio de trabajo sera /srv donde creare un directorio que almacenara toda las configuraciones de Emby.\par
-			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo Emby]
-				#cambiar al directorio srv
-				cd /srv
-				#crear directorio
-				mkdir emby
-				#cambiar directorio
-				cd emby
+		    \begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			sudo a2ensite nextcloud.conf
 			\end{lstlisting}
 			
-			\clearpage
+			Reiniciar el servicio de Apache para aplicar los cambios:
 			
-			Dentro del directorio creare un documento docker-compose.yaml el cual contendra el siguiente codigo:
-								
-			\inputminted{yaml}{documentos/docker/emby/docker-compose.yml}
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			sudo systemctl restart apache2
+			\end{lstlisting}
 			
-			\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
-			colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Estructura del documento,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]
-			
-			\centering
-			
-				Descripción del código \ref{estructura-docker}
-			
-			\end{tcolorbox}
-			
-			\subsection{Crear Contenedor Docker:}\par\vspace{0.2cm}
-			
-			\begin{lstlisting}[language=bash,caption=Crear contenedor Docker]
+			Con estos pasos, se habrá creado y habilitado el archivo de configuración ''nextcloud.conf'' en el directorio \textit{/etc/apache2/sites-available/}, lo que permitirá que Apache muestre Nextcloud desde la URL ''nextcloud.duckdns.org'' en el puerto 80. Además, se han configurado las opciones necesarias para que el servidor Apache funcione correctamente con Nextcloud, incluyendo la configuración de directorios, permisos y opciones de seguimiento de enlaces simbólicos.
+
 	
-				docker-compose up -d
-			\end{lstlisting}	
+			\item Conﬁguración adicional:
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			nvim /etc/php/7.4/apache2/conf.d/10-opcache.ini
+			\end{lstlisting}
+		
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+		zend_extension=opcache
+		opcache.enable=1
+		opcache.enable_cli=1
+		opcache.memory_consumption=128
+		opcache.interned_strings_buffer=8
+		opcache.max_accelerated_ﬁles=10000
+		opcache.revalidate_freq=1
+		opcache.save_comments=1
+		opcache.huge_code_pages=1
+		||\end{lstlisting}
+		
+		En la configuración de PHP, se realizaron las siguientes modificaciones específicas para el OPCache:
+		
+		\begin{itemize}
 			
-			\subsubsection{Explicación del comando anterior:}\par
+
+			
+			\item \textbf{zend\_extension=opcache:} Se habilita la extensión del OPCache en PHP, lo que permite que PHP utilice la caché de código opcodificado para mejorar el rendimiento de las ejecuciones de los scripts.
+			
+			\item \textbf{opcache.enable=1:} Se activa el OPCache para que esté habilitado y funcione en el entorno de PHP.
+			
+			\item \textbf{opcache.enabl\_cli=1:} Se habilita el OPCache también para la línea de comandos (CLI) de PHP, lo que permite que los scripts PHP ejecutados en la consola se beneficien de la caché opcodificada.
+			
+			\item\textbf{opcache.memory\_consumption=128:} Se establece la cantidad de memoria que el OPCache puede utilizar para almacenar la caché de código opcodificado. En este caso, se asignan 128 megabytes (MB) de memoria para esta función.
+			
+			\item\textbf{opcache.interned\_strings\_buffer=8:} Se especifica la cantidad de memoria en megabytes (MB) que el OPCache utiliza para almacenar las cadenas internas, lo que puede mejorar la eficiencia y reducir la duplicación de cadenas en el código PHP.
+			
+			\item\textbf{opcache.max\_accelerated\_files=10000:} Se establece el número máximo de archivos que el OPCache puede almacenar en caché. En este caso, se configura para almacenar hasta 10,000 archivos en la caché opcodificada.
+			
+			\item\textbf{opcache.revalidate\_freq=1:} Se define la frecuencia con la que el OPCache verificará si los archivos en caché han sido modificados en disco, en segundos. En este caso, se establece para que verifique cada segundo.
+			
+			\item\textbf{opcache.save\_comments=1:} Se indica que el OPCache debe guardar los comentarios en el código opcodificado. Esto puede ser útil para propósitos de depuración.
+			
+			\item\textbf{opcache.huge\_code\_pages=1:} Habilita el uso de páginas de código grandes (huge code pages) si están disponibles en el sistema. Esto puede mejorar el rendimiento del OPCache en ciertas configuraciones.
+		
+
+		\end{itemize}
+			Con estas configuraciones en OPCache, se optimiza el rendimiento del motor PHP, almacenando en caché el código opcodificado para reducir el tiempo de ejecución de los scripts y mejorar la eficiencia general del servidor PHP. Es importante tener en cuenta que estas configuraciones pueden variar según las necesidades y características del servidor y las aplicaciones web que se ejecuten.	
+			
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			systemctl restart apache2
+			a2dissite 000-default.conf
+			a2ensite nextcloud.conf
+			a2enmod rewrite
+			a2enmod headers
+			a2enmod env
+			a2enmod dir
+			a2enmod mime
+			\end{lstlisting}
+		
+			\item SSL - Certbot \par 
+			
+			Certbot es una herramienta de software desarrollada por la organización sin fines de lucro Internet Security Research Group (ISRG). Su objetivo principal es facilitar y automatizar el proceso de obtención, renovación e instalación de certificados SSL/TLS para sitios web, permitiendo así el uso de conexiones seguras (HTTPS) en los servidores web.
+			
+			Los certificados SSL/TLS son fundamentales para garantizar la seguridad de las comunicaciones entre los usuarios y el servidor, ya que cifran los datos transmitidos y autentican la identidad del servidor. Esto ayuda a proteger la privacidad de los datos y garantizar que la información no sea interceptada o manipulada por terceros malintencionados.
+			
+			Certbot es específicamente diseñado para funcionar con el servidor web Apache y el servidor web Nginx, aunque también es compatible con otros servidores web populares. La herramienta utiliza el protocolo de autorización automática ACME (Protocolo de Gestión de Certificados de Autoridad), que permite validar y obtener certificados automáticamente a través de desafíos bien definidos.
+			
+			La principal ventaja de Certbot es su facilidad de uso y automatización. Una vez configurado correctamente, puede realizar tareas como:
+			
+			Generación de una solicitud de firma de certificado (CSR).
+			Comunicarse con una Autoridad de Certificación (CA), como Let's Encrypt, para obtener un certificado SSL/TLS gratuito y confiable.
+			Verificar la propiedad del dominio a través de diferentes métodos de desafío (por ejemplo, desafío HTTP o desafío DNS).
+			Instalación automática del certificado en el servidor web configurado.
+			Programación de tareas para renovar automáticamente los certificados antes de que expiren.
+			
+	
+		\begin{itemize}
+			\item Instalación de CertBot y el complemento para Apache:
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			apt install certbot python3-certbot-apache
+			\end{lstlisting}
+			
+			\item Configuración de CertBot para Apache:	Una vez instalado, se configura CertBot para funcionar con Apache.
+			
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			certbot --apache
+			\end{lstlisting}
+		
+			\end{itemize}	
+		
+			El proceso de configuración de certificados SSL/TLS para sitios web alojados en Apache utilizando CertBot incluye un asistente interactivo. CertBot, de manera automática, detectará los dominios configurados en el servidor y presentará opciones para que se seleccione qué dominios requieren certificados SSL/TLS.
+			
+			Siguiendo las indicaciones del asistente, se podrá decidir si se desea redireccionar todas las solicitudes HTTP a HTTPS, garantizando así conexiones seguras. Una vez completado el proceso de configuración, CertBot se encargará de obtener y configurar los certificados SSL/TLS necesarios para los dominios seleccionados.
+			
+			CertBot también habilitará automáticamente la configuración de Apache para utilizar estos certificados, permitiendo ofrecer conexiones seguras a través de HTTPS. Con esta implementación, se asegura que los sitios web alojados en el servidor se carguen de manera segura mediante HTTPS y proporcionen conexiones cifradas para salvaguardar la privacidad y seguridad de los usuarios.
+			
+	
+			Editar el archivo \textit{/opt/nextcloud/conﬁg/conﬁg.php}:
+			
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			vim /opt/nextcloud/conﬁg/conﬁg.php
+			\end{lstlisting}
+				
+		
+			Con esta configuración, Nextcloud solo permitirá el acceso desde los dominios y direcciones IP especificados en la lista de dominios confiables. Los usuarios podrán acceder a Nextcloud desde cualquiera de estos dominios o direcciones IP sin problemas de autenticación o seguridad. Cualquier otro intento de acceso desde un dominio no listado en 'trusted\_domains' será bloqueado por Nextcloud.
+		
+			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			'trusted_domains' =>
+			array (
+			0 => 'localhost',
+			1 => 'aulavirtual.duckdns.org',
+			2 => '192.168.100.3',
+			),
+			\end{lstlisting}
+		
+		\begin{itemize}
+			\item \textbf{trusted\_domains:} se utiliza para especificar los nombres de dominio o direcciones IP desde las cuales se permite el acceso a Nextcloud. En este caso, se han establecido tres dominios confiables:
+			
+			\item \textbf{localhost:} Indica que el acceso a Nextcloud desde el propio servidor, a través de la dirección de loopback 'localhost' (127.0.0.1), está permitido.
+				
+			\item \textbf{aulavirtual.duckdns.org:} Especifica que el acceso a Nextcloud desde el dominio 'aulavirtual.duckdns.org' está permitido. Esto permitirá que Nextcloud sea accesible desde Internet a través de este dominio.
+				
+			\item \textbf{192.168.1.3:} Indica que el acceso a Nextcloud desde la dirección IP local '192.168.100.3' está permitido. Esto permitirá el acceso a Nextcloud desde la red local a través de esta dirección IP.
+
+		\end{itemize}
+		
+
+		
+		
+		Reiniciar servidor web:
+		\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+		systemctl restart apache2
+		\end{lstlisting}
+
+		\end{enumerate}
+		
+		\subsubsection{Configuración de red}
+	
+			\begin{lstlisting}[language=Bash, caption=docker]
+		#! /bin/bash
+		ip link add link enp1s0 name dmz type vlan id 100 #creo la vlan
+		ip addr add 192.168.100.3/24 brd 192.168.100.255 dev dmz #configuro la ip
+		ip link set dmz up #activo la interfaz
+		ip route add default via 192.168.100.1 #nueva ruta de ruteo
+		echo "nameserver 1.1.1.1" > /etc/resolv.conf # dns
+		ip addr del 192.168.1.124/24 dev enp1s0 #elimino la ip estatica anterio
+		
+			\end{lstlisting}
+
+			Este script realizará los pasos necesarios para configurar la interfaz de red ''dmz'' con la dirección IP ''192.168.100.3'' en la VLAN 100, conectándola a la red DMZ del servidor de virtualización. Además, establecerá la puerta de enlace predeterminada a través de ''192.168.100.1'' y configurará el servidor DNS con la dirección ''1.1.1.1''. Por último, eliminará la dirección IP estática ''192.168.1.124'' que estaba configurada en la interfaz ''enp1s0'' anteriormente.
+			
+			\subsubsection{Configuración NFS}
+			Para montar el directorio compartido a través de NFS en el servidor Nextcloud,se deben seguir los siguientes pasos:
 			
 			\begin{itemize}
+				\item Instalar nfs-common
+				\begin{lstlisting}[language=Bash, caption=nfs-common]
+					sudo apt install nfs-common
+				\end{lstlisting}
 				
-				\item \textbf{docker-compose:} Define y ejecute aplicaciones de varios contenedores con Docker.
+				\item Montar el directorio compartido utilizando el comando ''mount'' con la opción ''-t nfs'' y la dirección IP del servidor NFS seguido del directorio compartido:
+				\begin{lstlisting}[language=Bash, caption=mount]
+					sudo mount -t nfs 192.168.100.1:/ruta/directorio /ruta/datos
+				\end{lstlisting}
 				
-				\item \textbf{up:} Crea e inicia el contenedor.
-				
-				\item \textbf{-d:} Ejecuta contenedores en segundo plano.
-				
-			\end{itemize}
-			
-			Este proceso puede demorar varios minutos, dependiendo de la velocidad de la conexión al Internet con la que se cuente. Una vez finalizada la descarga de la imágene se ejecutara el contenedor.\par
-	
-		\subsection{Configuración Emby}
-					
-			Una vez que el contenedor se encuentra en ejecución me dirigiré al navegador web para terminar de realizar las configuraciones. Al igual que en NextCloud, para acceder al servicio de Emby solo se debe colocar en el navegador web la dirección IP del servidor Docker y el puerto donde escucha. En mi caso seria \href{http://192.168.1.222:8096/}{\color{blue}http://192.168.1.222:8096}
-			
-			\begin{itemize}
-				
-				\item \textbf{Idioma:} Seleccionar el lenguaje de la Interfaz Emby.
-				
-				\item \textbf{Crear usuario y contraseña:} Creación del usuario para acceder a la interfaz web de Emby.
-				
-				\item \textbf{Agregar Contenido Multimedia:} Seleccionar los directorios donde se encuentran todo el contenido multimedia que se compartirá con la red lan.
-				
-				\item \textbf{Lenguaje de las Bibliotecas:} Seleccionar el Lenguaje con el que se mostrara la información del contenido multimedia en la plataforma web.
-				
-				\item \textbf{Términos y Condiciones:} Aceptar los términos y condiciones de Emby.
-				
-				\item \textbf{Final de Configuración:} Ahora Emby se encargara de realizar las demás configuraciones, mientras ofrece los clientes de todas las plataformas soportadas.
-				
-				\item \textbf{Login:} Ingresar al sistema web.
-				
+				\item Para que el directorio compartido se monte automáticamente cada vez que el servidor Emby se inicie, se debe agregar la línea correspondiente al archivo ''/etc/fstab''.
+				\begin{lstlisting}[language=Bash, caption=fstab]
+					192.168.100.1:/ruta/directorio /ruta/datos nfs defaults 0 0
+				\end{lstlisting}	
 			\end{itemize}
 		
-			\subsubsection{Panel de control de Emby}
-			
-				\begin{figure}[ht]
-					
-					\centering
-					
-					\includegraphics[width=0.9\textwidth]{imagenes/docker/emby/emby-dashboard.png}
-					
-					\caption{Dashboard}
-					
-					\label{fig:dashboard}
-					
-				\end{figure}
-					
-		\subsection{Conclusión}
-		
-			Uno de los problemas que tenemos en el Aula virtual es la velocidad de conexión al Internet (2MB). Lo que dificulta en gran manera la reproducción de Vídeos Tutoriales o contenido multimedia recomendado por los docentes.\par
-			
-			Ahora se descarga el contenido multimedia y se almacena de forma segura en un lugar controlable dentro del Servidor Local y con Emby por medio de streaming se comparte con toda la red lan.\par
-	
+			\subsubsection{Personalización}
+			La configuración de la plataforma Nextcloud dependerá de las necesidades de cada establecimiento. Cada institución o administrador tendrá la capacidad de personalizar y ajustar la configuración de Nextcloud según los requerimientos y preferencias específicas de su entorno y usuarios. Nextcloud ofrece una amplia gama de opciones y ajustes que permiten una adaptación versátil de la plataforma para satisfacer las necesidades particulares de cada implementación.

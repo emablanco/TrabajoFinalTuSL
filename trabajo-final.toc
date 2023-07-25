@@ -7,94 +7,96 @@
 \contentsline {chapter}{\numberline {6}Conceptos técnicos aplicados}{7}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Licencias involucradas}{8}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Tipos de licencia}{8}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Licencias GPL}{8}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.1}Licencia GPL}{8}{subsection.7.1.1}%
 \contentsline {subsection}{\numberline {7.1.2}Licencias LGPL}{8}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Licencias AGPL}{8}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Licencias Estilo BSD}{8}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.3}Licencia AGPL}{8}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Licencia Estilo BSD}{8}{subsection.7.1.4}%
 \contentsline {subsection}{\numberline {7.1.5}Licencia PSFL}{9}{subsection.7.1.5}%
-\contentsline {subsection}{\numberline {7.1.6}Licencias MPL y derivadas}{9}{subsection.7.1.6}%
+\contentsline {subsection}{\numberline {7.1.6}Licencia MPL y derivadas}{9}{subsection.7.1.6}%
 \contentsline {subsection}{\numberline {7.1.7}Licencia CDDL}{9}{subsection.7.1.7}%
-\contentsline {subsection}{\numberline {7.1.8}Licencias EPL}{9}{subsection.7.1.8}%
+\contentsline {subsection}{\numberline {7.1.8}Licencia EPL}{9}{subsection.7.1.8}%
 \contentsline {subsection}{\numberline {7.1.9}Licencia Apache}{9}{subsection.7.1.9}%
 \contentsline {subsection}{\numberline {7.1.10}Licencia PHP}{10}{subsection.7.1.10}%
 \contentsline {subsection}{\numberline {7.1.11}Licencias Creative Commons}{10}{subsection.7.1.11}%
 \contentsline {subsubsection}{Tipos de licencias de Creative Commons}{10}{section*.2}%
-\contentsline {chapter}{\numberline {8}Documentación}{11}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Estado del arte}{12}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Objetivos}{13}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Generales}{13}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Específicos}{13}{section.10.2}%
-\contentsline {chapter}{\numberline {11}Desarrollo}{14}{chapter.11}%
-\contentsline {chapter}{\numberline {12}Cronograma de trabajo}{15}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Proceso de migración}{17}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Aspectos importantes}{17}{section.13.1}%
-\contentsline {section}{\numberline {13.2}Inventario de Software}{17}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Software Invetariado}{17}{subsection.13.2.1}%
-\contentsline {section}{\numberline {13.3}Inventario de Hardware}{18}{section.13.3}%
-\contentsline {subsection}{\numberline {13.3.1}Hardware Inventariado}{18}{subsection.13.3.1}%
-\contentsline {section}{\numberline {13.4}Sistema Operativo}{19}{section.13.4}%
-\contentsline {subsection}{\numberline {13.4.1}Distribución GNU/Linux}{19}{subsection.13.4.1}%
-\contentsline {subsection}{\numberline {13.4.2}Debian}{19}{subsection.13.4.2}%
-\contentsline {section}{\numberline {13.5}Instalación del sistema operativo}{19}{section.13.5}%
-\contentsline {subsection}{\numberline {13.5.1}Requisitos}{20}{subsection.13.5.1}%
-\contentsline {subsection}{\numberline {13.5.2}Proceso de Instalación}{20}{subsection.13.5.2}%
+\contentsline {chapter}{\numberline {8}Documentación}{12}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Estado del arte}{13}{chapter.9}%
+\contentsline {chapter}{\numberline {10}Objetivos}{14}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Generales}{14}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Específicos}{14}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Desarrollo}{15}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Cronograma de trabajo}{16}{chapter.12}%
+\contentsline {chapter}{\numberline {13}Proceso de migración}{18}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Aspectos importantes}{18}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Inventario de Software}{19}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Software Invetariado}{19}{subsection.13.2.1}%
+\contentsline {section}{\numberline {13.3}Inventario de Hardware}{19}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Hardware Inventariado}{20}{subsection.13.3.1}%
+\contentsline {section}{\numberline {13.4}Sistema Operativo}{20}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Distribución GNU/Linux}{20}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Debian}{20}{subsection.13.4.2}%
+\contentsline {section}{\numberline {13.5}Instalación del sistema operativo}{21}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Requisitos}{21}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Proceso de Instalación}{21}{subsection.13.5.2}%
 \contentsline {section}{\numberline {13.6}Repositorios}{22}{section.13.6}%
 \contentsline {subsection}{\numberline {13.6.1}¿Que es un repositorio?}{22}{subsection.13.6.1}%
 \contentsline {subsection}{\numberline {13.6.2}Configuración de repositorios Debian}{22}{subsection.13.6.2}%
 \contentsline {section}{\numberline {13.7}Instalación de Programas}{22}{section.13.7}%
 \contentsline {chapter}{\numberline {14}Configuración red LAN}{24}{chapter.14}%
-\contentsline {section}{\numberline {14.1}¿Que es una red LAN?}{24}{section.14.1}%
-\contentsline {section}{\numberline {14.2}¿Que es una dirección IP?}{24}{section.14.2}%
-\contentsline {subsection}{\numberline {14.2.1}Direcciones IP dinámicas}{24}{subsection.14.2.1}%
-\contentsline {subsection}{\numberline {14.2.2}Direcciones IP estáticas}{24}{subsection.14.2.2}%
+\contentsline {section}{\numberline {14.1}Definición de una red LAN}{24}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Significado de una dirección IP}{24}{section.14.2}%
 \contentsline {section}{\numberline {14.3}Configuración de red}{24}{section.14.3}%
-\contentsline {subsection}{\numberline {14.3.1}Diagrama de red}{25}{subsection.14.3.1}%
-\contentsline {chapter}{\numberline {15}Servidor Local}{26}{chapter.15}%
-\contentsline {section}{\numberline {15.1}¿Que es un Servidor Loca?}{26}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Uso del servidor}{26}{section.15.2}%
+\contentsline {subsection}{\numberline {14.3.1}Diagrama de red}{24}{subsection.14.3.1}%
+\contentsline {chapter}{\numberline {15}Servidor de Virtualizacion}{26}{chapter.15}%
+\contentsline {section}{\numberline {15.1}¿Que es un Servidor de Virtualizacion?}{26}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Usos del servidor de virtualización}{26}{section.15.2}%
 \contentsline {section}{\numberline {15.3}Sistema Operativo}{26}{section.15.3}%
-\contentsline {section}{\numberline {15.4}Instalación del Sistema Operativo}{26}{section.15.4}%
-\contentsline {section}{\numberline {15.5}LVM}{28}{section.15.5}%
-\contentsline {subsection}{\numberline {15.5.1}¿Que es LVM?}{28}{subsection.15.5.1}%
+\contentsline {section}{\numberline {15.4}Instalación del Sistema Operativo}{27}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Preparación:}{27}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}Proceso de instalación:}{27}{subsection.15.4.2}%
+\contentsline {section}{\numberline {15.5}LVM}{27}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}¿Que es LVM?}{27}{subsection.15.5.1}%
 \contentsline {subsection}{\numberline {15.5.2}Gestión volúmenes lógicos}{28}{subsection.15.5.2}%
 \contentsline {section}{\numberline {15.6}fstab}{29}{section.15.6}%
-\contentsline {subsection}{\numberline {15.6.1}Configurar fstab}{30}{subsection.15.6.1}%
-\contentsline {section}{\numberline {15.7}Controlar cambios en el sistema}{30}{section.15.7}%
-\contentsline {subsection}{\numberline {15.7.1}Generar Hash}{31}{subsection.15.7.1}%
-\contentsline {subsection}{\numberline {15.7.2}Comparar Hash}{31}{subsection.15.7.2}%
-\contentsline {section}{\numberline {15.8}Configuración de red}{32}{section.15.8}%
-\contentsline {subsection}{\numberline {15.8.1}Asignar una IP estática}{32}{subsection.15.8.1}%
-\contentsline {subsection}{\numberline {15.8.2}Servidor DNS}{32}{subsection.15.8.2}%
-\contentsline {section}{\numberline {15.9}Firewall}{33}{section.15.9}%
-\contentsline {subsection}{\numberline {15.9.1}¿Que es iptables?}{33}{subsection.15.9.1}%
-\contentsline {subsubsection}{Características de iptables:}{33}{section*.3}%
-\contentsline {subsection}{\numberline {15.9.2}Reglas iptables}{33}{subsection.15.9.2}%
-\contentsline {section}{\numberline {15.10}Servidor Docker}{34}{section.15.10}%
-\contentsline {subsection}{\numberline {15.10.1}¿Que es Docker?}{34}{subsection.15.10.1}%
-\contentsline {subsection}{\numberline {15.10.2}Funcionamiento de los contenedores?}{34}{subsection.15.10.2}%
-\contentsline {subsection}{\numberline {15.10.3}Características}{34}{subsection.15.10.3}%
-\contentsline {subsection}{\numberline {15.10.4}Herramientas de Docker}{34}{subsection.15.10.4}%
-\contentsline {subsection}{\numberline {15.10.5}Instalación Docker}{35}{subsection.15.10.5}%
-\contentsline {subsection}{\numberline {15.10.6}¿Que es Docker Compose?}{36}{subsection.15.10.6}%
-\contentsline {subsection}{\numberline {15.10.7}Instalación Docker Compose}{36}{subsection.15.10.7}%
-\contentsline {section}{\numberline {15.11}Contenedor NextCloud}{36}{section.15.11}%
-\contentsline {subsection}{\numberline {15.11.1}¿Que es Nextcloud?}{36}{subsection.15.11.1}%
-\contentsline {subsection}{\numberline {15.11.2}Características:}{36}{subsection.15.11.2}%
-\contentsline {subsection}{\numberline {15.11.3}Requisitos:}{36}{subsection.15.11.3}%
-\contentsline {subsection}{\numberline {15.11.4}Preparación del área de trabajo}{36}{subsection.15.11.4}%
-\contentsline {subsubsection}{Estructura del docker-compose.yml}{37}{section*.4}%
-\contentsline {subsection}{\numberline {15.11.5}Crear Contenedor}{38}{subsection.15.11.5}%
-\contentsline {subsubsection}{Explicación del comando anterior:}{38}{section*.5}%
-\contentsline {subsection}{\numberline {15.11.6}Configuración de NextCloud}{38}{subsection.15.11.6}%
-\contentsline {subsection}{\numberline {15.11.7}Conclusión}{39}{subsection.15.11.7}%
-\contentsline {section}{\numberline {15.12}Contenedor Emby}{40}{section.15.12}%
-\contentsline {subsection}{\numberline {15.12.1}¿Que es Emby?}{40}{subsection.15.12.1}%
-\contentsline {subsection}{\numberline {15.12.2}Características de Emby:}{40}{subsection.15.12.2}%
-\contentsline {subsection}{\numberline {15.12.3}¿Qué es un centro multimedia?}{40}{subsection.15.12.3}%
-\contentsline {subsection}{\numberline {15.12.4}Preparación del área de trabajo}{40}{subsection.15.12.4}%
-\contentsline {subsection}{\numberline {15.12.5}Crear Contenedor Docker:}{41}{subsection.15.12.5}%
-\contentsline {subsubsection}{Explicación del comando anterior:}{41}{section*.6}%
-\contentsline {subsection}{\numberline {15.12.6}Configuración Emby}{41}{subsection.15.12.6}%
-\contentsline {subsubsection}{Panel de control de Emby}{42}{section*.7}%
-\contentsline {subsection}{\numberline {15.12.7}Conclusión}{42}{subsection.15.12.7}%
-\contentsline {chapter}{\numberline {16}Conclusión}{43}{chapter.16}%
+\contentsline {section}{\numberline {15.7}Hypervisor}{30}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}KVM}{31}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}QEMU/KVM}{31}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.7.3}libvirt}{31}{subsection.15.7.3}%
+\contentsline {subsection}{\numberline {15.7.4}Instalación}{32}{subsection.15.7.4}%
+\contentsline {section}{\numberline {15.8}Conﬁguración de Red}{32}{section.15.8}%
+\contentsline {subsection}{\numberline {15.8.1}iproute}{33}{subsection.15.8.1}%
+\contentsline {subsection}{\numberline {15.8.2}Servidor DNS}{35}{subsection.15.8.2}%
+\contentsline {subsection}{\numberline {15.8.3}NFS}{35}{subsection.15.8.3}%
+\contentsline {subsection}{\numberline {15.8.4}IP forwarding}{36}{subsection.15.8.4}%
+\contentsline {subsubsection}{Habilitar IP forwarding}{36}{section*.3}%
+\contentsline {section}{\numberline {15.9}iptables}{37}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}Configurar reglas}{37}{subsection.15.9.1}%
+\contentsline {section}{\numberline {15.10}Seguridad}{39}{section.15.10}%
+\contentsline {subsection}{\numberline {15.10.1}Fail2ban}{39}{subsection.15.10.1}%
+\contentsline {subsubsection}{Instalación}{40}{section*.4}%
+\contentsline {subsubsection}{Configuración}{40}{section*.5}%
+\contentsline {subsubsection}{Script}{41}{section*.6}%
+\contentsline {subsubsection}{Action}{43}{section*.7}%
+\contentsline {subsubsection}{Jail}{44}{section*.8}%
+\contentsline {subsection}{\numberline {15.10.2}Controlar cambios en el sistema}{45}{subsection.15.10.2}%
+\contentsline {subsubsection}{Comparar Hash}{46}{section*.9}%
+\contentsline {section}{\numberline {15.11}Snapshot}{46}{section.15.11}%
+\contentsline {section}{\numberline {15.12}Maquinas virtuales}{47}{section.15.12}%
+\contentsline {subsection}{\numberline {15.12.1}Servidor Docker}{48}{subsection.15.12.1}%
+\contentsline {subsubsection}{¿Que es Docker?}{48}{section*.10}%
+\contentsline {subsubsection}{¿Qué es Docker Compose?}{48}{section*.11}%
+\contentsline {subsubsection}{Maquina Virtual}{48}{section*.12}%
+\contentsline {subsubsection}{Instalación}{48}{section*.13}%
+\contentsline {subsubsection}{Contenedor Emby}{50}{section*.14}%
+\contentsline {subsubsection}{¿Que es Emby?}{50}{section*.15}%
+\contentsline {subsubsection}{Configuración de red}{51}{section*.16}%
+\contentsline {subsubsection}{Configuración NFS}{52}{section*.17}%
+\contentsline {subsubsection}{Personalizacion}{52}{section*.18}%
+\contentsline {subsection}{\numberline {15.12.2}Servidor Nextcloud}{52}{subsection.15.12.2}%
+\contentsline {subsubsection}{¿Que es Nextcloud?}{52}{section*.19}%
+\contentsline {subsubsection}{Maquina Virtual}{53}{section*.20}%
+\contentsline {subsubsection}{Instalación}{53}{section*.21}%
+\contentsline {subsubsection}{Configuración de red}{59}{section*.22}%
+\contentsline {subsubsection}{Configuración NFS}{59}{section*.23}%
+\contentsline {subsubsection}{Personalización}{59}{section*.24}%
+\contentsline {chapter}{\numberline {16}Conclusión}{60}{chapter.16}%

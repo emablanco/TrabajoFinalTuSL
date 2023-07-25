@@ -1,36 +1,27 @@
 \chapter{Configuración red LAN}\label{ch:red lan}
 
-	\section{¿Que es una red LAN?}
-	
-		Una red LAN es un grupo de dispositivos (impresoras, sistemas, dispositivos móviles, consolas de juegos) interconectados mediante alguna tecnología, y que comparten datos entre sí. Una LAN puede ser una entidad autónoma e independiente, así como una parte de redes más grandes y extensas.\par
-
+		\section{Definición de una red LAN}
+		Una red de área local (LAN) es un conjunto de dispositivos, como impresoras, sistemas informáticos, dispositivos móviles y consolas de juegos, que están interconectados mediante alguna tecnología y comparten datos entre sí. Una LAN puede funcionar como una entidad autónoma e independiente o formar parte de redes más grandes y extensas.
 		
-	\section{¿Que es una dirección IP?}
+		\section{Significado de una dirección IP}
+		Una dirección IP (Protocolo de Internet, correspondiente al nivel de red del modelo TCP/IP) es un número que identifica de manera lógica y jerárquica una interfaz de red de un dispositivo. En un paquete IP, el encabezado contiene una dirección de 32 bits (IPv4) o 128 bits (IPv6). Este identificador es único y no se repite en ningún otro equipo en el mundo, y tiene la función de registrar el equipo en la red global. Las direcciones IP no solo son asignadas a equipos de cómputo, sino también a módems, routers, sitios web, entre otros.
 		
-		una dirección IP (Internet Protocol que corresponde al nivel de red del modelo TCP/IP) es un número que identifica, de manera lógica y jerárquica, a una Interfaz red de un dispositivo. En un paquete IP, el
-		encabezado contiene una dirección de 32 bits (IPv4) o 128 bits (IPv6). Este identificador es único y no se repite en ningún otro equipo en el mundo y tiene la tarea de registrar el equipo a la red global. Pero una dirección IP no solo la poseen los equipos de cómputo, también los módems, routers, sitios web, etc.\par
+		En el mundo del direccionamiento IP, se distinguen dos tipos de direcciones IP: dinámicas y estáticas.
+		\begin{itemize}
+			\item Las direcciones IP dinámicas son variables y son entregadas y administradas por un servidor DHCP. Su funcionamiento se basa en el arrendamiento de la dirección por un tiempo específico, tras el cual la dirección se renovará y puede cambiar su sintaxis.
 		
-		Entendiendo el papel de una dirección IP es necesario saber que existen dos tipos de direcciones IP y que se manejan dos protocolos para éstas. Éstos son el protocolo IPv4, pero con la demanda cada día mayor de solicitudes de direcciones IP se está implementando el protocolo IPv6. El cual ofrece mayor direcciones.\par En el mundo del direccionamiento IP se encuentran dos tipos de direcciones IP, estática y dinámica. \par
-		
-		\subsection{Direcciones IP dinámicas}
+			\item Las direcciones IP estáticas, como su nombre indica, son direcciones fijas que no cambian. Se utilizan en servidores, máquinas de producción conectadas a la red y, en general, por usuarios que no necesitan que su dirección IP varíe, ya que otros servicios dependen de ellas.
+		\end{itemize}
 			
-			Son direcciones variables, entregadas y administradas por un servidor DHCP y su funcionamiento radica en el arrendamiento de esta dirección por un tiempo específico, luego de este periodo de tiempo la dirección se renovará modificando su sintaxis.\par
+		\section{Configuración de red}
 		
-			
-		\subsection{Direcciones IP estáticas}\par
-			
-			Como su nombre lo indica, son direcciones IP que permanecerán fijas, sin ningún tipo de variación. Son usadas en servidores, máquinas de producción conectadas a la red y en general todo usuario que no requiere que su IP sea modificada, ya que de él dependen otros servicios.
-	
-			
-	\section{Configuración de red}	
-	
-		Por simplicidad y dado que la red del aula es una red pequeña las direcciones IP para los ordenadores de escritorios serán dinámicas. El servidor recibirá una dirección IP estática para que las estaciones de trabajo puedan encontrarlo en la red.\par
-	
-		La red tendrá la dirección IP 192.168.1.0/24 y se establecerá la dirección IP en 192.168.1.222 para el servidor Docker .\par
+		Para mantener la simplicidad en la red del aula, se ha decidido asignar direcciones IP dinámicas a los ordenadores de escritorio. Sin embargo, el servidor de virtualización recibirá una dirección IP estática para que las estaciones de trabajo puedan localizarlo en la red.
 		
+		La red del aula utilizará la dirección IP 192.168.1.0/24 y se ha establecido la dirección IP 192.168.1.222 para el servidor de virtualización.
+				
 		\subsection{Diagrama de red}
 				
-			El diagrama de red es la representación visual de los ordenadores que compondrán la red de trabajo y su interconexión.\par
+			El diagrama de red es una representación visual que muestra los ordenadores que formarán parte de la red de trabajo y su interconexión.\par
 			
 			\begin{figure}[h]
 				\centering

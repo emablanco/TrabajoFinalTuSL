@@ -1,29 +1,41 @@
 \chapter{Proceso de migración}\label{ch:migración}
 
-	En este punto se realizará un análisis de la situación de partida para obtener un conocimiento detallado de las arquitecturas de los hardware disponibles, los documentos, aplicaciones y tipos de archivos existentes, entre otros aspectos. Este análisis permitirá evitar ajustes imprevistos durante la migración y establecer un plan de acción con la debida anticipación.
+En este punto, se llevará a cabo un análisis exhaustivo de la situación de partida, con el propósito de obtener un conocimiento detallado de las arquitecturas de los hardware disponibles, la variedad de documentos, aplicaciones y tipos de archivos existentes, junto con otros aspectos relevantes. Este análisis tiene como objetivo evitar ajustes imprevistos durante el proceso de migración y establecer un plan de acción con la debida anticipación.
 
-El objetivo de este análisis es identificar los requisitos funcionales que debe cumplir el nuevo sistema operativo..
+El propósito primordial de este análisis consiste en identificar los requisitos funcionales que el nuevo sistema operativo debe cumplir. Mediante este enfoque, se busca garantizar que el sistema operativo seleccionado sea capaz de satisfacer las necesidades y demandas específicas del entorno, asegurando así una transición exitosa y efectiva hacia el nuevo entorno informático.
 	
 	\section{Aspectos importantes}
-	
+					
+		En el análisis de la situación de partida, se identificaron varios aspectos importantes que requieren una atención detallada para la migración exitosa. Entre ellos se encuentran:
+		
 		\begin{itemize}
 			
-			\item Documentos y sus formatos.
-			\item Archivos de audio/vídeos y sus formatos.
-			\item Aplicaciones y sus interfaces.
-			\item Bases de datos y estructura de datos.
-			\item Disponibilidad de datos y aplicaciones.
-			\item Hardware Disponible y driver necesarios.
-			
+			\item\textbf{Documentos y sus formatos:} Se ha recopilado información sobre los diferentes tipos de documentos utilizados en el entorno actual, así como sus formatos específicos. Este conocimiento será fundamental para asegurar que el nuevo sistema operativo pueda manejar y ser compatible con estos formatos, evitando la pérdida de información o la necesidad de conversiones complicadas.
+		
+			\item\textbf{Archivos de audio/videos y sus formatos:} Se ha evaluado la variedad de archivos de audio y video presentes en el sistema. Es esencial verificar que el nuevo sistema operativo cuente con las herramientas y códecs necesarios para reproducir y trabajar con estos archivos de manera efectiva.
+		
+			\item\textbf{Aplicaciones y sus interfaces:} Se ha analizado el conjunto de aplicaciones utilizadas actualmente y sus interfaces. Es crucial determinar si existen alternativas de software libre que puedan reemplazar estas aplicaciones y proporcionar una experiencia de usuario similar o mejor.
+		
+			\item\textbf{Bases de datos y estructura de datos:} Se ha estudiado la estructura y el contenido de las bases de datos utilizadas en el sistema actual. Este análisis permitirá planificar la migración de datos hacia el nuevo entorno y asegurarse de que la nueva plataforma sea compatible con las bases de datos existentes.
+		
+			\item\textbf{Disponibilidad de datos y aplicaciones:} Se ha verificado la disponibilidad de datos y aplicaciones críticas para el funcionamiento del sistema. Es fundamental asegurar que todos los datos y aplicaciones necesarios estarán disponibles en el nuevo entorno para garantizar la continuidad de las operaciones.
+		
+			\item\textbf{Hardware disponible y drivers necesarios:} Se ha realizado un inventario del hardware existente en el entorno actual. Es importante identificar si el nuevo sistema operativo es compatible con el hardware existente y si se requerirán controladores (drivers) adicionales para su correcto funcionamiento.
+		
 		\end{itemize}
+
+		Considerando estos aspectos, se podrá establecer un plan de acción detallado para la migración hacia el nuevo sistema operativo, asegurando que se cubran todas las necesidades y se minimicen los inconvenientes durante el proceso de transición. La atención cuidadosa a estos aspectos clave permitirá lograr una migración exitosa y una adaptación fluida al nuevo entorno basado en software libre.\par
+			
 	
 		\vspace{0.3cm}
 		
 	\section{Inventario de Software}
 		
-		El inventario de software tiene como finalidad realizar un listado completo de todos los programas, aplicaciones, servicios y configuraciones que se utilizan en los equipos que requieren migración. Este proceso permitirá tener un registro detallado de todo el software presente en los sistemas, lo cual facilitará la planificación y ejecución de la migración.\par
-
-El inventario de software incluirá información como el nombre de cada programa, su versión, el tipo de aplicación o servicio que representa y las configuraciones específicas que se han realizado en cada caso. Con esta recopilación exhaustiva de datos, se obtendrá una visión clara de los componentes del software existente, lo que contribuirá a una migración efectiva y sin contratiempos..\par
+		El objetivo del inventario de software es elaborar un listado completo de todos los programas, aplicaciones, servicios y configuraciones utilizados en los equipos que requieren migración. Este proceso tiene como propósito registrar de manera detallada todo el software presente en los sistemas, lo cual facilitará la planificación y ejecución de la migración de manera ordenada y estructurada.\par
+		
+		El inventario de software contendrá información esencial, como el nombre de cada programa, su versión, el tipo de aplicación o servicio que representa y las configuraciones específicas realizadas en cada caso. A través de esta recopilación exhaustiva de datos, se obtendrá una visión clara y completa de los componentes del software existente, lo que resultará fundamental para llevar a cabo una migración efectiva y sin contratiempos.\par
+		
+		Al contar con este inventario detallado, el equipo encargado de la migración podrá tomar decisiones informadas y estratégicas en cada etapa del proceso, asegurando la compatibilidad y disponibilidad de todas las aplicaciones y servicios críticos en el nuevo entorno. Asimismo, esta herramienta proporcionará una base sólida para realizar pruebas y verificar la funcionalidad de cada componente después de la migración, minimizando los riesgos y permitiendo una adaptación fluida al nuevo sistema basado en software libre.\par
 		
 		\vspace{0.3cm}
 		
@@ -51,11 +63,12 @@ El inventario de software incluirá información como el nombre de cada programa
 		
 	\section{Inventario de Hardware}
 			
-		El inventario de hardware tiene como objetivo obtener un conocimiento detallado de las características y especificaciones del hardware de los ordenadores que se planean migrar. Este proceso permitirá determinar si los equipos estarán soportados de manera nativa por las distribuciones de software libre y también identificar si es necesario actualizar algún componente o si existen posibles incidencias relacionadas con el soporte de hardware.\par
-
-En el inventario de hardware se registrarán datos como el modelo y fabricante de cada equipo, la cantidad de memoria RAM, el tipo y capacidad del disco duro, la tarjeta gráfica, la tarjeta de red, entre otros componentes relevantes. Además, se investigará si los controladores necesarios para el correcto funcionamiento del hardware están disponibles en las distribuciones de software libre que se consideran para la migración.\par
-
-Con este inventario detallado, se podrá anticipar y abordar posibles desafíos relacionados con el hardware durante el proceso de migración, asegurando así una transición exitosa hacia el software libre.\par\vspace{0.3cm}
+		El objetivo del inventario de hardware es obtener un conocimiento detallado de las características y especificaciones del hardware de los ordenadores que se planean migrar. Este proceso permite determinar si los equipos contarán con soporte nativo por parte de las distribuciones de software libre y también identificar la necesidad de actualizar algún componente o si existen posibles incidencias relacionadas con el soporte de hardware.\par
+		
+		En el inventario de hardware se registran datos como el modelo y fabricante de cada equipo, la cantidad de memoria RAM, el tipo y capacidad del disco duro, la tarjeta gráfica, la tarjeta de red, entre otros componentes relevantes. Además, se investiga la disponibilidad de los controladores necesarios para el correcto funcionamiento del hardware en las distribuciones de software libre consideradas para la migración.\par
+		
+		Con este inventario detallado, se anticipan y abordan posibles desafíos relacionados con el hardware durante el proceso de migración, asegurando así una transición exitosa hacia el software libre.\par
+		
 		
 		\subsection{Hardware Inventariado}
 		
@@ -115,49 +128,50 @@ Con este inventario detallado, se podrá anticipar y abordar posibles desafíos 
 		
 		\subsection{Distribución GNU/Linux}
 			
-Las distribuciones GNU/Linux son sistemas operativos basados en el núcleo Linux y que incluyen una selección de paquetes de software. Estas distribuciones se componen principalmente de software libre, aunque en algunos casos también pueden incluir software propietario.\par
+		Las distribuciones GNU/Linux representan sistemas operativos basados en el núcleo Linux, que contienen una selección de paquetes de software. Estas distribuciones están mayormente compuestas por software libre, aunque en algunos casos también pueden incluir software propietario.\par
+		
+		Adicionalmente al núcleo Linux, las distribuciones GNU/Linux típicamente integran las bibliotecas y herramientas del proyecto GNU, así como el sistema de ventanas X Window System. En función de su enfoque y el público objetivo al que van dirigidas, estas distribuciones pueden incluir una diversidad de aplicaciones y herramientas, como procesadores de texto, hojas de cálculo, reproductores multimedia y utilidades administrativas.\par
+		
+		Es relevante enfatizar que cuando una distribución GNU/Linux incorpora paquetes del proyecto GNU, se le conoce como distribución GNU/Linux, en reconocimiento a la contribución del software libre desarrollado por el proyecto GNU dentro de la distribución.\par	
+					
 
-Además del núcleo Linux, las distribuciones GNU/Linux suelen incorporar las bibliotecas y herramientas del proyecto GNU, así como el sistema de ventanas X Window System. Dependiendo de su enfoque y del público al que van dirigidas, estas distribuciones pueden incluir una variedad de aplicaciones y herramientas, como procesadores de texto, hojas de cálculo, reproductores multimedia y utilidades administrativas.\par
-
-Es importante destacar que cuando una distribución GNU/Linux incluye paquetes del proyecto GNU, se la denomina distribución GNU/Linux para resaltar la contribución del software libre desarrollado por el proyecto GNU en la distribución.\par			
-			
-			
-			
 		\subsection{Debian}\label{sub:debian}
 			
 
+			Se seleccionó Debian como sistema operativo para el servidor de virtualización debido a sus características y ventajas. Debian es una distribución mantenida por la comunidad que ofrece una excelente estabilidad y facilita las actualizaciones de paquetes y del propio sistema de manera sencilla.
 
-Se seleccionó Debian como sistema operativo de escritorio personal y para instalar en todos los ordenadores del aula universitaria debido a sus características y ventajas. Debian es una distribución mantenida por la comunidad que ofrece una excelente estabilidad y facilita las actualizaciones de paquetes y del propio sistema de manera sencilla.\par
+			Debian es conocido por su amplio soporte en diversas arquitecturas y dispositivos, además de ofrecer un soporte a largo plazo (LTS).
 
-Debian es conocido por su amplio soporte en diversas arquitecturas y dispositivos, y también ofrece un soporte a largo plazo (LTS).\par 
-
-Entre las características destacadas de Debian se encuentran las siguientes:
-
-    		\begin{itemize}
-				
-				\item \textbf{ Debian} está compuesto únicamente por software libre y se compromete a mantener esa condición en todas sus versiones.
-
-    			\item \textbf{ Estabilidad y seguridad:} Basado en el núcleo Linux, Debian es un sistema operativo que proporciona una configuración predeterminada para cada paquete y ofrece actualizaciones de seguridad de forma regular durante todo su ciclo de vida.
-
-   				 \item \textbf{ Amplio soporte de hardware:} La mayoría del hardware compatible con el núcleo Linux también es compatible con Debian. En caso de ser necesario, existen controladores no libres disponibles para aquellos dispositivos que lo requieran.			
+			Entre las características destacadas de Debian se encuentran las siguientes:
+		
+		\begin{itemize}
+		
+		
+			\item Es una distribución compuesta únicamente por software libre, y se compromete a mantener esa condición en todas sus versiones.
 			
+			\item Ofrece una gran estabilidad y seguridad, al estar basado en el núcleo Linux. Proporciona una configuración 
+			predeterminada para cada paquete y ofrece actualizaciones de seguridad de forma regular durante todo su ciclo de vida.
 			
-			\end{itemize}	
+			\item Cuenta con un amplio soporte de hardware, siendo compatible con la mayoría de los dispositivos compatibles con el núcleo Linux. En caso de ser necesario, Debian cuenta con controladores adicionales que facilitan la compatibilidad con otros dispositivos.
+		
+		
+		\end{itemize}
+
 			
 	\section{Instalación del sistema operativo}
 			
-	 		Antes de iniciar la instalación del sistema operativo en los ordenadores, se llevará a cabo la tarea de respaldar toda la información de los alumnos en un disco externo. Esta acción se considera esencial para preservar los datos de manera segura y evitar pérdidas.\par 
-
-Existen varias opciones para realizar el respaldo, pero se recomienda siempre utilizar un medio físico de almacenamiento adicional. Esto puede incluir discos duros externos, unidades USB, discos ópticos u otros dispositivos de respaldo adecuados. El objetivo es garantizar que los datos estén protegidos y disponibles para su posterior recuperación en caso de ser necesario.\par 
+	 		Antes de iniciar la instalación del sistema operativo en los ordenadores, se llevará a cabo la tarea de respaldar toda la información de los alumnos en un disco externo. Esta acción es considerada esencial para preservar los datos de manera segura y evitar pérdidas.
+	 		
+	 		Se presentan varias opciones para realizar el respaldo, pero siempre se recomienda utilizar un medio físico de almacenamiento adicional. Esto puede incluir discos duros externos, unidades USB, discos ópticos u otros dispositivos de respaldo adecuados. El objetivo es garantizar que los datos estén protegidos y disponibles para su posterior recuperación en caso de ser necesario.\par 
 			
-			\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
-				colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Debian,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]
+	    %	\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+		%		colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Debian,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black} ]
 		
-				\centering
+		%		\centering
 		
-				\href{https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/}{\color{blue}{}Descargar Debian	}
+		%		\href{https://cdimage.debian.org/debian-cd/current/amd64/bt-dvd/}{\color{blue}{}Descargar Debian	}
 			
-			\end{tcolorbox}
+		%	\end{tcolorbox}
 				
 			\subsection{Requisitos}
 				
@@ -174,174 +188,79 @@ Existen varias opciones para realizar el respaldo, pero se recomienda siempre ut
 			
 			\subsection{Proceso de Instalación}
 			
-				\textbf{Primeras configuraciones}\par
+			El proceso de instalación de Debian con el entorno de escritorio Cinnamon se lleva a cabo siguiendo los siguientes pasos:
 			
-				Para el proceso de instalación seguiré una serie de pasos que me servirán para ir configurando el sistema operativo. Este proceso se puede repetir en cada uno de los ordenadores o clonar el disco con alguna herramienta.
-				
-				\vspace{0.2cm}
-	 
-				\begin{itemize}
-				
-					\item \textbf{Seleccionar idioma:} Seleccionar el idioma del proceso de instalación.
-					
-					\item \textbf{Seleccionar su Ubicación:} Seleccionar la ubicación geográfica. Así Debian podrá configurar automáticamente la zona horaria y la 	localización.	
-				
-					\item \textbf{Configure el Teclado:} Seleccionar el idioma de nuestro teclado.
-							
-				\end{itemize}
-		
-				\vspace{0.2cm}	
 			
-				Ahora que el idioma y el teclado de la distro esta configurado, Debian se encargara de realizar las demás configuraciones.
+			\begin{itemize}
+				
+				\item \textbf{Preparación del medio de instalación:} En primer lugar, se obtiene la imagen ISO de Debian con el entorno Cinnamon desde el sitio web oficial de Debian. Luego, se graba la imagen en un DVD o se crea un dispositivo USB de arranque.
+					
+				\item \textbf{Arranque del sistema desde el medio de instalación:} Una vez que el medio de instalación está listo, se inicia el ordenador desde este medio. En la mayoría de los casos, esto implica configurar la secuencia de arranque en la BIOS o UEFI para que el equipo inicie desde el DVD o USB.
+					
+				\item \textbf{Selección del idioma y configuración:} Al iniciar el sistema desde el medio de instalación, se presentará un menú de bienvenida donde se puede seleccionar el idioma preferido. A continuación, se eligen las configuraciones regionales adecuadas, como la zona horaria y el teclado.
+					
+				\item \textbf{Configuración de la red:} Si se necesita acceso a internet durante la instalación (por ejemplo, para descargar paquetes adicionales), se configura la conexión a la red.
+					
+				\item {Particionado del disco:} Luego, se procede a la configuración del particionado del disco duro. Aquí, se puede elegir entre diferentes opciones, como usar todo el disco para Debian o realizar un particionado personalizado. Es importante tener cuidado, ya que esta etapa puede borrar datos existentes si no se realiza con precaución.
+					
+				\item Selección de paquetes de software: En este paso, se elige el entorno de escritorio Cinnamon junto con otros paquetes adicionales que se deseen instalar. Además, se puede seleccionar el tipo de instalación, como una instalación estándar o personalizada.
+					
+				\item \textbf{Configuración del gestor de arranque:} Se selecciona el gestor de arranque que se utilizará para iniciar Debian. Por lo general, GRUB (Grand Unified Bootloader) es el gestor de arranque predeterminado y adecuado para la mayoría de las configuraciones.
+					
+				\item \textbf{Creación del usuario y contraseña:} Se crea una cuenta de usuario con un nombre de usuario y una contraseña para acceder al sistema.
+					
+				\item \textbf{Finalización de la instalación:} Una vez que se han realizado todas las selecciones y configuraciones, se confirma la instalación y el proceso de instalación de Debian con Cinnamon comienza. El sistema copiará todos los archivos necesarios y configurará los paquetes seleccionados.
+					
+				\item \textbf{Reinicio del sistema:} Al finalizar la instalación, se reinicia el sistema y se cargará Debian con el entorno Cinnamon. A partir de ese momento, el usuario podrá acceder a su cuenta y comenzar a utilizar Debian con Cinnamon como entorno de escritorio.
 			
-				\vspace{0.2cm}
-			
-				\textbf{Detectar y configurar el hardware}\par\vspace{0.2cm}
-			
-				Después de las primeras configuracionesq Debian dedicará un tiempo a volcar los datos del medio de instalación (USB o DVD) al ordenador para poder acceder a ellos más rápidamente. También aprovechará para detectar todo el hardware del ordenador, configurarlo y conectarlo a Internet.\par
-				
-				Este proceso puede tardar varios minutos dependiendo de la potencia del PC.\par
-			
-				\vspace{0.2cm}
-			
-				\begin{itemize}
-					
-					\item \textbf{Configurar red:} El nombre que se le coloque al PC sera con el cual se identificara en la red local.
-					
-					\item \textbf{Configurar usuarios y contraseña:} Lo primero que pedirá Debian es introducir una contraseña para el superusuario. Esta contraseña debe ser larga y robusta, para proteger el equipo.
-					
-					Después de haber creado la cuenta de superusuario es hora de crear el primer usuario. Debian solicitara que se introduzca en primer lugar el nombre completo del mismo y luego la contraseña que se le asignara.
-					
-					\item \textbf{Configurar Reloj:} A continuación,se debe seleccionar la ubicación de la zona horaria para que se ajuste el reloj automáticamente.
-					
-				\end{itemize}
-
-				\vspace{0.3cm}
-				
-				\textbf{Particionado}\vspace{0.2cm}
-				
-				Ha llegado el turno al disco duro. Debian, como cualquier otro Linux utiliza una serie de particiones y puntos de montaje necesarios para poder guardar todos los datos. En este caso se puede usar todo el disco y usar el método guiado para que el proceso de creación de las particiones sea lo más sencillo posible.
-				
-				Por fines prácticos creare un LVM y seleccionare el \textbf{método guiado} para usar todo el disco.
-				
-				\begin{itemize}
-					
-					\item \textbf{Paso N° 1:} Seleccionar el disco duro donde se va a instalar la distribución
-					
-					\item \textbf{Paso N° 2:} Seleccionar la estructura de particiones que se va a utilizar.
-					
-				\end{itemize}
-
-								
-				El asistente de instalación de Debian hará los cálculos correspondientes y mostrara un resumen con todos los cambios que se van a realizar.\par			
-				
-				Si está todo correcto se debe aceptar los cambios y así comenzará la instalación como tal.\par
-								
-				\vspace{0.2cm}	
-		
-				\textbf{Comenzando la copia de archivos para instalar Debian}\par\vspace{0.2cm}
-		
-				\begin{itemize}
-					
-					\item \textbf{Instalando el sistema base:} El sistema se instala en el PC. Durante este proceso se descargarán los paquetes que faltan y se configurará la distribución para poder funcionar.\par
-					
-					\item \textbf{Configurar el gestor de paquetes:} Al acabar la copia de archivos, el asistente preguntará si hay otro CD o DVD de software para utilizar e instalar al mismo tiempo. Esto era bastante frecuente en el pasado, pero ahora ya está en desuso. Por tanto, como no se dispone otro medio de instalación, seleccionare la opción «No».\par 
-					
-					\item \textbf{Configurar el gestor de paquetes:} Ahora Debian solicitara la ubicación del servidor de repositorios, desde donde se descargarán los paquetes y las actualizaciones. Es recomendable que este servidor esté lo más cerca posible para que la velocidad sea lo mayor posible. También se debe seleccionar el servidor desde donde bajar todo. Generalmente, el que viene por defecto (deb.debian.org).\par
-					
-					Con todo esto el asistente de instalación de Debian se conectará a los repositorios y actualizará la base de datos de software, descargando otras dependencias o listas que no se encuentren en el sistema.\par
-					
-					\item \textbf{Configurar el popularity-contest:} Configurar si se compartirán datos anónimos de uso. Por defecto, no.\par	
-					
-				\end{itemize}
-				
-				\clearpage
-				
-				\textbf{Instalando software adicional}\par\vspace{0.2cm}
-				
-				\begin{itemize}
-					
-					\item \textbf{Selección de programas:} Seleccionar el entorno de escritorio. \par
-					
-				\end{itemize}
-				
-				Como ultimo paso se debe instalar el gestor de arranque \textbf{GRUB}, e indicar en qué unidad queremos instalarlo.\par
-			
-				\begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},colback=blue!5!white,colframe=blue!75!black,colbacktitle=red!80!black,title= Guía de Instalación,fonttitle=\bfseries, boxed title style={size=small,colframe=red!50!black}]
-					
-					\centering
-					
-					\href{https://debian-handbook.info/browse/es-ES/stable/sect.installation-steps.html/}{\color{blue}{}Manual de Debían}
-					
-				\end{tcolorbox}
+		\end{itemize}
 	
 	\section{Repositorios}
 	
 		\subsection{¿Que es un repositorio?}
 		
-			Un repositorio es un servidor web que se encarga de almacenar paquetes y programas para que los usuario puedan descargarlos e instalarlos en su distribución GNU/Linux. Además de los repositorios predeterminados del sistema operativo, se puedes disponer y utilizar repositorios de terceros, que contengan actualizaciones de software o programas que no han sido incluidos en los repositorios iniciales.\par
+			Un repositorio es un lugar centralizado y organizado donde se almacenan y mantienen los archivos y paquetes de software de una aplicación, programa o sistema operativo. En el contexto de sistemas operativos basados en Linux, como Debian, Ubuntu, CentOS, entre otros, los repositorios son fundamentales para la instalación y actualización de software de manera sencilla y segura.
+			
+			En un repositorio, se encuentran diversos tipos de software, como aplicaciones, bibliotecas, controladores y actualizaciones del sistema. Cada paquete de software está acompañado por metadatos que proporcionan información sobre su versión, autor, dependencias y otras características relevantes.
+			
+			Los repositorios pueden ser oficiales, proporcionados por los desarrolladores del sistema operativo, o de terceros, creados y mantenidos por la comunidad o empresas externas. La utilización de repositorios oficiales y de confianza es esencial para garantizar la seguridad y estabilidad del sistema, ya que se asegura de que el software provenga de fuentes confiables y se someta a controles de calidad antes de su inclusión.\par
 			
 		\subsection{Configuración de repositorios Debian}
-
-		La lista a editar se encuentra alojada en \textit{/etc/apt/source.list}. Para obtener información sobre los repositorios disponibles por parte de \href{https://www.debian.org}{\color{blue}{}Debian.org}, se puede hacer uso de una \href{https://wiki.debian.org/SourcesList/}{\color{blue}{}Wiki} que cuenta con información detallada de cada repositorio.\par
 		
-		Mi lista de repositorios.\par
-			
-	\begin{lstlisting}[language=bash, caption=Repositorios]
+		La lista que requiere edición se encuentra alojada en \textit{/etc/apt/sources.list}. Para obtener información acerca de los repositorios disponibles proporcionados por \href{https://www.debian.org}{\color{blue}{}Debian}, se puede consultar una \href{https://wiki.debian.org/SourcesList/}{\color{blue}{}Wiki Debian} que cuenta con información detallada sobre cada uno de los repositorios.\par
 		
-		deb http://deb.debian.org/debian/ bullseye main
-		
-		deb-src http://deb.debian.org/debian/ bullseye main
-		 
-		deb http://security.debian.org/debian-security bullseye-security main contrib
-		
-		deb-src http://security.debian.org/debian-security bullseye-security main contrib
-		 
-		bullseye-updates, to get updates before a point release is made;
-		
-		# see https://www.debian.org/doc/manuals/debian-reference/ch02.en.html#_updates_and_backports
-		
-		deb http://deb.debian.org/debian/ bullseye-updates main contrib
-		
-		deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
-		
-	\end{lstlisting}	
+	
 			
 	\section{Instalación de Programas}
 		
-		La mayoría de los programas que necesita el estudiante ya se instalan de forma automática y otros los tendré que instalar de forma manual por medio de la terminal.\par
-		
-		Los programas que debo instalar en los equipos son los siguientes:\par
+		La mayoría de los programas necesarios para los estudiante se instalan de forma automática, mientras que otros deberán ser instalados manualmente a través de la terminal.\par
+
+		A continuación, se detallan los programas que deben ser instalados en los equipos:
 		
 		\begin{itemize}
-			
-			\item \textbf{Brave:} Brave es un navegador totalmente gratuito y de código abierto para ordenador o para teléfonos móviles que destaca por la privacidad, por la velocidad.\par 
-			
-			\item \textbf{Chromium:} Chromium es una versión de código abierto de Google Chrome, pero sin todos los códecs exclusivos y otros elementos con los que Google pretende diferenciar Chrome de otros navegadores.\par
-				
-			\item \textbf{Cliente mail Thunderbird:} Thunderbird es el cliente de correo electrónico de la Fundación Mozilla, la misma responsable del navegador Firefox. Thunderbird fue creado para cubrir las necesidades de tener un gestor de correo ligero y gratuito.
+			\item \textbf{Brave:} Brave es un navegador totalmente gratuito y de código abierto para ordenadores o teléfonos móviles, que destaca por su enfoque en la privacidad y velocidad.
 
-			\item \textbf{Evince:} Evince es un visor de documentos para el entorno de escritorio GNOME. Se pueden ver los archivos en formato PDF y PostScript.\par
+			\item\textbf{Chromium:} Chromium es una versión de código abierto de Google Chrome, pero sin los códecs exclusivos y otros elementos que Google utiliza para diferenciar Chrome de otros navegadores.
 
+			\item \textbf{Cliente de correo Thunderbird:} Thunderbird es el cliente de correo electrónico desarrollado por la Fundación Mozilla, responsable también del navegador Firefox. Thunderbird se ha diseñado para cubrir las necesidades de aquellos que buscan un gestor de correo electrónico ligero y gratuito.
 			
-			\item \textbf{Gimp:} GIMP (GNU Image Manipulation Program) es un programa de edición de imágenes. Se trata de un software libre, englobado dentro del proyecto GNU y disponible bajo esta licencia pública y la de GNU Lesser General Public License.
+			\item\textbf{Evince:} Evince es un visor de documentos para el entorno de escritorio GNOME que permite visualizar archivos en formato PDF y PostScript.
 			
-			\item \textbf{Inkscape:} Inkscape es un editor de gráficos vectoriales que permite: Diseñar imágenes de calidad, básicas o complejas. Crear y editar diagramas, líneas, gráficos, logotipos, cómics, folletos, entre otros. Utilizar formas, trazos, texto, marcadores, clones, y otras herramientas de diseño.
+			\item\textbf{Gimp:} GIMP (GNU Image Manipulation Program) es un programa de edición de imágenes de software libre, que forma parte del proyecto GNU y se distribuye bajo licencia pública y GNU Lesser General Public License.
 			
-			\item \textbf{HandBrak:} HandBrake es un programa Software Libre que permite editar archivos de audio y videos. 
+			\item\textbf{Inkscape:} Inkscape es un editor de gráficos vectoriales que permite diseñar imágenes de calidad, tanto básicas como complejas. Ofrece herramientas para crear y editar diagramas, líneas, gráficos, logotipos, cómics, folletos, entre otros elementos.
 			
-			\item \textbf{qBittorrent:} qBittorrent es un cliente P2P, Software Libre y se utiliza para la transferencia de archivos grandes.\par
-							
-			\item \textbf{FileZilla:} FileZilla es un programa software libre y funciona a nivel cliente/servidor. Con esta herramienta podemos conectarnos a un servidor para consultar, adquirir y manipular contenido del mismo.\par
-		
-			\item \textbf{VLC:} VLC es un reproductor y framework de vídeo y música software libre compatible con un gran número de formatos de archivo multimedia. Es capaz de reproducir la mayoría de códecs sin tener que descargar paquetes adicionales.
-		
-			\item \textbf{BleachBit:} BleachBit es una herramienta software libre que se encarga de eliminar:
-			Cache, Cookies, Archivos temporales, Historiales, Registros de chats, Thumbs (miniaturas), Historial de descargas, Accesos directos inválidos, Registros de depuración.
-		
-			\item \textbf{TeXstudio} TeXstudio es un editor de \LaTeX{} multiplataforma software libre.\par
+			\item\textbf{HandBrake:} HandBrake es un programa de software libre que permite editar archivos de audio y video.
 			
-			Entre sus funciones se destacan: Marcadores, autocompletado de comandos, coloreado de sintaxis, menús, soporte de arrastrar imágenes, asistente para la creación de tablas, fórmulas, etc, soporte integrado de diversos compiladores de \LaTeX{}.\par
+			\item\textbf{qBittorrent:} qBittorrent es un cliente P2P de software libre que se utiliza para la transferencia de archivos grandes.
+			
+			\item\textbf{FileZilla:} FileZilla es un programa de software libre que funciona a nivel cliente/servidor, permitiendo conectarse a un servidor para consultar, adquirir y manipular contenido del mismo.
+			
+			\item\textbf{VLC:} VLC es un reproductor y framework de video y música de software libre, compatible con una amplia gama de formatos multimedia. Es capaz de reproducir la mayoría de los códecs sin necesidad de descargar paquetes adicionales.
+			
+			\item\textbf{BleachBit:} BleachBit es una herramienta de software libre que se encarga de eliminar elementos como caché, cookies, archivos temporales, historiales, registros de chats, miniaturas y accesos directos inválidos.
+			
+			\item\textbf{TeXstudio:} TeXstudio es un editor de \LaTeX{} multiplataforma de software libre, que ofrece funciones como marcadores, autocompletado de comandos, coloreado de sintaxis, soporte de arrastrar imágenes y asistente para la creación de tablas y fórmulas, entre otras características destacadas.
 			
 		
 		\end{itemize}
