@@ -135,7 +135,7 @@
 	\end{lstlisting}
 	¸
 	
-		Una vez montados los LV, se procede a mover el contenido de los directorios a los LV correspondientes. Esto se puede realizar utilizando comando mv o los comandos de copia, como cp o rsync. Por ejemplo:\par
+		Una vez montados los LV, se procede a mover el contenido de los directorios a los LV correspondientes. Esto se puede realizar utilizando comando mv o los comandos de copia, como cp o rsync. \par
 		
 	\begin{lstlisting}[language=Bash, caption=Mover directorios]
 		
@@ -164,7 +164,7 @@
 			
 			En el archivo fstab, se definen las particiones, dispositivos y volúmenes lógicos (LV) que deben montarse automáticamente en puntos específicos del sistema de archivos. Cada línea del archivo fstab corresponde a un sistema de archivos y sigue una estructura específica con campos separados por espacios o tabulaciones.\par
 			
-			Los campos en una línea típica del archivo fstab son los siguientes:
+			Los campos son los siguientes:
 			
 			\begin{enumerate}
 				
@@ -211,8 +211,7 @@
 			En un sentido, el hypervisor puede considerarse como el componente principal de un servidor de virtualización, ya que su función principal es administrar las máquinas virtuales y los recursos del sistema. De esta forma, se puede afirmar que el hypervisor desempeña el rol de un servidor de virtualización.\par
 			
 			Por otro lado, el término "servidor de virtualización" también puede referirse al hardware físico en el cual se ejecutan las máquinas virtuales. En este caso, el servidor de virtualización sería el equipo físico que aloja y ejecuta las máquinas virtuales, y el hypervisor sería el software que posibilita la virtualización en dicho servidor.\par
-			
-			En resumen, aunque el hypervisor es el software encargado de administrar la virtualización de las máquinas virtuales, el término "servidor de virtualización" puede hacer referencia tanto al hypervisor como al hardware físico en el cual se lleva a cabo la ejecución de las máquinas virtuales.\par
+
 			
 			
 			\subsection{KVM}
@@ -239,8 +238,6 @@
 				En combinación con KVM, QEMU permite la virtualización de sistemas completos y proporciona una capa de abstracción entre el hardware físico y los sistemas operativos invitados. KVM se encarga de la virtualización de hardware y proporciona un rendimiento óptimo, mientras que QEMU emula los dispositivos y brinda soporte para sistemas operativos invitados que no son nativos de la arquitectura del host.\par
 		
 				QEMU también puede utilizarse de forma independiente para emular hardware y ejecutar sistemas operativos en un entorno puramente emulado, sin utilizar la virtualización de hardware de KVM. Esto puede ser útil para el desarrollo y la depuración de software, así como para ejecutar sistemas operativos antiguos o exóticos en un entorno moderno.\par
-		
-				En resumen, QEMU es un software de emulación y virtualización que, en combinación con KVM, proporciona una solución completa para la virtualización de sistemas operativos en entornos Linux. Es utilizado tanto en entornos de desarrollo como en la construcción de infraestructuras de nube y ofrece flexibilidad y compatibilidad con diferentes arquitecturas y sistemas operativos invitados.\par
 				
 				
 			\subsection{libvirt} 
@@ -252,9 +249,7 @@
 				Libvirt se encarga de interactuar con el hypervisor KVM y el emulador QEMU para gestionar las operaciones de virtualización. Permite la gestión centralizada de múltiples hosts y proporciona una capa de abstracción que permite la interoperabilidad entre diferentes tecnologías de virtualización.\par
 		
 				Además de la administración de máquinas virtuales, libvirt ofrece características como el control de almacenamiento, la configuración de redes virtuales, la gestión de dispositivos y la monitorización de recursos. También permite la integración con otras herramientas de administración de virtualización y orquestación, como virt-manager, oVirt, OpenStack y Kubernetes.\par
-		
-				En resumen, libvirt es una biblioteca y conjunto de herramientas de administración de virtualización que se utiliza en combinación con QEMU/KVM para proporcionar una interfaz unificada y una gestión centralizada de las máquinas virtuales y los recursos del sistema. Facilita la administración y el despliegue de entornos de virtualización basados en QEMU/KVM.\par
-				
+
 				
 			\subsection{Instalación}\label{instalación de las herramientas}
 		
@@ -431,8 +426,6 @@
 		
 			\end{lstlisting}
 	
-			\item Guardar y cerrar el archivo crontab.
-	
 		\end{itemize}
 	
 		Con esta configuración, el script se ejecutará automáticamente al inicio del sistema utilizando crontab. Las tres interfaces serán creadas y configuradas según las especificaciones dentro del script, y estarán asociadas a la interfaz virtual br0, lo que permitirá el puenteo entre la interfaz física y otras redes.
@@ -447,7 +440,7 @@
 			Al editar el archivo \textit{/etc/resolv.conf}, se debe agregar la siguiente línea:
 		
 		
-			\begin{lstlisting}[language=Bash, caption=Editar archivo resolv]		
+			\begin{lstlisting}[language=Bash, caption=resolv]		
 				nameserver 1.1.1.1
 			\end{lstlisting}
 		
@@ -472,12 +465,12 @@
 		\begin{itemize}
 			\item \textbf{Paso 1:} Instalar el paquete nfs-kernel-server
 			\begin{lstlisting}[language=Bash, caption=nfs]
-		vi install nfs-kernel-server
+		apt install nfs-kernel-server
 			\end{lstlisting}
 		
-			\item\textbf{Paso 2:} Configurar el servidor NFS
+			\item\textbf{Paso 2:} Configurar el servidor NFS editando el archivo \textit{/etc/exports}
 			\begin{lstlisting}[language=Bash, caption=export]
-			vi /etc/exports
+		
 			#Agrega las líneas siguientes al archivo para compartir los dos directorios:
 			/ruta/multimedia 192.168.100.2(rw,sync,no_subtree_check)
 			/ruta/datos 192.168.100.3(rw,sync,no_subtree_check)
@@ -518,7 +511,7 @@
 		
 		\begin{lstlisting}[language=Bash, caption=Cargar Configuración]
 			
-			sudo sysctl -p
+			sysctl -p
 			
 		\end{lstlisting}
 		
@@ -585,7 +578,8 @@
 		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2220 -j DNAT --to 192.168.100.2:2222
 		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8096 -j DNAT --to 192.168.100.2:8096
 		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 2221 -j DNAT --to 192.168.100.3:2222
-		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 8080 -j DNAT --to 192.168.100.3:80
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 80 -j DNAT --to 192.168.100.3:80
+		/usr/sbin/iptables -t nat -A PREROUTING -i br0 -p tcp --dport 443 -j DNAT --to 192.168.100.3:443
 		
 		########################################################################################
 		#RESPUESTA A LAS COMUNICACIONES YA ESTABLECIDAS
@@ -661,6 +655,7 @@
 		#LAS REDIRECCIONES QUE REALIZARA EL FIREWALL A LOS SERVIDORES
 		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 8096 -j ACCEPT
 		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 80 -j ACCEPT
+		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 443 -j ACCEPT
 		/usr/sbin/iptables -A FORWARD -i br0 -o dmz -p tcp --dport 2222 -j ACCEPT
 		
 		#######################################################################################
@@ -942,7 +937,7 @@
 			[sshd]
 			enabled = true
 			action  = iptables[name=SSH, port=2222, protocol=tcp]
-			telegram
+					  telegram
 			\end{lstlisting}
 		
 		
@@ -991,17 +986,15 @@
 			%\inputminted{bash}{documentos/seguridad/generarHash.sh}
 							\vspace{0.3cm}
 			\begin{lstlisting}[language=Bash, caption=Generar Hash]
-				
-				#! /bin/bash
-				workdir=$PWD/seguridad
-				echo "Crear Base de datos del HASH de cada archivo"
-				find /usr -type f -exec md5sum {} \; > $workdir/usr.txt
-				find /boot -type f -exec md5sum {} \; > $workdir/boot.txt
-				find /opt -type f -exec md5sum {} \; > $workdir/opt.txt
-				find /etc -type f -exec md5sum {} \; > $workdir/etc.txt
-				find /var -type f -not -path "/var/pool/*" -not -path "/var/log/*" -not -path "/var/tmp/*" -exec md5sum {} \; > $workdir/var.txt
-				echo "Fin..."
-				
+		#! /bin/bash
+		workdir=$PWD/seguridad
+		echo "Crear Base de datos del HASH de cada archivo"
+		find /usr -type f -exec md5sum {} \; > $workdir/usr.txt
+		find /boot -type f -exec md5sum {} \; > $workdir/boot.txt
+		find /opt -type f -exec md5sum {} \; > $workdir/opt.txt
+		find /etc -type f -exec md5sum {} \; > $workdir/etc.txt
+		find /var -type f -not -path "/var/pool/*" -not -path "/var/log/*" -not -path "/var/tmp/*" -exec md5sum {} \; > $workdir/var.txt
+		echo "Fin..."
 			\end{lstlisting}
 			
 			El siguiente script proporcionado está diseñado para generar una base de datos de hashes de archivos en directorios específicos, con el fin de verificar la integridad de los archivos y detectar cambios no autorizados en el sistema.\par
@@ -1106,6 +1099,16 @@
 		
 		\end{lstlisting}
 	
+		\subsection{Configuración}
+				
+		Ahora, para finalizar con la configuración de QEMU/KVM, se debe abrir Virt-manager y comenzar el proceso de creación del ''silo de almacenamiento'' y agregar el directorio de las imágenes ISO y las máquinas virtuales.
+		
+		Luego, es necesario dirigirse a la sección ''Detalles'' y ''Almacenamiento'' dentro de Virt-manager. Para crear un ''pool de almacenamiento'' destinado a las imágenes ISO, se debe hacer clic en el botón ''Agregar pool'' o seleccionar el icono ''+'' en la pestaña ''Almacenamiento''. En el asistente para agregar el nuevo pool de almacenamiento, se selecciona el ''tipo de pool'': ''dir: de sistema de archivos''.
+		
+		A continuación, se especifica la ubicación del directorio donde se almacenarán las imágenes ISO, en este caso, \textit{/mnt/ISOS}. Se proporciona un nombre para el pool de almacenamiento, como ''Imágenes ISO'', y se seleccionan las opciones de acceso según se necesite, ya sea lectura/escritura o solo lectura. Luego, se completa el proceso para crear el pool de almacenamiento.
+		
+		Para agregar el directorio donde se almacenarán las máquinas virtuales, se sigue el mismo procedimiento que para las imágenes ISO. Se crea un nuevo ''pool de almacenamiento'' seleccionando el ''tipo de pool'': ''dir: de sistema de archivos''. A continuación, se especifica la ubicación del directorio deseado para las máquinas virtuales, en este caso, \textit{/mnt/vm}. También se asigna un nombre descriptivo al pool, como ''Máquinas Virtuales'', y se eligen las opciones de acceso adecuadas.
+	
 		\subsection{Servidor Docker}
 		
 			\subsubsection{¿Que es Docker?}
@@ -1113,11 +1116,32 @@
 				Docker es una plataforma de código abierto que permite a los desarrolladores crear, desplegar y ejecutar aplicaciones dentro de contenedores. Los contenedores son entornos de software livianos y portables que incluyen todo lo necesario para que una aplicación se ejecute, como código, bibliotecas y dependencias. Docker ofrece una solución para la virtualización a nivel de sistema operativo, lo que permite a las aplicaciones ejecutarse de manera consistente en cualquier entorno, ya sea en el desarrollo, pruebas o producción.
 		
 			\subsubsection{¿Qué es Docker Compose?}
-				Docker Compose es una herramienta que simplifica la administración de aplicaciones multi-contenedor en Docker. Permite definir y gestionar la configuración de varios contenedores dentro de una aplicación, incluyendo sus relaciones, redes y volúmenes necesarios. Todo esto se logra a través de un archivo YAML llamado "docker-compose.yml". Docker Compose facilita el despliegue y escalamiento de aplicaciones compuestas por múltiples servicios, lo que resulta especialmente útil para aplicaciones con arquitectura de microservicios.
+				Docker Compose es una herramienta que simplifica la administración de aplicaciones multi-contenedor en Docker. Permite definir y gestionar la configuración de varios contenedores dentro de una aplicación, incluyendo sus relaciones, redes y volúmenes necesarios. Todo esto se logra a través de un archivo YAML llamado ''docker-compose.yml''. 
 				
 	
 			\subsubsection{Maquina Virtual}
 			
+			Una vez conectado al hipervisor QEMU/KVM, se debe acceder a la opción ''Crear una nueva máquina virtual'' a través del botón correspondiente o seleccionando ''Archivo'' > ''Nueva máquina virtual'' en la barra de menú superior.
+			
+			A continuación, se abrirá un asistente para crear una nueva máquina virtual y se deben seguir los siguientes pasos:
+			
+			\begin{itemize}
+			
+				\item \textbf{Seleccionar la fuente de instalación:} La máquina virtual se puede instalar desde un archivo ISO, una imagen de disco existente o una red de instalación. En esta etapa, se debe elegir la opción que corresponda y proporcionar la ruta del archivo o imagen de disco.
+			
+				\item \textbf{Especificar el sistema operativo:} Se debe elegir el tipo de sistema operativo y su versión. Esto configurará automáticamente los recursos y ajustes recomendados para la máquina virtual.
+			
+				\item \textbf{Asignar recursos:} En este paso, se deben definir la cantidad de memoria RAM, el número de núcleos de CPU y el tamaño del disco duro para la máquina virtual.
+			
+				\item \textbf{Personalizar la configuración:} Aquí, es posible realizar ajustes adicionales, como agregar dispositivos de hardware, configurar la red, entre otros.
+			
+				\item \textbf{Finalizar la creación:} Aqui se debe revisar cuidadosamente la configuración y, si todo está correcto, completar el proceso para crear la máquina virtual.
+			
+			\end{itemize}
+	
+			Si es necesario, se procederá a la instalación del sistema operativo seleccionado. Si se eligió una fuente de instalación desde un archivo ISO o una red de instalación, Virt-manager iniciará el proceso de instalación del sistema operativo, donde se deberán seguir las instrucciones para completar dicho proceso.
+			
+			Una vez creada la máquina virtual, se podrá iniciarla haciendo clic derecho en la máquina virtual y seleccionando la opción ''Iniciar''. A través de Virt-manager, también se podrán gestionar las máquinas virtuales en ejecución, detenerlas, pausarlas o realizar otras acciones según las necesidades específicas de configuración y uso.
 			
 			
 			\subsubsection{Instalación}
@@ -1154,66 +1178,66 @@
 		\begin{itemize}
 			\item Actualiza la lista de paquetes disponibles en los repositorios de apt:
 			
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=udpate]
 			sudo apt update
 			\end{lstlisting}
 	
 		\item Instala los paquetes necesarios para gestionar certificados, realizar solicitudes web y utilizar claves de seguridad:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=install]
 			sudo apt install ca-certificates curl gnupg
 			\end{lstlisting}
 	
 		\item Crea el directorio /etc/apt/keyrings con permisos de lectura, escritura y ejecució:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=install]
 			sudo install -m 0755 -d /etc/apt/keyrings
 			\end{lstlisting}
 	
 		\item Descarga la clave GPG de Docker y la almacena en /etc/apt/keyrings/docker.gpg:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=gpg]
 			curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 			\end{lstlisting}
 		
 		\item Asigna permisos de lectura a la clave GPG para que sea accesible por otros usuarios:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=permisos]
 			sudo chmod a+r /etc/apt/keyrings/docker.gpg
 			\end{lstlisting}
 		
 		\item Añade una entrada al archivo /etc/apt/sources.list.d/docker.list con información sobre el repositorio de Docker para la versión de Debian instalada:
 			
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=repositorio]
 			echo \ \ "deb [arch=\"\$(dpkg --print-architecture)\" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \ \ \"\$(. /etc/os-release \&\& echo \"\$VERSION_CODENAME\")\" stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 			\end{lstlisting}
 		
 		\item Instala los paquetes de Docker y sus complementos:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=docker compose]
 			sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 			\end{lstlisting}
 	
 		\item Configura el directorio donde se almacenarán los archivos de configuración de Docker, en este caso, se establece el valor de la variable DOCKER\_CONFIG como el directorio \$HOME/.docker si no se ha definido previamente:
 	
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=variable]
 			DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
 			\end{lstlisting}
 		
 		\item Crea el directorio de complementos de la línea de comandos de Docker:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=directorio]
 			mkdir -p $DOCKER_CONFIG/cli-plugins
 			\end{lstlisting}
 		
 		\item Descarga la última versión de Docker Compose y la almacena en el directorio de complementos de la línea de comandos de Docker:
 		
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=descargar]
 			curl -SL https://github.com/docker/compose/releases/download/v2.20.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
 			\end{lstlisting}
 	
 		\item Asigna permisos de ejecución al archivo de Docker Compose:
 			
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=permisos de ejecución]
 			chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 			\end{lstlisting}
 		
 		\item Verifica la versión de Docker Compose instalada:
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=version]
 			docker compose version
 			\end{lstlisting}
 
@@ -1264,11 +1288,11 @@
 	
 		\begin{itemize}
 		
-		\item \textbf{Imagen:} La imagen de Docker utilizada para el servicio de Emby es "emby/embyserver". Esta imagen contiene todos los componentes y configuraciones necesarios para ejecutar Emby Server.
+		\item \textbf{Imagen:} La imagen de Docker utilizada para el servicio de Emby es ''emby/embyserver''. Esta imagen contiene todos los componentes y configuraciones necesarios para ejecutar Emby Server.
 	
-		\item \textbf{Nombre del contenedor:} El nombre del contenedor que ejecuta el servicio de Emby se establece como "emby". Esto permite hacer referencia y gestionar el contenedor de manera sencilla.
+		\item \textbf{Nombre del contenedor:} El nombre del contenedor que ejecuta el servicio de Emby se establece como ''emby''. Esto permite hacer referencia y gestionar el contenedor de manera sencilla.
 	
-		\item \textbf{Política de reinicio:} La política de reinicio se configura como "unless-stopped", lo que significa que el contenedor se reiniciará automáticamente a menos que sea detenido explícitamente por el usuario.
+		\item \textbf{Política de reinicio:} La política de reinicio se configura como ''unless-stopped'', lo que significa que el contenedor se reiniciará automáticamente a menos que sea detenido explícitamente por el usuario.
 	
 		\item  \textbf{Puertos:} El servicio expone el puerto 8096 del contenedor y lo mapea al puerto 8096 de la máquina anfitriona. Esto permite acceder al servidor Emby a través del puerto 8096 de la máquina anfitriona.
 	
@@ -1306,7 +1330,6 @@
 			ip route add default via 192.168.100.1 #nueva ruta de ruteo
 			echo "nameserver 1.1.1.1" > /etc/resolv.conf # dns
 			ip addr del 192.168.1.124/24 dev enp1s0 #elimino la ip estatica anterio
-			
 			\end{lstlisting}
 		
 			Este script realizará los pasos necesarios para configurar la interfaz de red ''dmz'' con la dirección IP ''192.168.100.2'' en la VLAN 100, conectándola a la red DMZ del servidor de virtualización. Además, establecerá la puerta de enlace predeterminada a través de ''192.168.100.1'' y configurará el servidor DNS con la dirección ''1.1.1.1''. Por último, eliminará la dirección IP estática ''192.168.1.124'' que estaba configurada en la interfaz ''enp1s0'' anteriormente.
@@ -1360,6 +1383,29 @@
 			En resumen, Nextcloud es una solución de almacenamiento en la nube de código abierto que brinda a los usuarios un mayor control sobre sus datos, así como una serie de herramientas de colaboración para mejorar la productividad y la gestión de archivos en un entorno seguro y personalizable.
 			
 			\subsubsection{Maquina Virtual}
+			
+			Una vez conectado al hipervisor QEMU/KVM, se debe acceder a la opción ''Crear una nueva máquina virtual'' a través del botón correspondiente o seleccionando ''Archivo'' > ''Nueva máquina virtual'' en la barra de menú superior.
+			
+			A continuación, se abrirá un asistente para crear una nueva máquina virtual y se deben seguir los siguientes pasos:
+
+			\begin{itemize}
+				
+				\item \textbf{Seleccionar la fuente de instalación:} La máquina virtual se puede instalar desde un archivo ISO, una imagen de disco existente o una red de instalación. En esta etapa, se debe elegir la opción que corresponda y proporcionar la ruta del archivo o imagen de disco.
+				
+				\item \textbf{Especificar el sistema operativo:} Se debe elegir el tipo de sistema operativo y su versión. Esto configurará automáticamente los recursos y ajustes recomendados para la máquina virtual.
+				
+				\item \textbf{Asignar recursos:} En este paso, se deben definir la cantidad de memoria RAM, el número de núcleos de CPU y el tamaño del disco duro para la máquina virtual.
+				
+				\item \textbf{Personalizar la configuración:} Aquí, es posible realizar ajustes adicionales, como agregar dispositivos de hardware, configurar la red, entre otros.
+				
+				\item \textbf{Finalizar la creación:} Aqui se debe revisar cuidadosamente la configuración y, si todo está correcto, completar el proceso para crear la máquina virtual.
+				
+			\end{itemize}
+			
+			Si es necesario, se procederá a la instalación del sistema operativo seleccionado. Si se eligió una fuente de instalación desde un archivo ISO o una red de instalación, Virt-manager iniciará el proceso de instalación del sistema operativo, donde se deberán seguir las instrucciones para completar dicho proceso.
+			
+			Una vez creada la máquina virtual, se podrá iniciarla haciendo clic derecho en la máquina virtual y seleccionando la opción ''Iniciar''. A través de Virt-manager, también se podrán gestionar las máquinas virtuales en ejecución, detenerlas, pausarlas o realizar otras acciones según las necesidades específicas de configuración y uso.
+
 	
 			\subsubsection{Instalación}
 			
@@ -1371,25 +1417,25 @@
 					
 					\item Se descarga Nextcloud siguiendo los siguientes pasos:
 		
-						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-						https://download.nextcloud.com/server/releases/latest.zip
+						\begin{lstlisting}[language=Bash,caption=NextCloud]
+						wget https://download.nextcloud.com/server/releases/latest.zip
 						\end{lstlisting}
 					\item Descompresión del archivo zip:	
-						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+						\begin{lstlisting}[language=Bash,caption=Descomprimir]
 						unzip lates.zip
 						\end{lstlisting}
 					\item Movimiento del directorio Nextcloud a /opt:	
-						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-						mv nextcloud /opt
+						\begin{lstlisting}[language=Bash,caption=Mover contenido]
+						sudo mv nextcloud /opt
 						\end{lstlisting}
 					\item Configuración de permisos y propiedad del directorio:
-						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-						chmod o-rwx /opt/nextcloud
-						chown -R root:root /opt
+						\begin{lstlisting}[language=Bash,caption=Dueño]
+						sudo chmod o-rwx /opt/nextcloud
+						sudo chown -R root:root /opt
 						\end{lstlisting}
 					\item Concesión de permisos al usuario "www-data":					
-						\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-						setfacl -R -m u:www-data:rwx /opt/nextcloud
+						\begin{lstlisting}[language=Bash,caption=Permiso]
+						sudo setfacl -R -m u:www-data:rwx /opt/nextcloud
 						\end{lstlisting}
 							
 				\end{itemize}
@@ -1404,8 +1450,8 @@
 				
 				
 				
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-		apt install php php-mysql php-mbstring php-json php7.4-common php7.4-xml php-zip php-gd curl php-curl php-pear php7.4-opcache php-intl mariadb-server
+				\begin{lstlisting}[language=Bash,caption=Instalación de dependecias]
+	sudo apt install php php-mysql php-mbstring php-json php7.4-common php7.4-xml php-zip php-gd curl php-curl php-pear php7.4-opcache php-intl mariadb-server
 				\end{lstlisting}
 			
 				\begin{itemize}
@@ -1442,15 +1488,15 @@
 				\item Una vez que la instalación de los programas ha finalizado, es necesario realizar algunas modificaciones en los valores predeterminados de PHP. Estas modificaciones son necesarias para asegurar que PHP esté correctamente configurado y pueda funcionar de manera óptima.
 				
 			
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Editar php]
 				#hacer backup del archivo original
-				cp /etc/php/7.4/cli/php.ini /etc/php/7.4/cli/php.ini.bk
-				nvim /etc/php/7.4/cli/php.ini
+				sudo cp /etc/php/7.4/cli/php.ini /etc/php/7.4/cli/php.ini.bk
+				sudo nvim /etc/php/7.4/cli/php.ini
 				
 				\end{lstlisting}
 				Dentro del documento se deben configurar los siguientes valores:
 						
-			    \begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			    \begin{lstlisting}[language=Bash,caption=Valores]
 				post_max_size = 512M
 				upload_max_ﬁlesize = 512M
 				memory_limit = 512M
@@ -1467,7 +1513,7 @@
 				\end{itemize}
 			
 				Finalizada la configuracion se debe reiniciar apache:
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Reiniciar apache]
 					systemctl restart apache2
 				\end{lstlisting}
 					
@@ -1480,34 +1526,33 @@
 				\begin{itemize}
 					\item Acceder a la consola de MySQL/MariaDB:
 				
-					\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
-				
+					\begin{lstlisting}[language=Bash,caption=Mysql]
 				mysql -u root -p
 					\end{lstlisting}
 				
 					\item Crear la base de datos para Nextcloud:
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Base de datos]
 				
 				CREATE DATABASE nextclouddb;
 				\end{lstlisting}
 			
 					\item Crear un usuario para Nextcloud y asignarle una contraseña:	
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Usuario]
 				CREATE USER 'nextcloud'@localhost IDENTIFIED BY '123456';
 				\end{lstlisting}
 			
 					\item	Conceder todos los privilegios al usuario sobre la base de datos creada:		
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Otorgar Permisos]
 					GRANT ALL privileges ON nextclouddb.* TO 'nextcloud'@localhost;
 				\end{lstlisting}
 			
 					\item Actualizar los privilegios para que los cambios tnegan efecto:
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Actualizar privilegios]
 					FLUSH PRIVILEGES;
 				\end{lstlisting}
 			
 					\item Salir de la consola de MySQL/MariaDB:
-				\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+				\begin{lstlisting}[language=Bash,caption=Salir]
 					EXIT;
 				\end{lstlisting}
 			\end{itemize}
@@ -1519,13 +1564,13 @@
 			
 			Abrir un editor de texto en el servidor:
 			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=VirtualHost]
 			sudo vim /etc/apache2/sites-available/nextcloud.conf
 			\end{lstlisting}
 		
 		Este VirtualHost está configurado para mostrar el sitio Nextcloud en el dominio ''aulavirtual.duckdns.org'' desde el directorio \textit{/opt/nextcloud/}, y permite el acceso completo a los archivos en ese directorio mientras deshabilita la compatibilidad con WebDAV para este sitio. Además, se habilita la posibilidad de usar archivos .htaccess para anular la configuración en el directorio.\par
 			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=VirtualHost]
 			
 			<VirtualHost *:80>
 			DocumentRoot /opt/nextcloud/
@@ -1547,25 +1592,25 @@
 			
 			Habilitar el sitio virtual creado mediante el comando a2ensite:
 			
-		    \begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+		    \begin{lstlisting}[language=Bash,caption=a2ensite]
 			sudo a2ensite nextcloud.conf
 			\end{lstlisting}
 			
 			Reiniciar el servicio de Apache para aplicar los cambios:
 			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=Reiniciar Apache]
 			sudo systemctl restart apache2
 			\end{lstlisting}
 			
-			Con estos pasos, se habrá creado y habilitado el archivo de configuración ''nextcloud.conf'' en el directorio \textit{/etc/apache2/sites-available/}, lo que permitirá que Apache muestre Nextcloud desde la URL ''nextcloud.duckdns.org'' en el puerto 80. Además, se han configurado las opciones necesarias para que el servidor Apache funcione correctamente con Nextcloud, incluyendo la configuración de directorios, permisos y opciones de seguimiento de enlaces simbólicos.
+			Con estos pasos, se habrá creado y habilitado el archivo de configuración ''nextcloud.conf'' en el directorio \textit{/etc/apache2/sites-available/}, lo que permitirá que Apache muestre Nextcloud desde la URL ''aulavirtual.duckdns.org'' en el puerto 80. Además, se han configurado las opciones necesarias para que el servidor Apache funcione correctamente con Nextcloud, incluyendo la configuración de directorios, permisos y opciones de seguimiento de enlaces simbólicos.
 
 	
 			\item Conﬁguración adicional:
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=Configurar Adicional]
 			nvim /etc/php/7.4/apache2/conf.d/10-opcache.ini
 			\end{lstlisting}
 		
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=Valores]
 		zend_extension=opcache
 		opcache.enable=1
 		opcache.enable_cli=1
@@ -1605,7 +1650,7 @@
 		\end{itemize}
 			Con estas configuraciones en OPCache, se optimiza el rendimiento del motor PHP, almacenando en caché el código opcodificado para reducir el tiempo de ejecución de los scripts y mejorar la eficiencia general del servidor PHP. Es importante tener en cuenta que estas configuraciones pueden variar según las necesidades y características del servidor y las aplicaciones web que se ejecuten.	
 			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=Habilitar]
 			systemctl restart apache2
 			a2dissite 000-default.conf
 			a2ensite nextcloud.conf
@@ -1635,13 +1680,13 @@
 	
 		\begin{itemize}
 			\item Instalación de CertBot y el complemento para Apache:
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=CertBot]
 			apt install certbot python3-certbot-apache
 			\end{lstlisting}
 			
 			\item Configuración de CertBot para Apache:	Una vez instalado, se configura CertBot para funcionar con Apache.
 			
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=CertBot]
 			certbot --apache
 			\end{lstlisting}
 		
@@ -1663,7 +1708,7 @@
 		
 			Con esta configuración, Nextcloud solo permitirá el acceso desde los dominios y direcciones IP especificados en la lista de dominios confiables. Los usuarios podrán acceder a Nextcloud desde cualquiera de estos dominios o direcciones IP sin problemas de autenticación o seguridad. Cualquier otro intento de acceso desde un dominio no listado en 'trusted\_domains' será bloqueado por Nextcloud.
 		
-			\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+			\begin{lstlisting}[language=Bash,caption=trusted\_domains]
 			'trusted_domains' =>
 			array (
 			0 => 'localhost',
@@ -1687,7 +1732,7 @@
 		
 		
 		Reiniciar servidor web:
-		\begin{lstlisting}[language=Bash,caption=Directorio de trabajo NextCloud]
+		\begin{lstlisting}[language=Bash,caption=Reiniciar Apache]
 		systemctl restart apache2
 		\end{lstlisting}
 
@@ -1695,7 +1740,7 @@
 		
 		\subsubsection{Configuración de red}
 	
-			\begin{lstlisting}[language=Bash, caption=docker]
+			\begin{lstlisting}[language=Bash, caption=Red]
 		#! /bin/bash
 		ip link add link enp1s0 name dmz type vlan id 100 #creo la vlan
 		ip addr add 192.168.100.3/24 brd 192.168.100.255 dev dmz #configuro la ip
@@ -1719,12 +1764,12 @@
 				
 				\item Montar el directorio compartido utilizando el comando ''mount'' con la opción ''-t nfs'' y la dirección IP del servidor NFS seguido del directorio compartido:
 				\begin{lstlisting}[language=Bash, caption=mount]
-					sudo mount -t nfs 192.168.100.1:/ruta/directorio /ruta/datos
+			sudo mount -t nfs 192.168.100.1:/ruta/directorio /ruta/datos
 				\end{lstlisting}
 				
 				\item Para que el directorio compartido se monte automáticamente cada vez que el servidor Emby se inicie, se debe agregar la línea correspondiente al archivo ''/etc/fstab''.
 				\begin{lstlisting}[language=Bash, caption=fstab]
-					192.168.100.1:/ruta/directorio /ruta/datos nfs defaults 0 0
+			192.168.100.1:/ruta/directorio /ruta/datos nfs defaults 0 0
 				\end{lstlisting}	
 			\end{itemize}
 		

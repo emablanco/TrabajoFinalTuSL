@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2023.6.6)  25 JUL 2023 01:12
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Debian) (preloaded format=xelatex 2023.6.6)  25 JUL 2023 20:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1450,8 +1450,13 @@ Overfull \hbox (1.34003pt too wide) detected at line 85
  []
 
 
-Overfull \hbox (1.34003pt too wide) detected at line 95
+Overfull \hbox (1.34003pt too wide) detected at line 86
 \TU/lmr/m/n/10 15.12.2. 
+ []
+
+
+Overfull \hbox (1.34003pt too wide) detected at line 96
+\TU/lmr/m/n/10 15.12.3. 
  []
 
 )
@@ -1687,55 +1692,55 @@ LaTeX Info: Redefining \% on input line 133.
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  [29])
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
+LaTeX Info: Redefining \. on input line 223.
+LaTeX Info: Redefining \% on input line 223.
  [30]
-LaTeX Info: Redefining \. on input line 252.
-LaTeX Info: Redefining \% on input line 252.
+LaTeX Info: Redefining \. on input line 258.
+LaTeX Info: Redefining \% on input line 258.
  [31]
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
  [32]
-LaTeX Info: Redefining \. on input line 364.
-LaTeX Info: Redefining \% on input line 364.
+LaTeX Info: Redefining \. on input line 367.
+LaTeX Info: Redefining \% on input line 367.
  [33]
-LaTeX Info: Redefining \. on input line 420.
-LaTeX Info: Redefining \% on input line 420.
+LaTeX Info: Redefining \. on input line 427.
+LaTeX Info: Redefining \% on input line 427.
  [34]
-LaTeX Info: Redefining \. on input line 470.
-LaTeX Info: Redefining \% on input line 470.
+LaTeX Info: Redefining \. on input line 477.
+LaTeX Info: Redefining \% on input line 477.
  [35]
-LaTeX Info: Redefining \. on input line 523.
-LaTeX Info: Redefining \% on input line 523.
+LaTeX Info: Redefining \. on input line 526.
+LaTeX Info: Redefining \% on input line 526.
  [36]
-Overfull \hbox (51.83667pt too wide) in paragraph at lines 557--558
+Overfull \hbox (51.83667pt too wide) in paragraph at lines 550--551
 [][][][] 
  []
 
-LaTeX Info: Redefining \. on input line 575.
-LaTeX Info: Redefining \% on input line 575.
+LaTeX Info: Redefining \. on input line 582.
+LaTeX Info: Redefining \% on input line 582.
 [37]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 639.
-LaTeX Info: Redefining \% on input line 639.
+LaTeX Info: Redefining \. on input line 648.
+LaTeX Info: Redefining \% on input line 648.
  [38]
-LaTeX Info: Redefining \. on input line 695.
-LaTeX Info: Redefining \% on input line 695.
+LaTeX Info: Redefining \. on input line 697.
+LaTeX Info: Redefining \% on input line 697.
 
 [39]
-LaTeX Info: Redefining \. on input line 734.
-LaTeX Info: Redefining \% on input line 734.
+LaTeX Info: Redefining \. on input line 731.
+LaTeX Info: Redefining \% on input line 731.
  [40]
-LaTeX Info: Redefining \. on input line 774.
-LaTeX Info: Redefining \% on input line 774.
+LaTeX Info: Redefining \. on input line 780.
+LaTeX Info: Redefining \% on input line 780.
  [41]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 845.
-LaTeX Info: Redefining \% on input line 845.
+LaTeX Info: Redefining \. on input line 852.
+LaTeX Info: Redefining \% on input line 852.
  [42]
-Overfull \hbox (58.36166pt too wide) in paragraph at lines 906--907
+Overfull \hbox (58.36166pt too wide) in paragraph at lines 901--902
 []\TU/lmr/bx/n/10 actionstart\TU/lmr/m/n/10 : Es la acción que se realizará cua
 ndo Fail2ban comience. Se ejecutará el script \TU/lmr/m/it/10 send[]telegram[]n
 otif.sh
@@ -1744,73 +1749,79 @@ otif.sh
 LaTeX Info: Redefining \. on input line 911.
 LaTeX Info: Redefining \% on input line 911.
 [43]
-LaTeX Info: Redefining \. on input line 954.
-LaTeX Info: Redefining \% on input line 954.
+LaTeX Info: Redefining \. on input line 956.
+LaTeX Info: Redefining \% on input line 956.
  [44]
-LaTeX Info: Redefining \. on input line 1004.
-LaTeX Info: Redefining \% on input line 1004.
+LaTeX Info: Redefining \. on input line 1005.
+LaTeX Info: Redefining \% on input line 1005.
  [45]
-LaTeX Info: Redefining \. on input line 1054.
-LaTeX Info: Redefining \% on input line 1054.
+LaTeX Info: Redefining \. on input line 1061.
+LaTeX Info: Redefining \% on input line 1061.
  [46]
-LaTeX Info: Redefining \. on input line 1105.
-LaTeX Info: Redefining \% on input line 1105.
+LaTeX Info: Redefining \. on input line 1107.
+LaTeX Info: Redefining \% on input line 1107.
  [47]
-LaTeX Info: Redefining \. on input line 1157.
-LaTeX Info: Redefining \% on input line 1157.
+LaTeX Info: Redefining \. on input line 1145.
+LaTeX Info: Redefining \% on input line 1145.
  [48]
-LaTeX Info: Redefining \. on input line 1207.
-LaTeX Info: Redefining \% on input line 1207.
+LaTeX Info: Redefining \. on input line 1203.
+LaTeX Info: Redefining \% on input line 1203.
  [49]
-LaTeX Info: Redefining \. on input line 1247.
-LaTeX Info: Redefining \% on input line 1247.
+LaTeX Info: Redefining \. on input line 1254.
+LaTeX Info: Redefining \% on input line 1254.
  [50]
-LaTeX Info: Redefining \. on input line 1310.
-LaTeX Info: Redefining \% on input line 1310.
+LaTeX Info: Redefining \. on input line 1293.
+LaTeX Info: Redefining \% on input line 1293.
  [51]
-LaTeX Info: Redefining \. on input line 1357.
-LaTeX Info: Redefining \% on input line 1357.
+LaTeX Info: Redefining \. on input line 1348.
+LaTeX Info: Redefining \% on input line 1348.
  [52]
-LaTeX Info: Redefining \. on input line 1409.
-LaTeX Info: Redefining \% on input line 1409.
+LaTeX Info: Redefining \. on input line 1394.
+LaTeX Info: Redefining \% on input line 1394.
  [53]
-Missing character: There is no ﬁ in font [lmmono8-regular]:!
-LaTeX Info: Redefining \. on input line 1466.
-LaTeX Info: Redefining \% on input line 1466.
+LaTeX Info: Redefining \. on input line 1448.
+LaTeX Info: Redefining \% on input line 1448.
  [54]
-LaTeX Info: Redefining \. on input line 1524.
-LaTeX Info: Redefining \% on input line 1524.
+Missing character: There is no ﬁ in font [lmmono8-regular]:!
+LaTeX Info: Redefining \. on input line 1509.
+LaTeX Info: Redefining \% on input line 1509.
  [55]
-Overfull \hbox (24.96175pt too wide) in paragraph at lines 1526--1526
+LaTeX Info: Redefining \. on input line 1569.
+LaTeX Info: Redefining \% on input line 1569.
+ [56]
+Overfull \hbox (24.96175pt too wide) in paragraph at lines 1571--1571
 []\TU/lmr/m/n/10 Este VirtualHost está configurado para mostrar el sitio Nextcl
 oud en el dominio ”aulavirtual.duckdns.org”
  []
 
 Missing character: There is no ﬁ in font [lmmono8-regular]:!
-LaTeX Info: Redefining \. on input line 1589.
-LaTeX Info: Redefining \% on input line 1589.
-[56]
-LaTeX Info: Redefining \. on input line 1628.
-LaTeX Info: Redefining \% on input line 1628.
- [57]
+LaTeX Info: Redefining \. on input line 1632.
+LaTeX Info: Redefining \% on input line 1632.
+[57]
+LaTeX Info: Redefining \. on input line 1672.
+LaTeX Info: Redefining \% on input line 1672.
+ [58]
 Missing character: There is no ﬁ in font [lmmono8-regular]:!
 Missing character: There is no ﬁ in font [lmmono8-regular]:!
-LaTeX Info: Redefining \. on input line 1681.
-LaTeX Info: Redefining \% on input line 1681.
- [58])
+LaTeX Info: Redefining \. on input line 1725.
+LaTeX Info: Redefining \% on input line 1725.
+ [59])
 LaTeX Info: Redefining \. on input line 136.
 LaTeX Info: Redefining \% on input line 136.
- [59]
+ [60]
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [61]
 \openout2 = `cuerpo/paginas/capitulo16.aux'.
 
  (./cuerpo/paginas/capitulo16.tex
 Capítulo 16.
-) [60
+) [62
 
 
 
 
-] (./trabajo-final.bbl) [61
+] (./trabajo-final.bbl) [63
 
 
 
@@ -1828,15 +1839,15 @@ LaTeX Info: Redefining \% on input line 25.
 (./cuerpo/paginas/capitulo13.aux) (./cuerpo/paginas/capitulo14.aux)
 (./cuerpo/paginas/capitulo15.aux) (./cuerpo/paginas/capitulo16.aux))
 Package rerunfilecheck Info: File `trabajo-final.out' has not changed.
-(rerunfilecheck)             Checksum: D97BF9A34FD0D4AA668551C0F3E0DB0A;8004.
+(rerunfilecheck)             Checksum: 93C0BC756956F764E5435471AD87DB15;8138.
  ) 
 Here is how much of TeX's memory you used:
  37062 strings out of 477220
- 728754 string characters out of 5832723
- 2053886 words of memory out of 5000000
+ 728751 string characters out of 5832723
+ 2114887 words of memory out of 5000000
  55916 multiletter control sequences out of 15000+600000
  411010 words of font info for 90 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,7n,108p,1105b,1884s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,7n,108p,1105b,1956s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on trabajo-final.pdf (65 pages).
+Output written on trabajo-final.pdf (67 pages).
